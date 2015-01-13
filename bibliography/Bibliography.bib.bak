@@ -1,0 +1,104 @@
+@misc{FødevarerLandbrug2013,
+author = {{FødevarerLandbrug}},
+file = {::},
+isbn = {9788787323178},
+title = {{Fakta om erhvervet}},
+year = {2013}
+}
+@article{Gasparri,
+author = {Garone, E and Gasparri, A and Naldi, R and Nicotra, M},
+file = {::},
+pages = {1--21},
+title = {{A Team of Cooperative Ground / Arial Robots}},
+year = {2013}
+}
+@article{Kim,
+author = {Kim, Soonkyum and Bhattacharya, S and Kumar, V},
+file = {::},
+journal = {hans.math.upenn.edu},
+title = {{Path Planning for a Tethered Mobile Robot}},
+url = {http://hans.math.upenn.edu/~subhrabh/file\_cache/tethered\_robot\_ICRA14\_0dc2a.pdf}
+}
+@book{LindegaardNielsen2005,
+author = {{Lindegaard Nielsen}, M.},
+isbn = {9788757408027},
+publisher = {Jurist- og \O konomforbundets forlag},
+title = {{Power i projekter og portef\o ljer}},
+year = {2005}
+}
+@article{Meier2012,
+author = {Meier, Lorenz and Tanskanen, Petri and Heng, Lionel},
+file = {::},
+journal = {Autonomous \ldots},
+keywords = {computer vision,micro aerial vehicles,quadrotor,stereo},
+title = {{PIXHAWK: A micro aerial vehicle design for autonomous flight using onboard computer vision}},
+url = {http://link.springer.com/article/10.1007/s10514-012-9281-4},
+volume = {231855},
+year = {2012}
+}
+@article{Engineering,
+author = {Moreales-Perryman, Quentin and Lee, Dr. Daniel D.},
+file = {::},
+keywords = {UAV tether},
+mendeley-tags = {UAV tether},
+pages = {7},
+title = {{Tethering System for Unmanned Aerial Vehicles}}
+}
+@misc{Parliament2006,
+author = {Parliament, T H E European and Council, T H E and The, O F and Union, European},
+file = {::},
+number = {9},
+pages = {10--19},
+publisher = {The European Parlement},
+title = {{It is possible that electrical equipment may be placed in free circulation even though it does not comply with the safety requirements, and it is therefore desirable to lay down suitable provisions to minimise this danger.}},
+year = {2006}
+}
+@article{Peverill2013,
+author = {Peverill, James},
+file = {::},
+number = {19},
+title = {{Figure 1b}},
+volume = {1},
+year = {2013}
+}
+@misc{PhidgetsInc.2012,
+author = {{Phidgets Inc.}},
+booktitle = {Wikipedia},
+title = {{Load Cell Primer}},
+url = {http://www.phidgets.com/docs/Load\_Cell\_Primer},
+urldate = {2014-11-18},
+year = {2012}
+}
+@article{Sandino2013,
+author = {Sandino, Luis a. and Bejar, Manuel and Kondak, Konstantin and Ollero, Anibal},
+doi = {10.1007/s10846-013-9910-y},
+file = {::},
+issn = {0921-0296},
+journal = {Journal of Intelligent \& Robotic Systems},
+keywords = {helicopter,model-based control,modeling,pid,stability,tethered systems,unmanned aerial systems},
+month = oct,
+number = {1-4},
+pages = {3--18},
+title = {{Advances in Modeling and Control of Tethered Unmanned Helicopters to Enhance Hovering Performance}},
+url = {http://link.springer.com/10.1007/s10846-013-9910-y},
+volume = {73},
+year = {2013}
+}
+@misc{I2015,
+author = {I, Phidgets},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Phidgets Inc Loadcell 5kg Specs.pdf:pdf},
+number = {c},
+pages = {3133},
+title = {{Phidgets Inc. - 3133\_0 - Micro Load Cell (0-5kg) - CZL635}},
+url = {http://www.phidgets.com/products.php?category=34\&product\_id=3133\_0},
+urldate = {04-01-2015},
+year = {2015}
+}
+@book{Whewelll1833,
+author = {Whewelll, W.},
+edition = {4},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Analytical\_Statics.pdf:pdf},
+title = {{Analytical Statics}},
+url = {http://scholar.google.com/scholar?hl=en\&btnG=Search\&q=intitle:No+Title\#0},
+year = {1833}
+}

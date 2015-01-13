@@ -1,0 +1,184 @@
+%!TEX root = ../Thesis.tex
+\chapter{Beagle Bone Setup}
+This project used a BeagleBone Black edition revision C with Debian distribution from 2014-05-14 running. \\
+Setting up is done by cloning the git repository at https://github.com/savnik/rhd  that contains all code needed\footnote{In order to bridge the usb network connection see Networking below.}.
+ \begin{lstlisting}[language=bash]
+git clone https://github.com/savnik/rhd
+\end{lstlisting}
+Inside the folder rhd/ a setup file found basic containing all setup that is needed. The setup is explained in parts below.
+\begin{lstlisting}[language=bash]
+cd rhd/
+./setup
+\end{lstlisting} 
+
+\section{usblib} 
+For communication with the Phidget bridge the usblib are needed and in this project version 1.0.9 is used. The library can be downloaded from http://www.libusb.org/.
+
+\section{libphidget}
+The Phidget bridge comes with a library for interfacing the Phidget bridge easy. For this project version 2.1.8.2014 is used. The library can be downloaded from Phidgets website http://www.phidget.com/.\\
+It is very important to setup the rules using the 99-phidgets.rules file, otherwise the RHD plugins can't connect.
+
+\section{Networking}
+Connecting the Beaglebone to the Ethernet is straight forward using the RJ45 plug, but in this setup the RJ45 plug is already used in connection to the UAV. There fore it is needed to bridge the network connection via USB. Beaglebone natively support a network connection through USB, but needs some configuration to connect to the internet through the USB cable\footnote{https://github.com/anujdeshpande/BBB-workshop}.
+
+\noindent
+On the Beaglebone run following command:
+\begin{lstlisting}[language=bash]
+/sbin/route add default gw 192.168.7.1
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+\end{lstlisting}
+First line tells the Beaglebone to go through 192.168.7.1 when trying to connect to the internet and second line tell the Beaglebone to use google name-server.
+
+\noindent
+On the host computer (Ubuntu): 
+\begin{lstlisting}[language=bash]
+sudo iptables -A POSTROUTING -t nat -j MASQUERADE
+sudo echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null
+\end{lstlisting}
+
+\section{GPIO}
+Setting up the GPIO is done through the device tree source file. This file shows an example on 4 GPIO pins that is setup to Output or Input, and the internal pullup/pulldown settings. 
+
+\begin{lstlisting}[language=bash]
+/dts-v1/;
+/plugin/;
+
+/{
+       compatible = "ti,beaglebone", "ti,beaglebone-black";
+       part-number = "DM-GPIO-Test";
+       version = "00A0";
+
+       fragment@0 {
+             target = <&am33xx_pinmux>;
+            
+             __overlay__ {
+                  pinctrl_test: DM_GPIO_Test_Pins {
+			pinctrl-single,pins = <
+
+				0x070 0x07  /* P9_11 OUTPUT MODE7 - M1EN */
+				0x078 0x07  /* P9_12 OUTPUT MODE7 - M1NA */
+				0x031 0x07  /* P9_13 OUTPUT MODE7 - M1NB */
+					    /* No PWM */
+				0x040 0x27  /* P9_15 INPUT MODE7 - M1CS */
+				
+                               /* OUTPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down */
+			       /* INPUT   GPIO(mode7) 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down */
+
+			>;
+		  };
+             };
+       };
+
+       fragment@1 {
+		target = <&ocp>;
+		__overlay__ {
+			test_helper: helper {
+				compatible = "bone-pinmux-helper";
+				pinctrl-names = "default";
+				pinctrl-0 = <&pinctrl_test>;
+				status = "okay";
+			};
+		};
+	};
+};
+\end{lstlisting}
+
+\noindent
+Compiling a Device Tree Source file (.dts files) can be done like this:
+\begin{lstlisting}[language=bash]
+dtc -O dtb -o DM-GPIO-Test-00A0.dtbo -b 0 -@ DM-GPIO-Test.dts
+\end{lstlisting}
+It is a little tricky because ''-O'' is for output format, dtb is for Blob format, ''-o'' is output file DM-GPIO-Test--VERSION.dtbo, ''-b'' physical boot cpu 0 and the input file DM-GPIO-Test.dts\footnote{http://web.mit.edu/freebsd/head/contrib/dtc/Documentation/manual.txt}.
+
+\noindent
+The device tree blob object can be loaded on boot or by
+\begin{lstlisting}[language=bash]
+echo DM-GPIO-Test > /sys/devices/bone_capemgr.9/slots
+\end{lstlisting}
+
+\noindent
+A list over active device tree blob object is obtained by
+\begin{lstlisting}[language=bash]
+cat /sys/devices/bone_capemgr.9/slots
+\end{lstlisting}
+
+\noindent 
+Writing, reading and some level of configuration is done by normal unix input/output method, writing/reading to/from a virtual file located at /sys/devices/gpio/.
+\dirtree{%
+.1 gpioXX.
+.2 active\_low.
+.2 direction.
+.2 value.
+}
+
+
+\section{PWM}
+Using the PWM output from the Beaglebone is not ''out-of-the-box''. In order to enable the PWM module a Device Tree Blob Object (.dtbo file) needs to be loaded is the cape slots. Beaglebone comes with a default Device Tree Blob Object file that supports the  PWM module. The Device Tree Blob Object files can be found in /lib/firmware/.
+For this project the default Device Tree Blob Object file for pin 14 was used\footnote{/lib/firmware/bone\_pwm\_P9\_14-00A0.dtbo}. 
+
+\noindent
+Accessing the PWM module is like normal unix input/output method, writing to a virtual file. The PWM modules virtual files is at /sys/devices/ocp.3/
+\dirtree{%
+.1 pwm\_p9\_14.
+.2 duty.
+.2 period.
+.2 polarity.
+.2 run.
+}
+
+\section{SPI}
+To enable the SPI interface on the beaglebone follow instructions from\\ http://elinux.org/BeagleBone\_Black\_Enable\_SPIDEV. Using the SPI interface can only be done be disabling the HDMI interface because they use the same pins. Because of the long cable connection (over about 10cm) the communication speed needs to be slowed down. 
+
+
+\section{Wire connections}
+Encoder wiring:\\
+\begin{figure}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Encoder Cable Pin & AMS AS5045B Pin & Beaglebone Pin \\ \hline
+1 & 16 VDD 5V & 5/6 P9 \\ \hline
+2 & 7 VSS & 1/2 P9 \\ \hline
+3 & 12 PWM & \\ \hline
+4 & 11 CSN (Chip Select) & \\ \hline
+5 & 6 Index & \\ \hline
+6 & 10 CLK & 31 P9 \\ \hline
+7 & & \\ \hline
+8 & 9 DO (data out) & 29 P9 \\ \hline
+9 & 8 PDIO & \\ \hline
+10 & 1 MagIn & \\ \hline
+11 & 2 MagDec & \\ \hline 
+\end{tabular}
+\end{figure}
+
+
+Motor Driver wiring:
+\begin{figure}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Cable pin & Motor Driver Pin & Beaglebone pin \\ \hline 
+Blue & Green GND & P8 1 GND\\ \hline
+Green & Blue VSS 5V & SYS 5V\\ \hline
+Yellow & Yellow Encoder Channel A & P8 7\\ \hline
+Orange & Orange Encoder Channel B & P8 8\\ \hline
+Red & Red Motor 12V & Motor Driver M1+\\ \hline
+Black & Black GND & Motor Driver M1-\\ \hline
+\end{tabular}
+\end{figure}
+
+\section{General notes}
+The Device tree blob object can be loaded at boot in the uEnc file, but it seems to be root of many booting problems loading the Device tree blob object at boot, therefore it is a better solution to run a shell script after bootup that loads the device tree blob objects. This way the Beaglebone is always able to boot, and in case of bad device tree blob object files it does not prevent the system from booting.\\
+
+\noindent
+The Beaglebone Debian distribution does unfortunately not include a compiled version of xpad. Xpad is the driver for the joystick and is needed for using the gamepad plugin. The raw files for the xpad driver is available several places on the internet and even through available at the Beaglebone Debian Distribution, but is somehow not included in the latest build from 2014-15-14. In order to compile xpad the header files placed in /usr/src is needed but in they does not come with the distribution. So to use xpad a new debian image is needed to be compiled. The distribution image size is 2Gb and the Beaglebone Back memory size is only 4Gb. The distribution image must be compiled on same type of processor in order to work properly or compiled using a cross compiler. Thus the joystick plugin will be disabled by default in the setup, but can be activated in rhdconfig.xml.\\
+
+\noindent
+The Beaglebone community is rather small compared to the Arduino or Raspberry Pi community, therefore searching for patches or solutions is generally extensive work and requires a high level of unix skills. 
+
+
+
+
+
+
+ 

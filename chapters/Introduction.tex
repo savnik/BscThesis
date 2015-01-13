@@ -1,0 +1,42 @@
+%!TEX root = ../Thesis.tex
+\chapter{Introduction}
+
+Unmanned Aerial Vehicles, also commonly known as UAV's or drones, has for long time only been used for military, research and hobby purposes - but recently has a wide range of industrial applications seen the potential in using UAVs for industrial purposes.
+Flying UAV's have been implemented in a variety of applications such as monitoring, photography / filming, surveying the landscape and much more.\\
+\\
+For some applications the system must be capable of operating for a long period of time there is a need for a constant power supply via a cable. This project is about developing a platform for tether control of UAV with a cable.
+A solution must not be limited to solving a single problem but as a platform for the implementation of tethered drones in a wide range of applications.
+
+
+\section{Previous work}
+Several attempts to build a tethered UAV has been seen before, several design concepts has been panted across the world - yet there is no commonly known commercial system available for sale. It is a great curiosity because most UAV systems has started to be tethered in some degree.\\
+\todo{Indsæt billede af 1 rotor forsøgsopstilling}
+\\
+For this project a UAV from microcopter with a PixHawk is provided. The UAV and the PixHawk has in previous work been set up and are working.\\
+\noindent
+While this thesis was written another student has designed a power supply system that attempts to meet the requirements described in the design requirement specification and another student is working on a position controller for the UAV.\\
+ 
+
+
+\section{Problem formulation} 
+
+The objective for this project is to analyse and propose mechanical and electrical design for a platform for tether control of UAV. The designs has to be analysed and through the analysis one design must be selected to be prototyped and tested.
+
+\section{Problem limitation}
+\begin{itemize}
+\item The UAV must be capable to be airborne through significantly longer time than a battery powered alternative.
+\item It is assumed the anchor point of the UAV has significantly greater mass than the UAV lifting capabilities.
+\item The power supply may bee optimized by using both a cable and a battery. The UAV do not use 100\% of it's power at all time, but cable and power converters must be dimensioned so it can deliver 100\% power when needed. Therefore it can be imagined that the UAV take off and land on the battery, and then the battery is recharged in air by the cable. This thesis only investigate the case without battery.
+\item This project will not cover the position control in the PixHawk. 
+\end{itemize}
+
+
+\section{Example of use case}
+
+In Denmark agriculture grain production constitute 35 \% of Denmark's total area, or $1,495,000$ hectares with a value of $29.4$ billion. kr. Producing increasingly more with less resources. The Agricultural puts a strong focus on optimizing production through research and innovation\cite{FødevarerLandbrug2013}.
+\\
+\\
+A well-known problem in cereal production is when the farmer harvests in the forest, there is often young wild and hiding in the grain. Their natural instinct of danger is to hide even more or pretend to be dead. This means that when the farmer harvests his field, the animal is not moving away from the machine. This results in a large number of young deer's which is hit by farmers machinery. It has economic consequences for the farmer, because the harvested grain is destroyed, that can happen materiel damage to the equipment and down time and, not least it is an unpleasant experience for the farmer.
+\\
+\\
+A research group at DTU Automation has proposed a solution with a tether UAV flying in front of the vehicle and with a vision system can detect any obstacles such as animals or stones.
