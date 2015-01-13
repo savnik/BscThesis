@@ -38,8 +38,16 @@ To measure the horizontal angle between the ground station and the UAV to loadce
 The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable and the measuring device must be able to withstand such a force without permanently bending. Two 5kg loadcells from Phidget Inc is assessed to be the best match for the job with regard to what's available in the projects price range.
 
 \subsection{Testing}
-The initial testing of the measurement device was done using a spring weight attached to the Teflon ring. Applying a steady tension between 250g and 1000g in different directions (horizontal) and comparing the measured $\phi$ to the actual angle. 
-\todo{Lav data. ved 2 vinkler}
+First off is calibrating the loadcells. First measurement is without any forces acting in x and y direction in order to determine the offset of each loadcell.
+The offset for x is found to $-455.9787$ and the y offset to $-511.2618$.\\
+Next 1000g of load is put on the loadcell with a rope through the Teflon ring first purely in positive x direction and next in purely y direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying a known force in a direction and then checking the result.
+
+\todo{Indsæt figur} 
+
+Second test is done by applying a known force in a combination of x and y direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg.
+
+\todo{Indsæt figur}
+
 
 \noindent
 Second test was done keeping the $\phi$ angle and the tension constant and varying the $\theta$ angle. Is is expected as $\theta$ approach $90$ degrees the measured force will be approaching $0$. 
