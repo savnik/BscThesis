@@ -38,8 +38,43 @@ To measure the horizontal angle between the ground station and the UAV to loadce
 The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable and the measuring device must be able to withstand such a force without permanently bending. Two 5kg loadcells from Phidget Inc is assessed to be the best match for the job with regard to what's available in the projects price range.
 
 \subsection{Testing}
-The initial testing of the measurement device was done using a spring weight attached to the Teflon ring. Applying a steady tension between 250g and 1000g in different directions (horizontal) and comparing the measured $\phi$ to the actual angle. 
-\todo{Lav data. ved 2 vinkler}
+First off is calibrating the loadcells. First measurement is without any forces acting in x and y direction in order to determine the offset of each loadcell.
+The offset for x is found to $-455.9787$ and the y offset to $-511.2618$.\\
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
+\caption{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
+\end{figure}
+
+Next 1000g of load is put on the loadcell with a rope through the Teflon ring first purely in positive x direction and next in purely y direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying $600$g of force in x-direction and then checking the result.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
+\caption{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
+\end{figure}
+
+\noindent
+Second test is done by applying a known force in a combination of x and y direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is properly due to tolerances in the manufacturing process enabling the loadcell to move slightly over time.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/phi45deg1kg.eps}
+\caption{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around 1kg of load the data seam to drift slightly towards 0.}
+\label{fig:phi45deg1kg}
+\end{figure}
+
+On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is properly due to tolerances in the manufacturing process enabling the loadcell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the date on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both x and y loadcell. Because it applies to both loadcells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/phi45deg1kgdata.eps}
+\caption{Showing the calibrated data from x and y loadcell then 1kg of load is applied with $\phi=45$ degrees.}
+\label{fig:phi45deg1kgdata}
+\end{figure}
+
+
 
 \noindent
 Second test was done keeping the $\phi$ angle and the tension constant and varying the $\theta$ angle. Is is expected as $\theta$ approach $90$ degrees the measured force will be approaching $0$. 
@@ -50,17 +85,36 @@ Second test was done keeping the $\phi$ angle and the tension constant and varyi
 \label{fig:loadcell_test2}
 \end{figure}
 
+At $\theta=45$ degrees and 1kg of load the measured result is very close to the expected result.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{graphics/gcs_test/45degTheta1kg.eps}
+\caption{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
+\label{fig:45degTheta1kg}
+\end{figure}
+
 \noindent
-Third test was done in the final assembly and with a real cable. In this test the cable was anchored to the winch below instead of the Teflon ring. This test may vary both $\phi$ and $\theta$.
-\todo{Indsæt måle data}
-\noindent
+At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean that we now only see a component of the force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to
+\begin{equation}
+\sum T -\lambda gs + (T_{0,x} + T_{whinch,y} ) = 0
+\end{equation}
+Hence the measurement device only measures $T_{0,x}$, $T_{whinch,y}$ is unknown. This test will show how much $T_{winch,y}$ influences.
+On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
+\caption{Comparing measures results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
+\end{figure}
+
+
 
 
 \subsection{Summary}
-The prototype is able to measure the force in x- and y-direction and $\phi$ can be calculated. \\
-\noindent
-It turns out that the force applied to both loadcells is much less than expected and is out of range for a 5kg loadcell. The 5kg loadcell has a zero balance at $\pm75g$. If the force is greater the loadcell measurement is out of the zero balance range the device works. Thus, it can reasonably be assumed the devices will work well with a loadcell with a less operating range and higher precision.  
-\todo{Kalibrer og find ud af hvor lidt trækket er} 
+The prototype is able to measure the force in x- and y-direction, $\phi$ and $r$ can be calculated with good results. Higher precision might be possible with more precise testing equipment.
+The 5kg loadcell has a zero balance at $\pm75g$. Any values close to this range must be considered as very unreliable. 
+The force in $T_{winch,y}$ is quite small and can therefore be ignored.
 
 
 
