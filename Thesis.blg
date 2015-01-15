@@ -7,13 +7,14 @@ A level-1 auxiliary file: frontmatter/Acknowledgements.aux
 A level-1 auxiliary file: chapters/Introduction.aux
 A level-1 auxiliary file: chapters/analysis.aux
 A level-1 auxiliary file: chapters/prototype.aux
-A level-1 auxiliary file: appendices/Beagle.aux
-A level-1 auxiliary file: appendices/RHD.aux
 A level-1 auxiliary file: chapters/Conclusion.aux
 A level-1 auxiliary file: appendices/Symbols.aux
+A level-1 auxiliary file: appendices/Beagle.aux
+A level-1 auxiliary file: appendices/RHD.aux
 A level-1 auxiliary file: appendices/cad.aux
 A level-1 auxiliary file: appendices/matlab.aux
 The style file: alpha.bst
 Database file #1: bibliography/Bibliography.bib
+Warning--empty institution in Wahlgreen2014
 Warning--empty publisher in Whewelll1833
-(There was 1 warning)
+(There were 2 warnings)

@@ -1,12 +1,14 @@
 %!TEX root = ../Thesis.tex
 \chapter{Introduction}
 
-Unmanned Aerial Vehicles, also commonly known as UAVs or drones, has for long time only been used for military, research and hobby purposes - but recently has a wide range of industrial applications seen the potential in using UAVs for industrial purposes.
+Unmanned Aerial Vehicles, also commonly known as UAVs or drones, have for long time only been used for military, research and hobby purposes - but recently have a wide range of industrial applications seen the potential in using UAVs for industrial purposes.
 Flying UAVs have been implemented in a variety of applications such as monitoring, photography / filming, surveying the landscape and much more.\\
 \\
 In some applications the system must be capable of operating for a long period of time. In this cases there is a need for a constant power supply via a cable. This project is about developing a platform for tether control of UAV with a cable.
 A solution must not be limited to solving a single problem but as a platform for the implementation of tethered drones in a wide range of applications.
 
+\noindent
+This project is an innovation project, that pushes the boundaries of the relative low cost technology. There is an old Danish saying that "Deep fall, high flying". Innovation project is about being willing to take a high risk, of falling deep, to achieve results no one thought was possible. If every innovation project succeeded, it's is not innovation - but only a further development of known technology. To achieve an innovative goal, you have to set a goal 110 per cent higher of what you expect to achieve and afterwards be fair in sentencing if missing the target.
 
 \section{Previous work}
 Several attempts to build a tethered UAV have been seen before, several design concepts have been panted across the world - yet there is no commonly known commercial system available for sale. It is a great curiosity because most UAV systems have started to be tethered in some degree.\\
@@ -14,7 +16,7 @@ Several attempts to build a tethered UAV have been seen before, several design c
 \\
 For this project a UAV from microcopter with a PixHawk is provided. The UAV and the PixHawk has in previous work been set up and are working.\\
 \noindent
-While this thesis was written another student has designed a power supply system that attempts to meet the requirements described in the design requirement specification and another student is working on a position controller for the UAV.\\
+While this thesis was written Mikkel Wahlgreen has designed a power supply system \cite{Wahlgreen2014} that attempts to meet the requirements described in this design requirement specification and Claudia G. Walls is working on a position controller for the UAV.\\
  
 
 
@@ -36,13 +38,13 @@ The objective for this project is to analyse and propose mechanical and electric
 In Denmark agriculture grain production constitutes $35$ per cent of the total area, or $1,495,000$ hectares with a value of $29.4$ billion. kr. Producing increasingly more with less resources. The Agriculture puts a strong focus on optimizing production through research and innovation\cite{FødevarerLandbrug2013}.
 \\
 \\
-A well-known problem in cereal production is when the farmer harvests in the forest, there is often young wild hiding in the grain. Their natural instinct of danger is to hide even more or pretend to be dead. This means that when the farmer harvests his field, the animal is not moving away from the machine. This results in a large number of young deer which are hit by farmers machinery. It has economic consequences for the farmer, because the harvested grain is destroyed, that can happen materiel damage to the equipment and down time and, not least it is an unpleasant experience for the farmer.
+A well-known problem in cereal production is when the farmer harvests in the forest, there is often young wild hiding in the grain. Their natural instinct of danger is to hide even more or pretend to be dead. This means that when the farmer harvests his field, the animal is not moving away from the machine. This results in a large number of young deer which are hit by farmers machinery. It has economic consequences for the farmer, because the harvested grain is destroyed, materiel damage can happen to the equipment resulting in down-time and, not least it is an unpleasant experience for the farmer.
 \\
 \\
 A research group at DTU Automation has proposed a solution with a tether UAV flying in front of the vehicle and with a vision system can detect any obstacles such as animals or stones.
 
 \section{Outline of this thesis}
-This thesis is divided into 2 main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components.
+This thesis is divided into 2 main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components. All practical information for replicating this work is located in the appendix.
 
 
 

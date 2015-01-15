@@ -1,22 +1,24 @@
 \begin{thebibliography}{PCTU06}
 
-\bibitem[{Fø}13]{FødevarerLandbrug2013}
-{FødevarerLandbrug}.
+\bibitem[{F\o}13]{FødevarerLandbrug2013}
+{F\o devarer \& Landbrug}.
 \newblock {Fakta om erhvervet}, 2013.
 
 \bibitem[PCTU06]{Parliament2006}
 T~H E~European Parliament, T~H~E Council, O~F The, and European Union.
-\newblock {It is possible that electrical equipment may be placed in free
-  circulation even though it does not comply with the safety requirements, and
-  it is therefore desirable to lay down suitable provisions to minimise this
-  danger.}, 2006.
+\newblock {Low Voltage Diretive}, 2006.
 
 \bibitem[{Phi}12]{PhidgetsInc.2012}
 {Phidgets Inc.}
 \newblock {Load Cell Primer}, 2012.
 
+\bibitem[Wah14]{Wahlgreen2014}
+Mikkel \O~rum Wahlgreen.
+\newblock {Effekttrin til en t\o jret ubemandet drone}.
+\newblock Technical Report november, 2014.
+
 \bibitem[Whe33]{Whewelll1833}
-W.~Whewelll.
+W.~Whewell.
 \newblock {\em {Analytical Statics}}.
 \newblock 4 edition, 1833.
 

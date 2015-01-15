@@ -1,22 +1,23 @@
 %!TEX root = ../Thesis.tex
 \chapter{Symbols and Acronyms}
-\section{Symbols}
+\section{Acronyms}
 \begin{center}
 \begin{tabular}{|c|l|}
 \hline
 BBB & Beaglebone Black \\ \hline
+CAD & Computer Aided Design \\ \hline
 DTU & Danish Technical University\\ \hline
 FCS & Flight Control System \\ \hline
-GTS & Ground Control Station \\ \hline
+GCS & Ground Control Station \\ \hline
 RHD & Robot Hardware Daemon \\ \hline
 UAV & Unmanned Aeriel Vehcile \\ \hline
 XML & Extensible Markup Language \\ \hline
-CAD & Computer Aided Design \\ \hline
 \end{tabular}
 \end{center}
 
 
-\section{Units}
+\section{Symbols}
+Units are as following, unless otherwise stated.
 \begin{center}
 \begin{tabular}{|c|l|}
 \hline

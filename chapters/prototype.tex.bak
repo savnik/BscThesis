@@ -199,7 +199,6 @@ Second an appliance inlet connector for easy plug-in and unplug is wanted. The c
 \section{Electrical Design}
 From an electrical view there are 2 separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAV's position controller is running on the UAV. 
 
-\todo{Wire diagram der viser system overview}
 
 \subsection{Ground Station}
 The ground station sends data to the UAV system and decides weather to roll cable in or out based on the wanted position. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher then expected more cable are rolled out and vice versa.  
@@ -216,7 +215,7 @@ The system on the UAV measures a 3-axis loadcell connected to a Phigets Bridge. 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/UAV-electrical-system.png}
-\caption{Electrical overview on UAV.}
+\caption{UAV electrical overview.}
 \end{figure}
 
 
@@ -226,7 +225,7 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=1]{graphics/EthernetLink.png}
+\includegraphics[scale=0.75]{graphics/EthernetLink.png}
 \caption{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
 \label{fig:Networking}
 \end{figure}
