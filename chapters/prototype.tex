@@ -15,6 +15,7 @@ The landing platform or helipad is a 60cm x 60cm wide plate with a hole in the m
 \end{figure}
 
 \section{Messuring the horisontal angle}
+\label{sec:horizontalAnglePrototype}
 In order to precisely determinate where the UAV is positioned relative to the helipad on a horizontal plane a coordinate system on figure \ref{fig:top-coordinates} is introduced. x and y are cartasian coordinates corresponding to the measurements of loadcell 1 and loadcell 2 from figure \ref{fig:loadcells}. $\phi$ is the angle, starting at the positive x direction and increases in positive direction of rotation.
 
 \begin{figure}[H]
@@ -173,28 +174,62 @@ Both concepts are mature enough to be prototyped and tested, but due to the time
 
 
 \section{Cable Connection point on the UAV}
-Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions. 
+Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions - x, y, and z directions. The loadcells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In z-direction the maximal force applied to the loadcell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choise of loadcell is a 5kg loadcell.\\
+\noindent
+In x- and y-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg loadcell is used to measure the x- and y-directional force. 
 
-\todo{Indsæt figur med hexa delen og koordinater}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.5]{graphics/cad/hexa.png}
+\caption{3-axes measuring device for the UAV with appliance inlet connector.}
+\end{figure}
 
+
+\noindent
 Second an appliance inlet connector for easy plug-in and unplug is wanted. The connector must be capable to withstand the weight of the cable and the force applied of the UAV. 
 
-\todo{Indsæt billede af neutrix true connector}  
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/Neutrix-True-One.png}
+\caption{Neutrix True One appliance connector system.}
+\end{figure}
 
 
 
 \section{Electrical Design}
-From an electrical view there are 2 separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAV's possession controller is running on the UAV. 
+From an electrical view there are 2 separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAV's position controller is running on the UAV. 
 
 \todo{Wire diagram der viser system overview}
 
 \subsection{Ground Station}
 The ground station sends data to the UAV system and decides weather to roll cable in or out based on the wanted position. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher then expected more cable are rolled out and vice versa.  
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{graphics/GCS-eltectrical-overview.png}
+\caption{Ground Station electrical overview.}
+\end{figure}
 
 
 \subsection{UAV System}
 The system on the UAV measures a 3-axis loadcell connected to a Phigets Bridge. The Phidget Bridge are interfaced via a Beaglebone Black.  
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{graphics/UAV-electrical-system.png}
+\caption{UAV electrical overview.}
+\end{figure}
+
+
+
+\subsection{Data Connection using Ethernet over Power line}
+To connect the UAV to the Ground Station an Ethernet over power line system is used. Ethernet over power line operate by adding a modulated carrier to the wiring system, intended to work on 110-230 volt AC with frequencies in 50-60 Hertz. The AV500 Nano\footnote{Model number: TL-PA411KIT.} system from TP-Link supports speeds up to 500Mbps and works without any configuration needed. Stripping the housing from the electronic and soldering 2 wires on to parallel connect the component to the 75 volt system. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{graphics/EthernetLink.png}
+\caption{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
+\label{fig:Networking}
+\end{figure}
 
 
 
