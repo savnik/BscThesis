@@ -1,7 +1,7 @@
 %!TEX root = ../Thesis.tex
 
 \chapter{Prototype}
-The ground control platform has some physical dimension given due to the size of the UAV used in this project. The dimension of the UAV used will effect the dimension and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is on making an industrial and robust prototype. 
+The ground control platform must have some physical dimension due to the size of the UAV used in this project. The dimension of the UAV used will effect the dimension and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is on making an industrial and robust prototype. 
 
 
 \section{Landing platform / Helipad}
@@ -15,7 +15,7 @@ The landing platform or helipad is a 60cm x 60cm wide plate with a hole in the m
 \end{figure}
 
 \section{Messuring the horisontal angle}
-In order to precisely determinate where the UAV are positioned relative to the helipad on a horizontal plane a coordinate system on figure \ref{fig:top-coordinates} is introduced. x and y are cartasian coordinates corresponding to the measurements of loadcell 1 and loadcell 2 from figure \ref{fig:loadcells}. $\phi$ is the angle, starting at the positive x direction and increases in positive direction of rotation.
+In order to precisely determinate where the UAV is positioned relative to the helipad on a horizontal plane a coordinate system on figure \ref{fig:top-coordinates} is introduced. x and y are cartasian coordinates corresponding to the measurements of loadcell 1 and loadcell 2 from figure \ref{fig:loadcells}. $\phi$ is the angle, starting at the positive x direction and increases in positive direction of rotation.
 
 \begin{figure}[H]
 \centering
@@ -56,16 +56,17 @@ Next 1000g of load is put on the loadcell with a rope through the Teflon ring fi
 \end{figure}
 
 \noindent
-Second test is done by applying a known force in a combination of x and y direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is properly due to tolerances in the manufacturing process enabling the loadcell to move slightly over time.
+Second test is done by applying a known force in a combination of x and y direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over time. This is probably due to tolerances in the manufacturing process enabling the loadcell to move slightly over time.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kg.eps}
-\caption{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around 1kg of load the data seam to drift slightly towards 0.}
+\caption{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
 \label{fig:phi45deg1kg}
 \end{figure}
 
-On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is properly due to tolerances in the manufacturing process enabling the loadcell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the date on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both x and y loadcell. Because it applies to both loadcells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
+\noindent
+On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to tolerances in the manufacturing process enabling the loadcell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both x and y loadcell. Because it applies to both loadcells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
 
 \begin{figure}[H]
 \centering
@@ -95,7 +96,7 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 \end{figure}
 
 \noindent
-At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean that we now only see a component of the force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to
+At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean the measured force is now only a component of the total force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to
 \begin{equation}
 \sum T -\lambda gs + (T_{0,x} + T_{whinch,y} ) = 0
 \end{equation}
@@ -105,7 +106,7 @@ On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than e
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
-\caption{Comparing measures results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
+\caption{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
 \end{figure}
 
 
@@ -120,10 +121,10 @@ The force in $T_{winch,y}$ is quite small and can therefore be ignored.
 
 
 \section{Winching and storing the cable}
-There is several ways to keep the cable when it's not rolled out, 2 commonly used methods are on a cable drum or in a winded pile. The critical parameter here is the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cabled is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
+There are several ways to keep the cable when it's not rolled out, 2 commonly used methods are on a cable drum or in a winded pile. The critical parameters here is the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cable is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
 
 \subsection{Storing cable on a drum}
-Storing cable on a drum is a very practical and commonly known method to store cables in a organised way. The benefits of this design is that the drum it self can be used as a winch to winch in the cable. But the minimum diameter of the drum is given by the cable minimum bending radius for flexible installation and that sets a physical minimum for the drums outer diameter. The larger the diameter the greater the force needed for rotating the drum. To assure smooth windings the drum can move from side to side. Physics says the movement from side to side will come natural, if the friction is low enough; in practise this concept works often but is not robust and that is why motorized guidance is needed. In theory the rotation of the drum can be used as a feedback for how much cable is rolled out, but in practice this will be a source to a great error. Further more this design is very dependent on the cable all ways has tension. If there is no or too little tension on the cable it will loosen from the drum. \\
+Storing cable on a drum is a very practical and commonly known method to store cables in a organised way. The benefits of this design is that the drum it self can be used as a winch to winch in the cable. But the minimum diameter of the drum is given by the cable minimum bending radius for flexible installation and that sets a physical minimum for the drums outer diameter. The larger the diameter the greater the force needed for rotating the drum. To assure smooth windings the drum can move from side to side. Due to physics the movement from side to side will come natural, if the friction is low enough; in practise this concept works often but is not robust and that is why motorized guidance is needed\todo{referance}. In theory the rotation of the drum can be used as a feedback for how much cable is rolled out, but in practice this will be a source to a large margin of error. Further more this design is very dependent on the cable all ways has tension. If there is no or too little tension on the cable it will loosen from the drum. \\
 On figure \ref{fig:cable-drum} a cable drum is put under the helipad and the horizontal measurement device. 
 
 \begin{figure}[H]
@@ -138,6 +139,7 @@ With all wire winded in and the UAV on maximum throttle there is assumed to be 5
 
 \noindent
 The worst-case test with full load over long time was performed at indoor environment with room temperature on 24 degree Celsius. The coil was excited with 75V DC and 30A just over an hour. The inner diameter of the coil is 10cm and is made of 2mm thick PVC pipe.
+\todo{Skelne tydligere mellem 75 volt siden og 12 volt siden}
 
 \begin{figure}[H]
    \centering
@@ -166,14 +168,18 @@ Sometimes simple is better. The simple design has a motorized toothed wheel and 
 \label{fig:winch}
 \end{figure}
 
-\subsection{Comparison}
+\subsection{Summary}
 Both concepts are mature enough to be prototyped and tested, but due to the time frame of this work there is only time for manufacturing and testing one design. Based on the lower mechanical complexity of the simple winch, the simple winch is the chosen design.    
 
 
-\section{Cable Connection to the UAV}
-Connecting the cable to the UAV has several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in which direction. Second a connector 
+\section{Cable Connection point on the UAV}
+Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions. 
 
+\todo{Indsæt figur med hexa delen og koordinater}
 
+Second an appliance inlet connector for easy plug-in and unplug is wanted. The connector must be capable to withstand the weight of the cable and the force applied of the UAV. 
+
+\todo{Indsæt billede af neutrix true connector}  
 
 
 

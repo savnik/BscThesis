@@ -13,7 +13,7 @@
 
 \def\thesisauthor  {Peter Juhl Savnik (s113556)}
 \def\thesistitle   {Tether Control for Unmanned Aerial Vehicle}
-\def\thesissubtitle{Creating a platform for tether control for UAVs}
+\def\thesissubtitle{Using UAVs in industrial applications}
 \def\thesislocation{Kongens Lyngby}
 
 \def\papersize    {a4paper} % Final papersize (b5paper/a4paper), recommended papersize for DTU Compute is b5paper

@@ -29,13 +29,14 @@
 \include{chapters/prototype}
 %\include{chapters/LongTitle}
 %\blinddocument
-\include{appendices/Beagle}
-\include{appendices/RHD}
+
 \include{chapters/Conclusion}
 
 \appendix
 %\include{appendices/AnAppendix}
 \include{appendices/Symbols}
+\include{appendices/Beagle}
+\include{appendices/RHD}
 \include{appendices/cad}
 \include{appendices/matlab}
 

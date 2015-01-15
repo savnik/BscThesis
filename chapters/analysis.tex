@@ -5,11 +5,11 @@
 \section{Background}
 It is desired to develop a platform for tether control of UAV. Such a platform can have many applications in the industrial world - which also raises a number of requirements for reliability and robust design. \\
 \\
-The project has several issues which needs to be addressed in the analysis in order to make a design requirement specification. This analysis will cover the issues and the solutions on the issues will be addressed in the Prototype chapter 
+The project has several issues which needs to be addressed in the analysis in order to make a design requirement specification. This analysis will cover the issues and the solutions of the issues will be addressed in the prototype chapter 
 
 
 \section{Platform for Tethered UAV}
-A platform for tether control of UAV must have 3 basic elements; the UAV, a power line and a ground station. The ground station supply the poler line with power and keeps track of the cable. The UAV must be able to land and take-off from the ground station. The power line must be light enough for the UAV to lift it. The ground station must assure that the power line is not touching the ground by releasing or pulling cable.
+A platform for tether control of UAV must have 3 basic elements; the UAV, a power line and a ground station. The ground station supplies the power line with power and keeps track of the cable. The UAV must be able to land and take-off from the ground station. The power line must be light enough for the UAV to lift it. The ground station must assure that the power line is not touching the ground by releasing or pulling cable.
 
 \begin{figure}[H]
 \centering
@@ -22,10 +22,10 @@ A platform for tether control of UAV must have 3 basic elements; the UAV, a powe
 
 \section{Power line}
 
-Every cable has an electrical loss, and this factor contributes significantly then the cable is long and has a low cross-sectional area. It is wanted to have a cable that is as long as possible, but the UAV can only lift a limited amount of payload. The cross-sectional area and the length has a big impact on the weight. But how thin and how long can the cable be?
+Every cable has an electrical loss, and this factor contributes significantly when the cable is long and has a low cross-sectional area. It is wanted to have a cable that is as long as possible, but the UAV can only lift a limited amount of payload. The cross-sectional area and the length has a big impact on the weight. Investigating the electrical loss in the cable results in the cable specification requirements. 
  
 \noindent
-We assume that UAV requires 500W at 12V when using maximal thrust. To be on the safe side we put in a tolerance on 10\%, ending up with supplying the UAV with 550W. 
+It is assumed the UAV requires 500 watt at 12 volt when using maximal thrust.\todo{Indsæt referance til Mikkel} To be on the safe side a tolerance of 10 per cent is added, ending up with supplying the UAV with 550 watt. 
 The loss in the cable can now be calculated as following. 
 $P$ is the power in Watt, $U$ is the voltage in Volt, $l$ is the cable distance in meter, $\rho$ is the electrical resistivity in $\Omega \cdot m$ and $A$ is the cross sectional area in $m^2$.
 \noindent
@@ -75,15 +75,16 @@ The loss in the cable needs to be minimal. A known method to minimize the loss o
 \end{figure}
 \todo{Check udregning om den der dobbelt}
 
-From figure \ref{fig:relationship_loss_length} it is seen that electrical loss is the conductor also depends on length and cross-sectional area of the conductor. 
+\noindent
+From figure \ref{fig:relationship_loss_length} it is seen that electrical loss is the conductor also depends on length and cross-sectional area of the conductor. The electrical loss is converted to heat in the cable.
 
 
 \section{Tension force in the Cable}
-In a simplified model the weight of the cable will only drag the UAV on one axis, towards the ground station. On the UAV there is one loadcell mounted, measuring the force in the direction of the tension. The output of the loadcell will enable the ground station to decide weather it should roll cable out or in. How ever this simplified model assumes the UAV to be perpendicular to the cable at all times. 
+In a simplified model the weight of the cable will only drag the UAV on one axis, towards the ground station. On the UAV there is one loadcell mounted, measuring the force in the direction of the tension. The output of the loadcell will enable the ground station to decide if it should roll cable out or in. However this simplified model assumes the UAV to be perpendicular to the cable at all times. 
 That will in the real world only be true when it hovers directly over the ground station. As the UAV goes to one of the sides it will try to maintain horizontal pitch/tilt \todo{definer udtryk}. The cable will try to drag it in the direction of the ground station, making giving the UAV at steady force to work against. Because of aerodynamics the UAV will tilt in some extend to work against the tension. If this tilt get to large the UAV will lose it's lifting capability and therefore stall and crash towards the ground.   
 
 \subsection{Modelling the tension in the free hanging cable}
-Modelling the cable in the real world has a great complexity and in order to make a robust design we must assume the surrounds are not ideal. The ideal case is the cable is hanging as a direct line, as seen on figure \ref{fig:cable_model_cases}. Only at the anchor point the cable touches the ground. Worst case seanario is all cable is lying on the ground, except what is directly underneath the UAV. It can be assumed that the cable will be in between the direct line and worst case. The maximal position error will be the difference between the direct line and worst case line, calculated to approximately $14.65$ meters or 29.3\%. 
+Modelling the cable in the real world has a great complexity and in order to make a robust design we must assume the surrounds are not ideal. The ideal case is the cable is hanging as a direct line, as seen on figure \ref{fig:cable_model_cases}. Only at the anchor point the cable touches the ground. Worst case seanario is all cable is lying on the ground, except what is directly underneath the UAV. It can be assumed that the cable will be in between the direct line and worst case. The maximal position error will be the difference between the direct line and worst case line, calculated to approximately $14.65$ meters or 29.3 per cent. 
 
 \begin{figure}[H]
 \centering
@@ -93,13 +94,13 @@ Modelling the cable in the real world has a great complexity and in order to mak
 \end{figure}
 
 \noindent
-Both the direct line and worst case is possible, but highly unlikely in the real world. A cable hanging between two point will have a curved shape from the sag. If the curve from the sag can be described as an circle, the cable will curve uniformly over the hole length. This assumes the cable has no mass, but in the real world it has.
+Both the direct line and worst case is possible, but highly unlikely in the real world. A cable hanging between two points will have a curved shape from the sag. If the curve from the sag can be described as an circle, the cable will curve uniformly over the entire length. This assumes the cable has no mass, but in the real world it has.
 The catenary chain is close to an parabolic shape but describes the curve of a freely hanging chain with the weight uniformly distributed\cite{Whewelll1833}. The catenary equation has the form
 \begin{equation}
 y = a \cdot \cosh\left(\frac{x}{a}\right)
 \end{equation}
 The catenary chain assumes the cable is so flexible that any force exerted by the chain is parallel to the chain. This set a requirement for the bending radius for the cable to be much less than the length of the cable.
-The weight of the cable pull the UAV down and towards the anchor point. Let the point $c$ be the anchor point to the ground and $r$ be a force vector at the anchor point on the UAV. $r$ must be at a higher point than $c$. The force $T_0$ at point $c$ is tangential to the curvature thus only has a $x$ component. The force $T$ at point $r$ is tangential to the curvature at point $r$ and can be described as
+The weight of the cable pulls the UAV down and towards the anchor point. Let the point $c$ be the anchor point to the ground and $r$ be a force vector at the anchor point on the UAV. $r$ must be at a higher point than $c$. The force $T_0$ at point $c$ is tangential to the curvature thus only has a $x$ component. The force $T$ at point $r$ is tangential to the curvature at point $r$ and can be described as
 \begin{equation}
 T = T \cos(\phi) +  \sin(\phi)
 \end{equation} 
@@ -113,14 +114,14 @@ $\phi$ is the angle between the $x$ axis and the force vector and $T$ is the mag
 \end{figure}
 
 \noindent
-In this analysis the cable is in equilibrium thus the sum of the tree forces is zero. Splitting up the sum in $x$ and $y$ components gives
+In this analysis the cable is in equilibrium thus the sum of the tree forces is zero. Splitting up the sum in $x$ and $y$ components gives:
 \begin{eqnarray}
 T\cos(\phi) =& T_0 \\
 T \sin(\phi) =& \lambda g s
 \end{eqnarray}
 This gives the expected force at $T$ as a function of either the force at the anchor point or the cable length and $\phi$.
 \begin{equation}
-T = \frac{T_0}{cos(\phi)} = \frac{\lambda g s}{\sin(\phi)}
+T = \frac{T_0}{\cos(\phi)} = \frac{\lambda g s}{\sin(\phi)}
 \end{equation}
 
 To be able to model the cable using the catenary chain 4 parameters must be available; The tension at anchor point $T_0$, the angle at the UAV $\phi$ and the length of the cable.
@@ -139,7 +140,7 @@ For measuring the horizontal angle, $\phi$, relative to the Ground Control Stati
 From the length scaled of the scaled vectors $\overline{X}$ and $\overline{Y}$ the angle $phi$ can be found.
 
 \begin{equation}
-\phi = atan2 (Y,  X) = 2 \cdot arctan \frac{\sqrt{X^2+Y^2}-X}{Y}
+\phi = \mathrm{atan2} (Y,  X) = 2 \cdot \mathrm{arctan} \frac{\sqrt{X^2+Y^2}-X}{Y}
 \end{equation}
 
 \noindent
@@ -155,22 +156,22 @@ The length of $\overline{XY}$ is given by:
 The length og $\overline{XY}$ corresponds to the total tension in the cable in $\phi$ direction. 
 
 \subsection{Loadcell}
-The loadcells used in this project is a single-point loadcell. The choice of loadcell was determined by the availability/flexibility to easily create multidimensional measurements and the cost. A loadcell is basic a strain gauge(flexibly resistor pattern) that will change resistance when bended, mountet on a flexible material. In this case a block of Aluminium is cut out and a strain gauge is mounted. When the Aluminium is exerted with a force or weight it will bend slightly, causing a small change of resistance in the straingauge. The change of resistance can be measured by a Wheatstone bridge, as the one on the Phidget bridge. 
+The loadcells used in this project is a single-point loadcell. The choice of loadcell was determined by the availability/flexibility to easily create multidimensional measurements and the cost. A loadcell is basicly a strain gauge(flexibly resistor pattern) that will change resistance when bended, mounted on a flexible material. In this case a block of Aluminium is cut out and a strain gauge is mounted. When the aluminium is exerted with a force or weight it will bend slightly, causing a small change of resistance in the straingauge. The change of resistance can be measured by a Wheatstone bridge, as the one on the Phidget bridge. 
 
 The calibration of the loadcell is very important to obtain a value that fits the theory. The calibration converts the measured voltage to the measured force.
 \begin{eqnarray}
 F =& K_f \cdot (V_{in} - b)\\
 W =& K_w \cdot (V_{in} - b)
 \end{eqnarray}
-$F$ and $W$ is the expected force and weight. $K$ is a gain value depending on weather the output unit is force or weight. The offset $b$ will vary between individual loadcell, even from the same batch. $V_{in}$ is the voltage reading from the Phidget bridge.
-
-When dealing with multiple loadcells there are two ways of configure them electrical wise. First is to measure each loadcell individual and second to measure all together. The first one has the advantage of being able to messenger each loadcell individually, but the disadvantage of using many inputs and each loadcell needs to be calibrated individually. Second one has the advantage of only using 1 input on the bridge and all cells can be calibrated together, but the disadvantage of all loadcells need to be of same type and size and not being able to measure each loadcell individually. In this project the information of direction of tension is important and because of that measuring each loadcell individually is the best solution. \cite{PhidgetsInc.2012}
+$F$ and $W$ is the expected force and weight. $K$ is a gain value depending on weather the output unit is force or weight. The offset $b$ will vary between individual loadcell, even from the same batch. $V_{in}$ is the voltage reading from the Phidget bridge.\\
+\noindent
+When dealing with multiple loadcells there are two ways of configure them electrical wise. First is to measure each loadcell individual and second to measure all together. The first one has the advantage of being able to measure each loadcell individually, but the disadvantage of using many inputs and each loadcell needs to be calibrated individually. Second one has the advantage of only using 1 input on the bridge and all cells can be calibrated together, but the disadvantage of all loadcells need to be of same type and size and not being able to measure each loadcell individually. In this project the information of direction of tension is important and because of that measuring each loadcell individually is the best solution. \cite{PhidgetsInc.2012}
 
 
 \section{Design Requirement Specification}
 \begin{itemize}
 \item Supply the UAV with 120V DC and 500W
-\item The weight of the cable must not be greater than the lifting capability of approximate 3kg.
+\item The weight of the cable must not be greater than the lifting capability of approximately 3kg.
 \item The system must not be subject to the Electrical Safety: Low Voltage Directive, and therefore keep any voltage under 75 volt DC \cite{Parliament2006}.
 \item Given the cheap cost of UAVs today, the solution must keep a low material cost.
 \item Measuring the total horizontal force at the anchor point.
