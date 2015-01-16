@@ -5,38 +5,38 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tethered UAV}}{3}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between Voltage drop and cable length per Ampere}}{5}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Relationship between cable length, cross-sectional area and loss.}}{6}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing 4 ways of approximate the cables position.}}{8}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Catenary Chain Force diagram}}{9}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Coordinate system for horizontal measurement device.}}{10}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Force diagram for UAV}}{11}{figure.2.7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tethered UAV}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between Voltage drop and cable length per Ampere}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Relationship between cable length, cross-sectional area and cable loss.}}{7}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing 4 ways of approximate the cables position.}}{9}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Catenary Chain Force diagram}}{10}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Coordinate system for horizontal measurement device.}}{11}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Force diagram for UAV}}{12}{figure.2.7}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of Helipad with a hole in the middle for the cable.}}{16}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Helipad seen from top view with coordinate system.}}{17}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuration of 2 loadcells, for measuring the cable drag}}{18}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Raw data from load cell}}{19}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparing raw data to the calibrated values}}{20}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Test combines both $x$ and $y$ direction}}{21}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Calibrated data from $x$ and $y$ load cell}}{22}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.}}{23}{figure.3.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of Helipad with a hole in the middle for the cable.}}{15}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Helipad seen from top view with coordinate system.}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuration of two load cells, for measuring the cable drag}}{17}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Raw data from load cell}}{18}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparing raw data from load cells to the calibrated values}}{19}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Test combines both $x$ and $y$ direction}}{20}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Calibrated data from $x$ and $y$ load cell}}{21}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.}}{22}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Comparing the measured load to the theoretical value}}{23}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Comparing measured results to the theoretically expected, $\theta $ variable}}{24}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Cable drum design}}{26}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Heat test setup showing the coil, the test load and power Converters.}}{27}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Heat test, image from thermal camera}}{27}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces The Simple Winch}}{28}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces 3-axes measuring device for the UAV with appliance inlet connector.}}{29}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Neutrix True One appliance connector system.}}{30}{figure.3.16}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Ground Station electrical overview.}}{31}{figure.3.17}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces UAV electrical overview.}}{31}{figure.3.18}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Ethernet over power line setup}}{32}{figure.3.19}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Ground Control Station software overview}}{33}{figure.3.20}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Flight Control System software overview}}{35}{figure.3.21}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Cable drum design}}{25}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Heat test setup showing the coil, the test load and DC/DC power converters.}}{26}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Heat test, image from thermal camera}}{26}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces The Simple Winch}}{27}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces 3-axes measuring device for the UAV with appliance inlet connector.}}{28}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Neutrix True One appliance connector system.}}{29}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Ground Station electrical overview.}}{30}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces UAV electrical overview.}}{30}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Ethernet over power line setup}}{31}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Ground Control Station software overview}}{32}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Flight Control System software overview}}{34}{figure.3.21}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.}}{50}{figure.C.1}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.}}{48}{figure.C.1}
 \addvspace {10pt}

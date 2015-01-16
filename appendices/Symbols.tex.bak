@@ -9,6 +9,7 @@ CAD & Computer Aided Design \\ \hline
 DTU & Danish Technical University\\ \hline
 FCS & Flight Control System \\ \hline
 GCS & Ground Control Station \\ \hline
+GPIO & General Purpose Input and Output\\ \hline
 RHD & Robot Hardware Daemon \\ \hline
 UAV & Unmanned Aeriel Vehcile \\ \hline
 XML & Extensible Markup Language \\ \hline
@@ -34,6 +35,6 @@ b & Offset \\ \hline
 T & Tension force \\ \hline
 $\lambda$ & Cable Weight per unit length \\ \hline
 g & Gravitational constant \\ \hline
-$\phi$ & The angle fra x axis in positive rotational direction.\\ \hline
+$\phi$ & The angle from $x axis in positive rotational direction.\\ \hline
 \end{tabular}
 \end{center}

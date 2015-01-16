@@ -1,5 +1,9 @@
 \begin{thebibliography}{PCTU06}
 
+\bibitem[Dan15]{Dandrone2015}
+Dandrone.
+\newblock {Dandrone Erhverv - Implementering af Drone Teknologi}, 2015.
+
 \bibitem[{F\o}13]{FødevarerLandbrug2013}
 {F\o devarer \& Landbrug}.
 \newblock {Fakta om erhvervet}, 2013.
@@ -7,6 +11,11 @@
 \bibitem[PCTU06]{Parliament2006}
 T~H E~European Parliament, T~H~E Council, O~F The, and European Union.
 \newblock {Low Voltage Diretive}, 2006.
+
+\bibitem[Pev13]{Peverill2013}
+James Peverill.
+\newblock {Figure 1b}.
+\newblock 1(19), 2013.
 
 \bibitem[{Phi}12]{PhidgetsInc.2012}
 {Phidgets Inc.}

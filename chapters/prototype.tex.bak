@@ -1,75 +1,75 @@
 %!TEX root = ../Thesis.tex
 
 \chapter{Prototype}
-The ground control platform must have some physical dimension due to the size of the UAV used in this project. The dimension of the UAV used will effect the dimension and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is on making an industrial and robust prototype. 
+The Ground Control Platform must have some physical dimension due to the size of the UAV used in this project. The dimension of the UAV used will effect the dimension and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is on making an industrial and robust prototype. 
 
 
 \section{Landing platform / Helipad}
 The landing platform or helipad is a 60cm x 60cm wide plate with a hole in the middle. Dimensioning of the size mainly relies on tolerance on the presision of landing the UAV. The UAV only needs 30cm x 30cm space for the landing gear, but in case a big wind gust comes in just before landing/take-off, the UAV can slide off the platform if the platform is too small. On figure \ref{fig:helipad} the helipad is seen from the top.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.75]{graphics/cad/toplevel.png}
+\includegraphics[scale=0.6]{graphics/cad/toplevel.png}
 \caption{Illustration of Helipad with a hole in the middle for the cable.}
 \label{fig:helipad}
 \end{figure}
 
 \section{Messuring the horisontal angle}
 \label{sec:horizontalAnglePrototype}
-In order to precisely determinate where the UAV is positioned relative to the helipad on a horizontal plane a coordinate system on figure \ref{fig:top-coordinates} is introduced. x and y are cartasian coordinates corresponding to the measurements of loadcell 1 and loadcell 2 from figure \ref{fig:loadcells}. $\phi$ is the angle, starting at the positive x direction and increases in positive direction of rotation.
+In order to precisely determinate where the UAV is positioned relative to the helipad on a horizontal plane a coordinate system on figure \ref{fig:top-coordinates} is introduced. $x$ and $y$ are Cartesian coordinates corresponding to the measurements of load cell 1 and load cell 2 from figure \ref{fig:loadcells}. $\phi$ is the angle, starting at the positive $x$ direction and increases in positive direction of rotation.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.75]{graphics/cad/top-coordinates.png}
+\includegraphics[scale=0.6]{graphics/cad/top-coordinates.png}
 \caption{Helipad seen from top view with coordinate system.}
 \label{fig:top-coordinates}
 \end{figure}
 
 \noindent
-To measure the horizontal angle between the ground station and the UAV to loadcells are used, perpendicular to each other. One end attached to the ground station and the other end attached to a cable though hole made in Teflon. Then the UAV is exactly direct over the hole, no force will be measured, but at the UAV moves to one of the sides it will create a cable tension that results in a force in x- and y- direction. Combining the x and y force can be translated to an angle. 
+To measure the horizontal angle between the Ground Station and the UAV to load cells are used, perpendicular to each other. One end attached to the Ground Station and the other end attached to a cable though hole made in Teflon. Then the UAV is exactly direct over the center, no force will be measured, but then the UAV moves to one of the sides it will create a cable tension that results in a force in $x$- and $y$-direction. Combining the $x$ and $y$ force can be translated to an angle. 
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/loadcell.png}
-\caption[Configuration of 2 loadcells, for measuring the cable drag]{Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.}
+\caption[Configuration of two load cells, for measuring the cable drag]{Configuration of two load cells, for measuring the cable drag in x and y direction. Load cell 1 measures in $x$-direction and load cell 2 in $y$-direction.}
 \label{fig:loadcells}
 \end{figure}
 
 \noindent
-The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable and the measuring device must be able to withstand such a force without permanently bending. Two 5kg loadcells from Phidget Inc is assessed to be the best match for the job with regard to what's available in the projects price range.
+The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable and the measuring device must be able to withstand such a force without permanently bending. Two 5kg load cells from Phidget Inc is assessed to be the best match for the job with regard to what's available in the projects price range.
 
 \subsection{Testing}
-First off is calibrating the loadcells. First measurement is without any forces acting in x and y direction in order to determine the offset of each loadcell.
-The offset for x is found to $-455.9787$ and the y offset to $-511.2618$.\\
+First off is calibrating the load cells. First measurement is without any forces acting in $x$ and $y$ direction in order to determine the offset of each load cell.
+The offset for $x$ is found to $-455.9787$ and the $y$ offset to $-511.2618$.\\
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
-\caption[Raw data from load cell]{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
+\caption[Raw data from load cell]{Raw input data from load cell $x$ and $y$. The average line is the calculated offset used for calibration. Measured without load in any directions.}
 \end{figure}
 
-Next 1000g of load is put on the loadcell with a rope through the Teflon ring first purely in positive x direction and next in purely y direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying $600$g of force in x-direction and then checking the result.
+Next 1000g of load is put on the load cell with a rope through the Teflon ring first purely in positive $x$ direction and next in purely $y$ direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying $600$g of force in $x$-direction and then checking the result.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
-\caption[Comparing raw data to the calibrated values]{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
+\caption[Comparing raw data from load cells to the calibrated values]{Comparing raw data to the calibrated values. The $x$-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
 \end{figure}
 
 \noindent
-Second test is done by applying a known force in a combination of x and y direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over time. This is probably due to tolerances in the manufacturing process enabling the loadcell to move slightly over time.
+Next test is performed by applying a known force in a combination of $x$ and $y$ direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over time. This is probably due to tolerances in the manufacturing process of the mount enabling the load cell to move slightly over time or the elasticity of the connecting rope between the spring load and the load cell.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kg.eps}
-\caption[Test combines both $x$ and $y$ direction]{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
+\caption[Test combines both $x$ and $y$ direction]{This test combines both $x$ and $y$ direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly decreasing.}
 \label{fig:phi45deg1kg}
 \end{figure}
 
 \noindent
-On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to tolerances in the manufacturing process enabling the loadcell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both x and y loadcell. Because it applies to both loadcells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
+On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to tolerances in the manufacturing process enabling the load cell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both $x$ and $y$ load cell. Because it applies to both load cells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kgdata.eps}
 \caption[Calibrated data from $x$ and $y$ load cell]{Showing the calibrated data from $x$ and $y$ load cell then 1kg of load is applied with $\phi=45$ degrees.}
@@ -79,7 +79,7 @@ On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over
 
 
 \noindent
-Second test was done keeping the $\phi$ angle and the tension constant and varying the $\theta$ angle. Is is expected as $\theta$ approach $90$ degrees the measured force will be approaching $0$. 
+Next test is performed by keeping the $\phi$ angle and the tension constant and varying the $\theta$ angle. Is is expected as $\theta$ approach $90$ degrees the measured force will be approaching $0$. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/loadcell_test2.png}
@@ -89,7 +89,7 @@ Second test was done keeping the $\phi$ angle and the tension constant and varyi
 
 At $\theta=45$ degrees and 1kg of load the measured result is very close to the expected result.
 
-\begin{figure}[H]
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/gcs_test/45degTheta1kg.eps}
 \caption[Comparing the measured load to the theoretical value]{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
@@ -97,14 +97,17 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 \end{figure}
 
 \noindent
-At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean the measured force is now only a component of the total force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to
+At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean the measured force is now only a component of the total force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to:
+\todo{ref til sum af kræfter i 2.4 + lav diagram}
 \begin{equation}
 \sum T -\lambda gs + (T_{0,x} + T_{whinch,y} ) = 0
 \end{equation}
-Hence the measurement device only measures $T_{0,x}$, $T_{whinch,y}$ is unknown. This test will show how much $T_{winch,y}$ influences.
-On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision. 
 
-\begin{figure}[H]
+\noindent
+Hence the measurement device only measures $T_{0,x}$, $T_{whinch,y}$ is unknown. This test will show how much $T_{winch,y}$ influences.
+On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision of the calibration. 
+
+\begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
 \caption[Comparing measured results to the theoretically expected, $\theta$ variable]{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
@@ -114,24 +117,26 @@ On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than e
 
 
 \subsection{Summary}
-The prototype is able to measure the force in x- and y-direction, $\phi$ and $r$ can be calculated with good results. Higher precision might be possible with more precise testing equipment.
-The 5kg loadcell has a zero balance at $\pm75g$. Any values close to this range must be considered as very unreliable. 
+The prototype is able to measure the force in $x$- and $y$-direction, $\phi$ and $r$ can be calculated with good results. Higher precision might be possible with more precise testing equipment.
+The 5kg load cell has a zero balance at $\pm75g$. Any values close to this range must be considered as very unreliable. 
 The force in $T_{winch,y}$ is quite small and can therefore be ignored.
 
 
 
 
 \section{Winching and storing the cable}
-There are several ways to keep the cable when it's not rolled out, 2 commonly used methods are on a cable drum or in a winded pile. The critical parameters here is the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cable is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
+There are several ways to keep the cable when it's not rolled out, two commonly used methods are on a cable drum or in a winded pile. The critical parameters here is the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cable is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
 
 \subsection{Storing cable on a drum}
-Storing cable on a drum is a very practical and commonly known method to store cables in a organised way. The benefits of this design is that the drum it self can be used as a winch to winch in the cable. But the minimum diameter of the drum is given by the cable minimum bending radius for flexible installation and that sets a physical minimum for the drums outer diameter. The larger the diameter the greater the force needed for rotating the drum. To assure smooth windings the drum can move from side to side. Due to physics the movement from side to side will come natural, if the friction is low enough; in practise this concept works often but is not robust and that is why motorized guidance is needed\todo{referance}. In theory the rotation of the drum can be used as a feedback for how much cable is rolled out, but in practice this will be a source to a large margin of error. Further more this design is very dependent on the cable all ways has tension. If there is no or too little tension on the cable it will loosen from the drum. \\
+Storing cable on a drum is a very practical and commonly known method to store cables in a organised way. The benefits of this design is that the drum it self can be used as a winch to winch in the cable. But the minimum diameter of the drum is given by the cable minimum bending radius for flexible installation and that sets a physical minimum for the drums outer diameter. The larger the diameter the greater the force needed for rotating the drum. To assure smooth windings the drum can move from side to side. 
+%Due to physics the movement from side to side will come natural, if the friction is low enough; in practise this concept works often but is not robust and that is why motorized guidance is needed\todo{referance}. 
+In theory the rotation of the drum can be used as a feedback for how much cable is rolled out, but in practice this will be a source to a large margin of error. Further more this design is very dependent on the cable always have tension on. If there is no or too little tension on the cable it will loosen from the drum. \\
 On figure \ref{fig:cable-drum} a cable drum is put under the helipad and the horizontal measurement device. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/cable-drum.png}
-\caption{Cable drum design. The drum can rotate to winch in/out the cable, and also move from side-to-side to assure smooth windings.}
+\caption[Cable drum design]{Cable drum design. The drum can rotate to winch in/out the cable, and also move from side-to-side to assure smooth windings.}
 \label{fig:cable-drum}
 \end{figure}
 
@@ -152,7 +157,7 @@ The worst-case test with full load over long time was performed at indoor enviro
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/heat_test/IR_1491.jpg}
-\caption[Caption for LOF]{Heat test of 20m standard household cable\footnotemark winded in 2 layers with 75V DC and 30A. Spot 1 is inside the coil, spot 2 is the lower side of the outer coil and spot 3 i at center of the outer coil. On the lower left corner thermometer calibration constants is displayed.}
+\caption[Heat test, image from thermal camera]{Heat test of 20m standard household cable\footnotemark winded in 2 layers with 75V DC and 30A. Spot 1 is inside the coil, spot 2 is the lower side of the outer coil and spot 3 i at center of the outer coil. On the lower left corner thermometer calibration constants is displayed.}
 \label{fig:heat_test_ir}
 \end{figure}
 \footnotetext{House hold cable with unknown origin, cross-sectional area 0.75mm2, Max voltage 230 AC, Max current 10A}
@@ -165,7 +170,7 @@ Sometimes simple is better. The simple design has a motorized toothed wheel and 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/winch.png}
-\caption{The Simple Winch only has one motor and an encoder wheel pushing the cable towards the motor wheel. Two springs adjust the tension.}
+\caption[The Simple Winch]{The Simple Winch only has one motor and an encoder wheel pushing the cable towards the motor wheel. Two springs adjust the tension.}
 \label{fig:winch}
 \end{figure}
 
@@ -174,9 +179,9 @@ Both concepts are mature enough to be prototyped and tested, but due to the time
 
 
 \section{Cable Connection point on the UAV}
-Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions - x, y, and z directions. The loadcells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In z-direction the maximal force applied to the loadcell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choise of loadcell is a 5kg loadcell.\\
+Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions - x, y, and z directions. The loadcells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In z-direction the maximal force applied to the loadcell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choise of load cell is a 5kg load cell.\\
 \noindent
-In x- and y-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg loadcell is used to measure the x- and y-directional force. 
+In x- and y-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg load cell is used to measure the x- and y-directional force. 
 
 \begin{figure}[hbtp]
 \centering
@@ -226,7 +231,7 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/EthernetLink.png}
-\caption{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
+\caption[Ethernet over power line setup]{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
 \label{fig:Networking}
 \end{figure}
 
@@ -240,7 +245,7 @@ The objective of the Ground Control station software is to measure the horizonta
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/Visio/GCS-software-overview.png}
-\caption{Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.}
+\caption[Ground Control Station software overview]{Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.}
 \label{fig:GCS-software-overview}
 \end{figure}
 
@@ -254,5 +259,5 @@ The objective of the Flight Control System is to measure the force from the 3-ax
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/Visio/FCS-software-overview.png}
-\caption{Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.}
+\caption[Flight Control System software overview]{Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.}
 \end{figure}

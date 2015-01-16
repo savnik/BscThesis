@@ -1,16 +1,48 @@
+@misc{Anders2015,
+author = {Anders, David},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/BeagleBone Black Enable SPIDEV - eLinux.pdf:pdf},
+pages = {1--7},
+title = {{BeagleBone Black Enable SPIDEV SPIDEV Interface Description Enabling SPIDEV with Cape Manager}},
+url = {http://elinux.org/BeagleBone\_Black\_Enable\_SPIDEV},
+year = {2015}
+}
+@article{Ewkf2013,
+author = {Ewkf, \"{O}lflex Heat Hss-f},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/0900766b8133149a.pdf:pdf},
+pages = {2012--2014},
+title = {{Product information}},
+year = {2013}
+}
+@article{External2014,
+author = {External, No and Required, Components and Thermal, Internal and Protection, Overload and Short, Internal and Current, Circuit and Requiring, Other Applications and Site, Unique and Requirements, Control Change},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/MC7800-D.PDF:PDF},
+pages = {1--31},
+title = {{1 . 0 A Positive Voltage Regulators}},
+year = {2014}
+}
 @misc{FødevarerLandbrug2013,
-author = {{FødevarerLandbrug}},
-file = {::},
+author = {{F\o devarer \& Landbrug}},
+file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2013 - Fakta om erhvervet.pdf:pdf},
 isbn = {9788787323178},
 title = {{Fakta om erhvervet}},
 year = {2013}
 }
 @article{Gasparri,
 author = {Garone, E and Gasparri, A and Naldi, R and Nicotra, M},
-file = {::},
+file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Gasparri, Naldi - Unknown - Aerial Robots • The Team of Heterogeneous Robots.pdf:pdf},
 pages = {1--21},
 title = {{A Team of Cooperative Ground / Arial Robots}},
 year = {2013}
+}
+@misc{I2015,
+author = {I, Phidgets},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Phidgets Inc Loadcell 5kg Specs.pdf:pdf},
+number = {c},
+pages = {3133},
+title = {{Phidgets Inc. - 3133\_0 - Micro Load Cell (0-5kg) - CZL635}},
+url = {http://www.phidgets.com/products.php?category=34\&product\_id=3133\_0},
+urldate = {04-01-2015},
+year = {2015}
 }
 @article{Kim,
 author = {Kim, Soonkyum and Bhattacharya, S and Kumar, V},
@@ -38,7 +70,7 @@ year = {2012}
 }
 @article{Engineering,
 author = {Moreales-Perryman, Quentin and Lee, Dr. Daniel D.},
-file = {::},
+file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Engineering, Fellow - Unknown - Tethering System for Unmanned Aerial Vehicles.pdf:pdf},
 keywords = {UAV tether},
 mendeley-tags = {UAV tether},
 pages = {7},
@@ -50,12 +82,12 @@ file = {::},
 number = {9},
 pages = {10--19},
 publisher = {The European Parlement},
-title = {{It is possible that electrical equipment may be placed in free circulation even though it does not comply with the safety requirements, and it is therefore desirable to lay down suitable provisions to minimise this danger.}},
+title = {{Low Voltage Diretive}},
 year = {2006}
 }
 @article{Peverill2013,
 author = {Peverill, James},
-file = {::},
+file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Peverill - 2013 - Figure 1b.pdf:pdf},
 number = {19},
 title = {{Figure 1b}},
 volume = {1},
@@ -72,7 +104,7 @@ year = {2012}
 @article{Sandino2013,
 author = {Sandino, Luis a. and Bejar, Manuel and Kondak, Konstantin and Ollero, Anibal},
 doi = {10.1007/s10846-013-9910-y},
-file = {::},
+file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Sandino et al. - 2013 - Advances in Modeling and Control of Tethered Unmanned Helicopters to Enhance Hovering Performance.pdf:pdf},
 issn = {0921-0296},
 journal = {Journal of Intelligent \& Robotic Systems},
 keywords = {helicopter,model-based control,modeling,pid,stability,tethered systems,unmanned aerial systems},
@@ -84,21 +116,53 @@ url = {http://link.springer.com/10.1007/s10846-013-9910-y},
 volume = {73},
 year = {2013}
 }
-@misc{I2015,
-author = {I, Phidgets},
-file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Phidgets Inc Loadcell 5kg Specs.pdf:pdf},
-number = {c},
-pages = {3133},
-title = {{Phidgets Inc. - 3133\_0 - Micro Load Cell (0-5kg) - CZL635}},
-url = {http://www.phidgets.com/products.php?category=34\&product\_id=3133\_0},
-urldate = {04-01-2015},
-year = {2015}
+@phdthesis{Sidea2013,
+author = {Sidea, Adriana-Gabriela},
+keywords = {UAV,drone,elektr,kandidat,master of science in engineering,position control,tether},
+mendeley-tags = {UAV,drone,position control,tether},
+school = {Danish Technical University},
+title = {{Position Control of Tethered Helicopter}},
+url = {http://findit.dtu.dk/en/catalog/240121791},
+year = {2013}
 }
 @book{Whewelll1833,
-author = {Whewelll, W.},
+author = {Whewell, W.},
 edition = {4},
 file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Analytical\_Statics.pdf:pdf},
 title = {{Analytical Statics}},
 url = {http://scholar.google.com/scholar?hl=en\&btnG=Search\&q=intitle:No+Title\#0},
 year = {1833}
+}
+@techreport{Wahlgreen2014,
+author = {Wahlgreen, Mikkel},
+file = {:D$\backslash$:/Dokumenter/DTU/7. semester/BSc/Referancer/Effekttrin til UAV.pdf:pdf},
+number = {november},
+title = {{Effekttrin til en tøjret ubemandet drone}},
+year = {2014}
+}
+
+@techreport{Beck2008,
+author = {Beck, Anders},
+file = {:C$\backslash$:/Users/Peter/Documents/DTU/7. semester/BSc/Referancer/Rhd.pdf:pdf},
+title = {{Special Course}},
+year = {2008}
+}
+
+@misc{Dandrone2015,
+author = {Dandrone},
+title = {{Dandrone Erhverv - Implementering af Drone Teknologi}},
+url = {http://www.erhverv.dandrone.dk/},
+urldate = {2015-01-16},
+year = {2015}
+}
+
+
+@misc{Peverill2013,
+abstract = {A tethered unmanned aerial vehicle (“UAV”) may be out?tted With a sensor payload for data gathering. The tethered UAV may be tethered to a ground station for constricting the ?ight space of the UAV While also providing the option for poWer delivery and/or bidirectional communications. The tethered UAV’s ?ight path may be extended by introducing one or more secondary UAVs that cooperate to extend the horizontal ?ight path of a primary UAV. The ground station; Which may be coupled With the tethered aerial vehicle; may comprise a listening sWitch con?gured to determine a condition of the tether such that the supply of poWer to the tether may be terminated When tether damage or a tether severance is detected.},
+author = {WoodWorth, Adam and Peverill, James},
+file = {:C$\backslash$:/Users/Peter/Documents/DTU/7. semester/BSc/Referancer/US20130233964.pdf:pdf},
+number = {19},
+title = {{TETHERED AERIAL SYSTEM FOR DATA GATHERING}},
+volume = {1},
+year = {2013}
 }
