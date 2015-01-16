@@ -31,7 +31,7 @@ To measure the horizontal angle between the ground station and the UAV to loadce
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/loadcell.png}
-\caption{Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.}
+\caption[Configuration of 2 loadcells, for measuring the cable drag]{Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.}
 \label{fig:loadcells}
 \end{figure}
 
@@ -45,7 +45,7 @@ The offset for x is found to $-455.9787$ and the y offset to $-511.2618$.\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
-\caption{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
+\caption[Raw data from load cell]{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
 \end{figure}
 
 Next 1000g of load is put on the loadcell with a rope through the Teflon ring first purely in positive x direction and next in purely y direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying $600$g of force in x-direction and then checking the result.
@@ -53,7 +53,7 @@ Next 1000g of load is put on the loadcell with a rope through the Teflon ring fi
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
-\caption{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
+\caption[Comparing raw data to the calibrated values]{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
 \end{figure}
 
 \noindent
@@ -62,7 +62,7 @@ Second test is done by applying a known force in a combination of x and y direct
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kg.eps}
-\caption{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
+\caption[Test combines both $x$ and $y$ direction]{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
 \label{fig:phi45deg1kg}
 \end{figure}
 
@@ -72,7 +72,7 @@ On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kgdata.eps}
-\caption{Showing the calibrated data from x and y loadcell then 1kg of load is applied with $\phi=45$ degrees.}
+\caption[Calibrated data from $x$ and $y$ load cell]{Showing the calibrated data from $x$ and $y$ load cell then 1kg of load is applied with $\phi=45$ degrees.}
 \label{fig:phi45deg1kgdata}
 \end{figure}
 
@@ -92,7 +92,7 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/gcs_test/45degTheta1kg.eps}
-\caption{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
+\caption[Comparing the measured load to the theoretical value]{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
 \label{fig:45degTheta1kg}
 \end{figure}
 
@@ -107,7 +107,7 @@ On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than e
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
-\caption{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
+\caption[Comparing measured results to the theoretically expected, $\theta$ variable]{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
 \end{figure}
 
 

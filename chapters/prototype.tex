@@ -31,7 +31,7 @@ To measure the horizontal angle between the ground station and the UAV to loadce
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/loadcell.png}
-\caption{Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.}
+\caption[Configuration of 2 loadcells, for measuring the cable drag]{Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.}
 \label{fig:loadcells}
 \end{figure}
 
@@ -45,7 +45,7 @@ The offset for x is found to $-455.9787$ and the y offset to $-511.2618$.\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
-\caption{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
+\caption[Raw data from load cell]{Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.}
 \end{figure}
 
 Next 1000g of load is put on the loadcell with a rope through the Teflon ring first purely in positive x direction and next in purely y direction, in order to determine the gain factor $Kx$ and $Ky$. $Kx$ is found to $0.4786$ and $Ky$ to $-0.5134$. Afterwards the calibration is tested by applying $600$g of force in x-direction and then checking the result.
@@ -53,7 +53,7 @@ Next 1000g of load is put on the loadcell with a rope through the Teflon ring fi
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
-\caption{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
+\caption[Comparing raw data to the calibrated values]{Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
 \end{figure}
 
 \noindent
@@ -62,7 +62,7 @@ Second test is done by applying a known force in a combination of x and y direct
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kg.eps}
-\caption{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
+\caption[Test combines both $x$ and $y$ direction]{This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.}
 \label{fig:phi45deg1kg}
 \end{figure}
 
@@ -72,7 +72,7 @@ On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/phi45deg1kgdata.eps}
-\caption{Showing the calibrated data from x and y loadcell then 1kg of load is applied with $\phi=45$ degrees.}
+\caption[Calibrated data from $x$ and $y$ load cell]{Showing the calibrated data from $x$ and $y$ load cell then 1kg of load is applied with $\phi=45$ degrees.}
 \label{fig:phi45deg1kgdata}
 \end{figure}
 
@@ -92,7 +92,7 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/gcs_test/45degTheta1kg.eps}
-\caption{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
+\caption[Comparing the measured load to the theoretical value]{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
 \label{fig:45degTheta1kg}
 \end{figure}
 
@@ -107,7 +107,7 @@ On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than e
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
-\caption{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
+\caption[Comparing measured results to the theoretically expected, $\theta$ variable]{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
 \end{figure}
 
 
@@ -131,7 +131,7 @@ On figure \ref{fig:cable-drum} a cable drum is put under the helipad and the hor
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/cable-drum.png}
-\caption{Cable drum design. The drum can rotate to winch in/out the cable, and also move from side-to-side to assure smooth windings.}
+\caption[Cable drum design]{Cable drum design. The drum can rotate to winch in/out the cable, and also move from side-to-side to assure smooth windings.}
 \label{fig:cable-drum}
 \end{figure}
 
@@ -152,7 +152,7 @@ The worst-case test with full load over long time was performed at indoor enviro
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{graphics/heat_test/IR_1491.jpg}
-\caption[Caption for LOF]{Heat test of 20m standard household cable\footnotemark winded in 2 layers with 75V DC and 30A. Spot 1 is inside the coil, spot 2 is the lower side of the outer coil and spot 3 i at center of the outer coil. On the lower left corner thermometer calibration constants is displayed.}
+\caption[Heat test, image from thermal camera]{Heat test of 20m standard household cable\footnotemark winded in 2 layers with 75V DC and 30A. Spot 1 is inside the coil, spot 2 is the lower side of the outer coil and spot 3 i at center of the outer coil. On the lower left corner thermometer calibration constants is displayed.}
 \label{fig:heat_test_ir}
 \end{figure}
 \footnotetext{House hold cable with unknown origin, cross-sectional area 0.75mm2, Max voltage 230 AC, Max current 10A}
@@ -165,7 +165,7 @@ Sometimes simple is better. The simple design has a motorized toothed wheel and 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/winch.png}
-\caption{The Simple Winch only has one motor and an encoder wheel pushing the cable towards the motor wheel. Two springs adjust the tension.}
+\caption[The Simple Winch]{The Simple Winch only has one motor and an encoder wheel pushing the cable towards the motor wheel. Two springs adjust the tension.}
 \label{fig:winch}
 \end{figure}
 
@@ -174,9 +174,9 @@ Both concepts are mature enough to be prototyped and tested, but due to the time
 
 
 \section{Cable Connection point on the UAV}
-Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions - x, y, and z directions. The loadcells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In z-direction the maximal force applied to the loadcell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choise of loadcell is a 5kg loadcell.\\
+Connecting the cable to the UAV have several issues to address. First a 3-axis measurement device is needed to measure how much the cable tension is and in tree directions - x, y, and z directions. The loadcells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In z-direction the maximal force applied to the loadcell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choise of load cell is a 5kg load cell.\\
 \noindent
-In x- and y-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg loadcell is used to measure the x- and y-directional force. 
+In x- and y-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg load cell is used to measure the x- and y-directional force. 
 
 \begin{figure}[hbtp]
 \centering
@@ -226,7 +226,7 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/EthernetLink.png}
-\caption{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
+\caption[Ethernet over power line setup]{Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.}
 \label{fig:Networking}
 \end{figure}
 
@@ -240,7 +240,7 @@ The objective of the Ground Control station software is to measure the horizonta
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/Visio/GCS-software-overview.png}
-\caption{Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.}
+\caption[Ground Control Station software overview]{Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.}
 \label{fig:GCS-software-overview}
 \end{figure}
 
@@ -254,5 +254,5 @@ The objective of the Flight Control System is to measure the force from the 3-ax
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/Visio/FCS-software-overview.png}
-\caption{Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.}
+\caption[Flight Control System software overview]{Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.}
 \end{figure}

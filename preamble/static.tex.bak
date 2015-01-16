@@ -4,16 +4,16 @@
 
 %\def\thesistypeabbr{B.Eng.}
 %\def\thesistype    {Bachelor of Engineering}
-\def\thesistypeabbr{B.Sc.Eng.}
-\def\thesistype    {Bachelor of Science in Engineering}
+\def\thesistypeabbr{BSc Eng}
+\def\thesistype    {Bachelor of Science Engineering}
 %\def\thesistypeabbr{M.Sc.}
 %\def\thesistype    {Master of Science in Engineering}
 %\def\thesistypeabbr{Ph.D.}
 %\def\thesistype    {Doctor of Philosophy}
 
 \def\thesisauthor  {Peter Juhl Savnik (s113556)}
-\def\thesistitle   {Tether Control for Unmanned Aerial Vehicle}
-\def\thesissubtitle{Creating a platform for tethered control of UAVs}
+\def\thesistitle   {Tether Control for Unmanned Aerial \\ Vehicle}
+\def\thesissubtitle{Creating a Platform for Tethered Control of UAVs}
 \def\thesislocation{Kongens Lyngby}
 
 \def\papersize    {a4paper} % Final papersize (b5paper/a4paper), recommended papersize for DTU Compute is b5paper

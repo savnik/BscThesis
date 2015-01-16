@@ -4,38 +4,39 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tethered UAV\relax }}{3}{figure.caption.11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between Voltage drop and cable length per Ampere over a 50m cable. A is the cross-sectional area of the conductor.\relax }}{5}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Relationship between cable length, cross-sectional area and loss. Calculated with copper resistivity and for both + and GND conductor cores.\relax }}{6}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing 4 ways of approximate the cables position. The direct line the the ideal case. The area between the ideal and worst case is the actual working area where it's assumed the position of the UAV to be. Position estimation using a circular shape and catenary chain to approximate the position.\relax }}{7}{figure.caption.18}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Catenary Chain Force diagram displaying forces acting from anchor point $c$ to point $r$. $T_0$ is the tension at anchor point $c$ and $T$ is the tension at point $r$. Note the $y$ axis in this diagram will correspond to the height later denoted as $z$.\relax }}{8}{figure.caption.19}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Coordinate system for horizontal measurement device.\relax }}{9}{figure.caption.21}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagram showing the force $T$ the UAV have to withstand from the cable.\relax }}{10}{figure.caption.23}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of Helipad with a hole in the middle for the cable.\relax }}{14}{figure.caption.26}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Helipad seen from top view with coordinate system.\relax }}{15}{figure.caption.27}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuration of 2 loadcells, for measuring the cable drag in x and y direction. Loadcell 1 measures in x-direction and loadcell 2 in y-direction.\relax }}{16}{figure.caption.28}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Raw input data from loadcell x and y. The average line is the calculated offset used for calibration. Measured without load in any directions.\relax }}{17}{figure.caption.30}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparing raw data to the calibrated values. The x-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm 75$g around the zero balance.\relax }}{18}{figure.caption.31}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces This test combines both x and y direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly towards 0.\relax }}{19}{figure.caption.32}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Showing the calibrated data from x and y loadcell then 1kg of load is applied with $\phi =45$ degrees.\relax }}{20}{figure.caption.33}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.\relax }}{21}{figure.caption.34}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparing the measured load to the theoretical value. Showing slightly less than expected.\relax }}{21}{figure.caption.35}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparing measured results to the theoretically expected when varying $\theta $ and 1kg load. The results is a little higher than expected, but comparing to figure \ref {fig:45degTheta1kg} this result is unexpected.\relax }}{22}{figure.caption.36}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Cable drum design. The drum can rotate to winch in/out the cable, and also move from side-to-side to assure smooth windings.\relax }}{24}{figure.caption.40}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Heat test setup showing the coil, the test load and power Converters.\relax }}{25}{figure.caption.42}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Caption for LOF}}{25}{figure.caption.43}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces The Simple Winch only has one motor and an encoder wheel pushing the cable towards the motor wheel. Two springs adjust the tension.\relax }}{26}{figure.caption.46}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces 3-axes measuring device for the UAV with appliance inlet connector.\relax }}{27}{figure.caption.49}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Neutrix True One appliance connector system.\relax }}{28}{figure.caption.50}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Ground Station electrical overview.\relax }}{29}{figure.caption.52}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces UAV electrical overview.\relax }}{29}{figure.caption.54}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Ethernet over power line setup. Two TL-PA411 is connected to the 75 volt powerline creating an Ethernet over power line connection to the UAV.\relax }}{30}{figure.caption.56}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.\relax }}{31}{figure.caption.58}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.\relax }}{32}{figure.caption.60}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tethered UAV}}{3}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between Voltage drop and cable length per Ampere}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Relationship between cable length, cross-sectional area and loss.}}{6}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing 4 ways of approximate the cables position.}}{8}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Catenary Chain Force diagram}}{9}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Coordinate system for horizontal measurement device.}}{10}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Force diagram for UAV}}{11}{figure.2.7}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of Helipad with a hole in the middle for the cable.}}{16}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Helipad seen from top view with coordinate system.}}{17}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuration of 2 loadcells, for measuring the cable drag}}{18}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Raw data from load cell}}{19}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparing raw data to the calibrated values}}{20}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Test combines both $x$ and $y$ direction}}{21}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Calibrated data from $x$ and $y$ load cell}}{22}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.}}{23}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Comparing the measured load to the theoretical value}}{23}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparing measured results to the theoretically expected, $\theta $ variable}}{24}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Cable drum design}}{26}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Heat test setup showing the coil, the test load and power Converters.}}{27}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Heat test, image from thermal camera}}{27}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces The Simple Winch}}{28}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces 3-axes measuring device for the UAV with appliance inlet connector.}}{29}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Neutrix True One appliance connector system.}}{30}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Ground Station electrical overview.}}{31}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces UAV electrical overview.}}{31}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Ethernet over power line setup}}{32}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Ground Control Station software overview}}{33}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Flight Control System software overview}}{35}{figure.3.21}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.\relax }}{47}{figure.caption.73}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.}}{50}{figure.C.1}
 \addvspace {10pt}

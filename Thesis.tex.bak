@@ -23,6 +23,7 @@
 \tableofcontents
 \clearforchapter
 \mylistoftodos
+\clearforchapter
 \listoffigures
 \listoftables
 

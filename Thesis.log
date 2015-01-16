@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  16 JAN 2015 09:56
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  16 JAN 2015 19:42
 entering extended mode
 **Thesis.tex
 
@@ -1004,42 +1004,13 @@ Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 )
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\preamble/
 dtucolors.sty")
-
-Class memoir Warning: You are using the caption package with the memoir class. 
-To prepare we will now reset all captioning macros and configurations to kernel
- defaults, and then let the caption package take over. Please remember to use t
-he caption package interfaces in order to configure your captions. .
-
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen222
-\captionmargin@=\dimen223
-\captionwidth=\dimen224
-\caption@tempdima=\dimen225
-\caption@indent=\dimen226
-\caption@parindent=\dimen227
-\caption@hangindent=\dimen228
-)
-\c@ContinuedFloat=\count201
-Package caption Info: hyperref package is loaded.
-Package caption Info: listings package is loaded.
-)
-(C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count202
-\c@subtable=\count203
-)
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\polyglossia\polyglossia.st
 y
 Package: polyglossia 2014/05/21 v1.33.5 Babel replacement for XeLaTeX and LuaTe
 X
  (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count204
+\etb@tempcnta=\count201
 )
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\makecmds\makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
@@ -1050,7 +1021,7 @@ Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
 \XKV@toks=\toks42
 \XKV@tempa@toks=\toks43
-\XKV@depth=\count205
+\XKV@depth=\count202
 File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
@@ -1403,9 +1374,11 @@ e 7493.
 Package cleveref Info: always capitalise cross-reference names on input line 74
 93.
 )
+\c@subfigure=\count309
 \cftbeforesubfigureskip=\skip258
 \cftsubfigureindent=\skip259
 \cftsubfigurenumwidth=\skip260
+\c@subtable=\count310
 \cftbeforesubtableskip=\skip261
 \cftsubtableindent=\skip262
 \cftsubtablenumwidth=\skip263
@@ -1424,10 +1397,10 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 ibraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count309
+\c@@todonotes@numberoftodonotes=\count311
 )
-\c@todocounter=\count310
-\c@todocounter@totc=\count311
+\c@todocounter=\count312
+\c@todocounter@totc=\count313
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
@@ -1454,7 +1427,7 @@ File: ppxetex.def 2013/08/25 v0.4v Pdfpages driver for XeTeX (AM)
 )
 \AM@pagebox=\box60
 \AM@toc@title=\toks46
-\c@AM@survey=\count312
+\c@AM@survey=\count314
 \AM@templatesizebox=\box61
 ))
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfsync\pdfsync.sty
@@ -1466,7 +1439,7 @@ fonts.tex"
 Requested font "[texgyreadventor-regular.otf]/ICU" at 10.0pt
  -> C:/Users/Peter/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/tex-gyre/te
 xgyreadventor-regular.otf
-\g_fontspec_family_texgyreadventor_int=\count313
+\g_fontspec_family_texgyreadventor_int=\count315
 Requested font "[texgyreadventor-bold.otf]/ICU" at 10.0pt
  -> C:/Users/Peter/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/tex-gyre/te
 xgyreadventor-bold.otf
@@ -1534,24 +1507,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count314
-\c@Blindtext=\count315
-\c@blind@countparstart=\count316
-\blind@countxx=\count317
-\blindtext@numBlindtext=\count318
-\blind@countyy=\count319
-\c@blindlist=\count320
-\c@blindlistlevel=\count321
-\c@blindlist@level=\count322
-\blind@listitem=\count323
-\c@blind@listcount=\count324
-\c@blind@levelcount=\count325
-\blind@mathformula=\count326
-\blind@Mathformula=\count327
-\c@blind@randomcount=\count328
-\c@blind@randommax=\count329
-\c@blind@pangramcount=\count330
-\c@blind@pangrammax=\count331
+\c@blindtext=\count316
+\c@Blindtext=\count317
+\c@blind@countparstart=\count318
+\blind@countxx=\count319
+\blindtext@numBlindtext=\count320
+\blind@countyy=\count321
+\c@blindlist=\count322
+\c@blindlistlevel=\count323
+\c@blindlist@level=\count324
+\blind@listitem=\count325
+\c@blind@listcount=\count326
+\c@blind@levelcount=\count327
+\blind@mathformula=\count328
+\blind@Mathformula=\count329
+\c@blind@randomcount=\count330
+\c@blind@randommax=\count331
+\c@blind@pangramcount=\count332
+\c@blind@pangrammax=\count333
 )
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
@@ -1560,14 +1533,14 @@ nment
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count332
+\c@float@type=\count334
 \float@exts=\toks47
 \float@box=\box62
 \@float@everytoks=\toks48
 \@floatcapt=\box63
 )
 \@float@every@algorithm=\toks49
-\c@algorithm=\count333
+\c@algorithm=\count335
 )
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithmicx\algpseudocode
 .sty
@@ -1578,15 +1551,15 @@ sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count334
-\c@ALG@rem=\count335
-\c@ALG@nested=\count336
+\c@ALG@line=\count336
+\c@ALG@rem=\count337
+\c@ALG@nested=\count338
 \ALG@tlm=\skip264
 \ALG@thistlm=\skip265
-\c@ALG@Lnr=\count337
-\c@ALG@blocknr=\count338
-\c@ALG@storecount=\count339
-\c@ALG@tmpcounter=\count340
+\c@ALG@Lnr=\count339
+\c@ALG@blocknr=\count340
+\c@ALG@storecount=\count341
+\c@ALG@tmpcounter=\count342
 \ALG@tmplength=\skip266
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -1603,8 +1576,8 @@ de.tex
 \t@pgfplots@tokb=\toks51
 \t@pgfplots@tokc=\toks52
 \pgfplots@tmpa=\dimen290
-\c@pgfplots@coordindex=\count341
-\c@pgfplots@scanlineindex=\count342
+\c@pgfplots@coordindex=\count343
+\c@pgfplots@scanlineindex=\count344
 
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgfplotssys
 generic.code.tex))
@@ -1624,13 +1597,13 @@ gfplotsliststructure.code.tex)
 gfplotsliststructureext.code.tex)
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
 gfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count343
+\c@pgfplotsarray@tmp=\count345
 )
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
 gfplotsmatrix.code.tex)
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\numtable\pgfplo
 tstableshared.code.tex
-\c@pgfplotstable@counta=\count344
+\c@pgfplotstable@counta=\count346
 \t@pgfplotstable@a=\toks53
 )
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
@@ -1643,13 +1616,13 @@ nary.data.code.tex))
 il.verb.code.tex)
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgflibrary
 pgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count345
+\c@pgfplotslibrarysurf@no=\count347
 
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibraryp
 gfplots.surfshading.pgfsys-xetex.def
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibraryp
 gfplots.surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count346
+\c@pgfplotslibrarysurf@streamlen=\count348
 ))))
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsco
 lormap.code.tex
@@ -1682,7 +1655,7 @@ orations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen293
 \pgfdecoratedinputsegmentremainingdistance=\dimen294
 \pgf@decorate@distancetomove=\dimen295
-\pgf@decorate@repeatstate=\count347
+\pgf@decorate@repeatstate=\count349
 \pgfdecorationsegmentamplitude=\dimen296
 \pgfdecorationsegmentlength=\dimen297
 )
@@ -1696,7 +1669,7 @@ s\pgflibrarydecorations.pathmorphing.code.tex))
 ibraries\tikzlibrarydecorations.pathreplacing.code.tex
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
 s\pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count348
+\pgfplots@numplots=\count350
 \pgfplots@xmin@reg=\dimen298
 \pgfplots@xmax@reg=\dimen299
 \pgfplots@ymin@reg=\dimen300
@@ -1810,10 +1783,10 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@rulewidth=\dimen309
 \DT@dotwidth=\dimen310
 \DTbaselineskip=\dimen311
-\DT@counti=\count349
-\DT@countii=\count350
-\DT@countiii=\count351
-\DT@countiv=\count352
+\DT@counti=\count351
+\DT@countii=\count352
+\DT@countiii=\count353
+\DT@countiv=\count354
 \DT@indent=\dimen312
 \DT@parskip=\dimen313
 \DT@baselineskip=\dimen314
@@ -1895,7 +1868,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmr' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@lstlisting=\count353
+\c@lstlisting=\count355
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box85
@@ -1907,7 +1880,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count354
+\c@section@level=\count356
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1921,9 +1894,6 @@ t")
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.ou
 t")
 \@outlinefile=\write5
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1989,8 +1959,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 9.
 Configuring pdfsync
 \PDFSYNC@ut=\write6
-\PDFSYNCf@li@=\count355
-\PDFSYNC@rder=\count356
+\PDFSYNCf@li@=\count357
+\PDFSYNC@rder=\count358
 **** pdfsync.sty: Synchronizing at \everypar
 \PDFSYNCeveryp@r=\toks54
 **** pdfsync.sty: Synchronizing at \everymath
@@ -2004,6 +1974,8 @@ Configuring pdfsync
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.11} (current compat level: 1.7).
 
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
+put line 9.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
 t line 9.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
@@ -2085,35 +2057,35 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
 
 
-Package nag Warning: figure with no \caption on input line 40.
+Package nag Warning: figure with no \caption on input line 41.
 
 
-Overfull \hbox (38.25208pt too wide) in paragraph at lines 24--40
+Overfull \hbox (38.25208pt too wide) in paragraph at lines 25--41
 [][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--41
+Underfull \hbox (badness 10000) in paragraph at lines 2--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--41
+Underfull \hbox (badness 10000) in paragraph at lines 2--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--41
+Underfull \hbox (badness 10000) in paragraph at lines 2--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--41
+Underfull \hbox (badness 10000) in paragraph at lines 2--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--41
+Underfull \hbox (badness 10000) in paragraph at lines 2--42
 
  []
 
@@ -2142,9 +2114,11 @@ Requested font "[texgyreadventor-regular.otf]/ICU:script=latn;language=DFLT;map
 ping=tex-text;" at 32.0pt
  -> C:/Users/Peter/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/tex-gyre/te
 xgyreadventor-regular.otf
-) [3]
+ [3] [4
+
+]) [5]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\frontmatt
-er/Preface.tex" [4
+er/Preface.tex" [6
 
 
 
@@ -2154,9 +2128,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
  []
 
 File: graphics/Signature.pdf Graphic file (type QTm)
-<use  "graphics/Signature.pdf" >) [5]
+<use  "graphics/Signature.pdf" >) [7]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\frontmatt
-er/Acknowledgements.tex" [6
+er/Acknowledgements.tex" [8
 
 
 
@@ -2175,7 +2149,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--21
 
  []
 
-[7] [8
+[9] [10
 
 
 ]
@@ -2186,28 +2160,41 @@ Requested font "[texgyreadventor-bold.otf]/ICU:script=latn;language=DFLT;mappin
 g=tex-text;" at 12.0pt
  -> C:/Users/Peter/AppData/Roaming/MiKTeX/2.9/fonts/opentype/public/tex-gyre/te
 xgyreadventor-bold.otf
- [9] [10]
-Overfull \hbox (1.55997pt too wide) detected at line 72
-[][] []\EU1/texgyreadventor(0)/bx/n/12 113[]
+
+Overfull \hbox (0.59996pt too wide) detected at line 8
+[][] []\EU1/texgyreadventor(0)/bx/n/12 xvii[]
  []
 
-) [11] [12
+
+Overfull \hbox (3.47997pt too wide) detected at line 9
+[][] []\EU1/texgyreadventor(0)/bx/n/12 xviii[]
+ []
+
+[11] [12]
+Overfull \hbox (1.55997pt too wide) detected at line 73
+[][] []\EU1/texgyreadventor(0)/bx/n/12 117[]
+ []
+
+) [13] [14
 
 ]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.td
-o") [13
+o") [15
 
-] [14
+] [16
 
 ]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.lo
 f"
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [15])
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.lo
 t"
 Package cleveref Info: loaded `english' language definitions on input line 1.
-) [16]
+) [18]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\chapters/
 Introduction.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
@@ -2270,10 +2257,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
  []
 
 File: graphics/overall-system.png Graphic file (type QTm)
-<use  "graphics/overall-system.png" >
-Underfull \vbox (badness 1365) has occurred while \output is active []
-
- [3
+<use  "graphics/overall-system.png" > [3
 
 
 
@@ -2356,53 +2340,56 @@ Requested font "[lmroman12-regular]:mapping=tex-text" at 14.4pt
 Requested font "[lmroman12-bold]:mapping=tex-text" at 14.4pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-bold.otf
 
-Underfull \vbox (badness 5022) has occurred while \output is active []
+Underfull \vbox (badness 3168) has occurred while \output is active []
 
  [6]
 File: graphics/matlab/cable_arc_approx.eps Graphic file (type eps)
 
-<graphics/matlab/cable_arc_approx.eps> [7]
-File: graphics/CatenaryForceDiagram.png Graphic file (type QTm)
+<graphics/matlab/cable_arc_approx.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use  "graphics/CatenaryForceDiagram.png" >
+ [7]
+[8]
+File: graphics/CatenaryForceDiagram.png Graphic file (type QTm)
+ <use  "graphics/CatenaryForceDiagram.png" >
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 116.
 
-[8]
+[9]
 File: graphics/horizontal_coordinatesystem.png Graphic file (type QTm)
- <use  "graphics/horizontal_coordinatesystem.png" > [9]
+ <use  "graphics/horizontal_coordinatesystem.png" >
 File: graphics/UAV-force-diagram.png Graphic file (type QTm)
 
-<use  "graphics/UAV-force-diagram.png" > [10]
+<use  "graphics/UAV-force-diagram.png" > [10] [11]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 192.
 
-[11]) [12]
+[12]) [13]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\chapters/
-prototype.tex"
-File: graphics/cad/toplevel.png Graphic file (type QTm)
- <use  "graphics/cad/toplevel.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13
+prototype.tex" [14
 
 
 
 ]
+File: graphics/cad/toplevel.png Graphic file (type QTm)
+ <use  "graphics/cad/toplevel.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 File: graphics/cad/top-coordinates.png Graphic file (type QTm)
 
 <use  "graphics/cad/top-coordinates.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [16]
 File: graphics/cad/loadcell.png Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
@@ -2411,40 +2398,37 @@ File: graphics/gcs_test/calib_0_data_raw.eps Graphic file (type eps)
 <graphics/gcs_test/calib_0_data_raw.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [18]
 File: graphics/gcs_test/calib_result_compare.eps Graphic file (type eps)
 
 <graphics/gcs_test/calib_result_compare.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [19]
 File: graphics/gcs_test/phi45deg1kg.eps Graphic file (type eps)
 
 <graphics/gcs_test/phi45deg1kg.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [20]
 File: graphics/gcs_test/phi45deg1kgdata.eps Graphic file (type eps)
 
 <graphics/gcs_test/phi45deg1kgdata.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [21]
 File: graphics/loadcell_test2.png Graphic file (type QTm)
 
 <use  "graphics/loadcell_test2.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [22]
 File: graphics/gcs_test/45degTheta1kg.eps Graphic file (type eps)
 
-<graphics/gcs_test/45degTheta1kg.eps> [21]
+<graphics/gcs_test/45degTheta1kg.eps> [23]
 File: graphics/gcs_test/Theta1kgCable.eps Graphic file (type eps)
 
-<graphics/gcs_test/Theta1kgCable.eps>
-Underfull \vbox (badness 1163) has occurred while \output is active []
-
- [22]
+<graphics/gcs_test/Theta1kgCable.eps> [24]
 Overfull \hbox (21.45038pt too wide) in paragraph at lines 128--128
 [][][][][][]\EU1/lmr/m/n/12 3.3 (5) refer- 
  []
@@ -2468,7 +2452,7 @@ File: graphics/cad/cable-drum.png Graphic file (type QTm)
 <use  "graphics/cad/cable-drum.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [25]
 Overfull \hbox (28.96237pt too wide) in paragraph at lines 143--143
 [][][][][][]\EU1/lmr/m/n/12 3.3 (6) Skelne 
  []
@@ -2492,7 +2476,7 @@ File: graphics/heat_test/heat_test_setup.png Graphic file (type QTm)
 <use  "graphics/heat_test/heat_test_setup.png" >
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
+ [26]
 File: graphics/heat_test/IR_1491.jpg Graphic file (type QTm)
 
 <use  "graphics/heat_test/IR_1491.jpg" >
@@ -2503,6 +2487,9 @@ Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
 Requested font "cmex7" at 7.0pt
 Requested font "cmex7" at 5.0pt
 
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [27]
 Overfull \hbox (15.11438pt too wide) in paragraph at lines 160--160
 [][][][][][]\EU1/lmr/m/n/12 3.3 (7) Lav 
  []
@@ -2522,9 +2509,8 @@ Overfull \hbox (15.11438pt too wide) in paragraph at lines 160--160
 [][][][][][]\EU1/lmr/m/n/12 3.3 (7) Lav 
  []
 
-[25]
 
-LaTeX Warning: Marginpar on page 26 moved by 0.39555pt.
+LaTeX Warning: Marginpar on page 28 moved by 0.39555pt.
 
 File: graphics/cad/winch.png Graphic file (type QTm)
 <use  "graphics/cad/winch.png" >
@@ -2532,7 +2518,7 @@ Overfull \hbox (72.49872pt too wide) in paragraph at lines 167--168
  [][][][] 
  []
 
-
+[28]
 Overfull \hbox (22.20638pt too wide) in paragraph at lines 177--177
 [][][][][][]\EU1/lmr/m/n/12 3.4 (8) Citer 
  []
@@ -2552,43 +2538,46 @@ Overfull \hbox (22.20638pt too wide) in paragraph at lines 177--177
 [][][][][][]\EU1/lmr/m/n/12 3.4 (8) Citer 
  []
 
-[26]
 File: graphics/cad/hexa.png Graphic file (type QTm)
- <use  "graphics/cad/hexa.png" >
+<use  "graphics/cad/hexa.png" >
 File: graphics/Neutrix-True-One.png Graphic file (type QTm)
  <use  "graphics/Neutrix-True-One.png" >
 Overfull \hbox (44.9988pt too wide) in paragraph at lines 193--194
  [][][][] 
  []
 
+[29]
 File: graphics/GCS-eltectrical-overview.png Graphic file (type QTm)
-<use  "graphics/GCS-eltectrical-overview.png" > [27]
+ <use  "graphics/GCS-eltectrical-overview.png" >
 File: graphics/UAV-electrical-system.png Graphic file (type QTm)
 
-<use  "graphics/UAV-electrical-system.png" >
+<use  "graphics/UAV-electrical-system.png" > [30] [31]
 File: graphics/EthernetLink.png Graphic file (type QTm)
 
-<use  "graphics/EthernetLink.png" > [28] [29]
+<use  "graphics/EthernetLink.png" >
 File: graphics/Visio/GCS-software-overview.png Graphic file (type QTm)
 
-<use  "graphics/Visio/GCS-software-overview.png" > [30]
+<use  "graphics/Visio/GCS-software-overview.png" > [32]
+Underfull \vbox (badness 7238) has occurred while \output is active []
+
+ [33]
 File: graphics/Visio/FCS-software-overview.png Graphic file (type QTm)
 
-<use  "graphics/Visio/FCS-software-overview.png" >) [31] [32]
+<use  "graphics/Visio/FCS-software-overview.png" >) [34] [35]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\chapters/
-Conclusion.tex") [33
+Conclusion.tex" [36
 
 
 
-]
+]) [37]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
-s/Symbols.tex" [34
+s/Symbols.tex" [38
 
 
 
-]) [35]
+]) [39]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
-s/Beagle.tex" [36
+s/Beagle.tex" [40
 
 
 
@@ -2624,24 +2613,24 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 10.
 Requested font "[lmmonolt10-bold]" at 10.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmmonolt10-bold.otf
- [37] [38] [39]
+ [41] [42] [43]
 Underfull \hbox (badness 10000) in paragraph at lines 134--152
 
  []
 
-[40]
+
 Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-) [41]
+) [45]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
-s/RHD.tex" [42
+s/RHD.tex" [46
 
 
 
@@ -2656,7 +2645,7 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 (C:\Users\Peter\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-[43]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
@@ -2686,7 +2675,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-[44]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
@@ -2696,15 +2685,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
-[45]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
 File: graphics/joycontrol/joycontrol.png Graphic file (type QTm)
-<use  "graphics/joycontrol/joycontrol.png" >) [46] [47]
+<use  "graphics/joycontrol/joycontrol.png" > [50]) [51]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
-s/cad.tex" [48
+s/cad.tex" [52
 
 
 
@@ -2717,7 +2706,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf" >
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf" > [49]
+<use  "graphics/cad/loadcell-assembly.pdf" > [53]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page1>
@@ -2732,7 +2721,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page1>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page1> [50]
+<use  "graphics/cad/loadcell-assembly.pdf"  page1> [54]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page2>
@@ -2741,7 +2730,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page2>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page2> [51]
+<use  "graphics/cad/loadcell-assembly.pdf"  page2> [55]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page3>
@@ -2750,7 +2739,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page3>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page3> [52]
+<use  "graphics/cad/loadcell-assembly.pdf"  page3> [56]
 File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/cable_hole.pdf" >
@@ -2770,7 +2759,7 @@ File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 <use  "graphics/cad/cable_hole.pdf"  page1>
 File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/cable_hole.pdf"  page1> [53]
+<use  "graphics/cad/cable_hole.pdf"  page1> [57]
 File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-to-toplevel-fitting.pdf" >
@@ -2791,7 +2780,7 @@ File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1>
 File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1> [54]
+<use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1> [58]
 File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-vinkel-fitting.pdf" >
@@ -2812,7 +2801,7 @@ File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1>
 File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1> [55]
+<use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1> [59]
 File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-ring-insert.pdf" >
@@ -2833,13 +2822,13 @@ File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-ring-insert.pdf"  page1>
 File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-ring-insert.pdf"  page1> [56]
+<use  "graphics/cad/teflon-ring-insert.pdf"  page1> [60]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf" >
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf" > [57]
+<use  "graphics/cad/winch-assembly.pdf" > [61]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page1>
@@ -2854,7 +2843,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page1>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page1> [58]
+<use  "graphics/cad/winch-assembly.pdf"  page1> [62]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page2>
@@ -2863,7 +2852,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page2>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page2> [59]
+<use  "graphics/cad/winch-assembly.pdf"  page2> [63]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page3>
@@ -2872,7 +2861,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page3>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page3> [60]
+<use  "graphics/cad/winch-assembly.pdf"  page3> [64]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page4>
@@ -2881,7 +2870,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page4>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page4> [61]
+<use  "graphics/cad/winch-assembly.pdf"  page4> [65]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf" >
@@ -2902,7 +2891,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page1>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page1> [62]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page1> [66]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page2>
@@ -2911,7 +2900,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page2>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page2> [63]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page2> [67]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page3>
@@ -2920,7 +2909,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page3>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page3> [64]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page3> [68]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page4>
@@ -2929,7 +2918,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page4>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page4> [65]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page4> [69]
 File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/tension-fitting.pdf" >
@@ -2950,7 +2939,7 @@ File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/tension-fitting.pdf"  page1>
 File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/tension-fitting.pdf"  page1> [66]
+<use  "graphics/cad/tension-fitting.pdf"  page1> [70]
 File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/axis-holder.pdf" >
@@ -2970,7 +2959,7 @@ File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/axis-holder.pdf"  page1>
 File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/axis-holder.pdf"  page1> [67]
+<use  "graphics/cad/axis-holder.pdf"  page1> [71]
 File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-ring.pdf" >
@@ -2990,7 +2979,7 @@ File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-ring.pdf"  page1>
 File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-ring.pdf"  page1> [68]
+<use  "graphics/cad/teflon-ring.pdf"  page1> [72]
 File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/brass-bearings.pdf" >
@@ -3011,7 +3000,7 @@ File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 <use  "graphics/cad/brass-bearings.pdf"  page1>
 File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/brass-bearings.pdf"  page1> [69]
+<use  "graphics/cad/brass-bearings.pdf"  page1> [73]
 File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/smooth-rods.pdf" >
@@ -3031,13 +3020,13 @@ File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 <use  "graphics/cad/smooth-rods.pdf"  page1>
 File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/smooth-rods.pdf"  page1> [70]
+<use  "graphics/cad/smooth-rods.pdf"  page1> [74]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf" >
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf" > [71]
+<use  "graphics/cad/main_assembly_3.pdf" > [75]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf"  page1>
@@ -3052,7 +3041,7 @@ File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 <use  "graphics/cad/main_assembly_3.pdf"  page1>
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf"  page1> [72]
+<use  "graphics/cad/main_assembly_3.pdf"  page1> [76]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf"  page2>
@@ -3061,7 +3050,7 @@ File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 <use  "graphics/cad/main_assembly_3.pdf"  page2>
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf"  page2> [73]
+<use  "graphics/cad/main_assembly_3.pdf"  page2> [77]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf" >
@@ -3082,7 +3071,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page1>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page1> [74]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page1> [78]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page2>
@@ -3091,7 +3080,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page2>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page2> [75]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page2> [79]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page3>
@@ -3100,7 +3089,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page3>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page3> [76]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page3> [80]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page4>
@@ -3109,7 +3098,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page4>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page4> [77]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page4> [81]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page5>
@@ -3118,7 +3107,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page5>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page5> [78]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page5> [82]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page6>
@@ -3127,7 +3116,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page6>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page6> [79]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page6> [83]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page7>
@@ -3136,7 +3125,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page7>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page7> [80]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page7> [84]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page8>
@@ -3145,7 +3134,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page8>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page8> [81]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page8> [85]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page9>
@@ -3154,7 +3143,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page9>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page9> [82]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page9> [86]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page10>
@@ -3163,7 +3152,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page10>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page10> [83]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page10> [87]
 File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/LM12UU-holder.pdf" >
@@ -3184,7 +3173,7 @@ File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/LM12UU-holder.pdf"  page1>
 File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/LM12UU-holder.pdf"  page1> [84]
+<use  "graphics/cad/LM12UU-holder.pdf"  page1> [88]
 File: graphics/cad/end.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/end.pdf" >
@@ -3202,7 +3191,7 @@ File: graphics/cad/end.pdf Graphic file (type QTm)
  <use  "graphics/cad/end.pdf"  page1>
 File: graphics/cad/end.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/end.pdf"  page1> [85]
+<use  "graphics/cad/end.pdf"  page1> [89]
 File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-inserts.pdf" >
@@ -3223,7 +3212,7 @@ File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-inserts.pdf"  page1>
 File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-inserts.pdf"  page1> [86]
+<use  "graphics/cad/teflon-inserts.pdf"  page1> [90]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf" >
@@ -3243,7 +3232,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page1>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page1> [87]
+<use  "graphics/cad/baseplate.pdf"  page1> [91]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page2>
@@ -3252,7 +3241,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page2>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page2> [88]
+<use  "graphics/cad/baseplate.pdf"  page2> [92]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page3>
@@ -3261,7 +3250,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page3>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page3> [89]
+<use  "graphics/cad/baseplate.pdf"  page3> [93]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page4>
@@ -3270,7 +3259,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page4>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page4> [90]
+<use  "graphics/cad/baseplate.pdf"  page4> [94]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page5>
@@ -3279,7 +3268,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page5>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page5> [91]
+<use  "graphics/cad/baseplate.pdf"  page5> [95]
 File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/motor-holder.pdf" >
@@ -3300,7 +3289,7 @@ File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/motor-holder.pdf"  page1>
 File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/motor-holder.pdf"  page1> [92]
+<use  "graphics/cad/motor-holder.pdf"  page1> [96]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/rod.pdf" >
@@ -3318,7 +3307,7 @@ File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page1>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/rod.pdf"  page1> [93]
+<use  "graphics/cad/rod.pdf"  page1> [97]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page2>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
@@ -3326,14 +3315,14 @@ File: graphics/cad/rod.pdf Graphic file (type QTm)
 <use  "graphics/cad/rod.pdf"  page2>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page2>
-[94]
+[98]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page3>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page3>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/rod.pdf"  page3> [95]
+<use  "graphics/cad/rod.pdf"  page3> [99]
 File: graphics/cad/side.pdf Graphic file (type QTm)
  <use  "graphics/cad/side.pdf" >
 File: graphics/cad/side.pdf Graphic file (type QTm)
@@ -3351,7 +3340,7 @@ File: graphics/cad/side.pdf Graphic file (type QTm)
 <use  "graphics/cad/side.pdf"  page1>
 File: graphics/cad/side.pdf Graphic file (type QTm)
  <use  "graphics/cad/side.pdf"  page1>
-[96]
+[100]
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
  <use  "graphics/cad/belt-fastner-plate.pdf" >
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
@@ -3371,7 +3360,7 @@ File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
 <use  "graphics/cad/belt-fastner-plate.pdf"  page1>
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/belt-fastner-plate.pdf"  page1> [97]
+<use  "graphics/cad/belt-fastner-plate.pdf"  page1> [101]
 File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/belt-fastner-bracket.pdf" >
@@ -3392,7 +3381,7 @@ File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 <use  "graphics/cad/belt-fastner-bracket.pdf"  page1>
 File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/belt-fastner-bracket.pdf"  page1> [98]
+<use  "graphics/cad/belt-fastner-bracket.pdf"  page1> [102]
 File: graphics/cad/pullys.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/pullys.pdf" >
@@ -3412,7 +3401,7 @@ File: graphics/cad/pullys.pdf Graphic file (type QTm)
 <use  "graphics/cad/pullys.pdf"  page1>
 File: graphics/cad/pullys.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/pullys.pdf"  page1> [99]
+<use  "graphics/cad/pullys.pdf"  page1> [103]
 File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/slip_ring_with_flange.pdf" >
@@ -3433,13 +3422,13 @@ File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 <use  "graphics/cad/slip_ring_with_flange.pdf"  page1>
 File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/slip_ring_with_flange.pdf"  page1> [100]
+<use  "graphics/cad/slip_ring_with_flange.pdf"  page1> [104]
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/toplevel.pdf" >
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
  <use  "graphics/cad/toplevel.pdf" >
-[101]
+[105]
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
  <use  "graphics/cad/toplevel.pdf"  page1>
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
@@ -3453,13 +3442,13 @@ File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 <use  "graphics/cad/toplevel.pdf"  page1>
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/toplevel.pdf"  page1> [102]
+<use  "graphics/cad/toplevel.pdf"  page1> [106]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf" >
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf" > [103]
+<use  "graphics/cad/hexa-assembly.pdf" > [107]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page1>
@@ -3474,7 +3463,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page1>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page1> [104]
+<use  "graphics/cad/hexa-assembly.pdf"  page1> [108]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page2>
@@ -3483,7 +3472,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page2>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page2> [105]
+<use  "graphics/cad/hexa-assembly.pdf"  page2> [109]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page3>
@@ -3492,7 +3481,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page3>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page3> [106]
+<use  "graphics/cad/hexa-assembly.pdf"  page3> [110]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page4>
@@ -3501,7 +3490,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page4>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page4> [107]
+<use  "graphics/cad/hexa-assembly.pdf"  page4> [111]
 File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/powercon-to-loadcell.pdf" >
@@ -3522,7 +3511,7 @@ File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 <use  "graphics/cad/powercon-to-loadcell.pdf"  page1>
 File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/powercon-to-loadcell.pdf"  page1> [108]
+<use  "graphics/cad/powercon-to-loadcell.pdf"  page1> [112]
 File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/powercon-fitting.pdf" >
@@ -3543,7 +3532,7 @@ File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/powercon-fitting.pdf"  page1>
 File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/powercon-fitting.pdf"  page1> [109]
+<use  "graphics/cad/powercon-fitting.pdf"  page1> [113]
 File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/fitting-5kg-to-075kg.pdf" >
@@ -3564,7 +3553,7 @@ File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 <use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1>
 File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1> [110]
+<use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1> [114]
 File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/fitting-075-to-075.pdf" >
@@ -3585,7 +3574,7 @@ File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 <use  "graphics/cad/fitting-075-to-075.pdf"  page1>
 File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/fitting-075-to-075.pdf"  page1> [111]
+<use  "graphics/cad/fitting-075-to-075.pdf"  page1> [115]
 File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/mount-plate.pdf" >
@@ -3605,13 +3594,13 @@ File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 <use  "graphics/cad/mount-plate.pdf"  page1>
 File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/mount-plate.pdf"  page1> [112])
+<use  "graphics/cad/mount-plate.pdf"  page1> [116])
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.bb
 l"
 bibitemlist
 Requested font "[lmroman12-italic]:mapping=tex-text" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-italic.otf
-) [113
+) [117
 
 
 
@@ -3620,7 +3609,7 @@ Requested font "[lmroman12-italic]:mapping=tex-text" at 12.0pt
 Package nag Warning: 3 complaints in total.
 
 File: graphics/DTU-frise-SH-15.pdf Graphic file (type QTm)
-<use  "graphics/DTU-frise-SH-15.pdf" > [114
+<use  "graphics/DTU-frise-SH-15.pdf" > [118
 
 ]
 \tf@toc=\write7
@@ -3667,12 +3656,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 54986 strings out of 429025
- 1163409 string characters out of 3167800
- 1652569 words of memory out of 3000000
- 57359 multiletter control sequences out of 15000+200000
+ 53977 strings out of 429025
+ 1144825 string characters out of 3167800
+ 1640513 words of memory out of 3000000
+ 56357 multiletter control sequences out of 15000+200000
  8444 words of font info for 65 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
- 62i,54n,98p,10454b,3350s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,54n,98p,10454b,3376s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Thesis.pdf (132 pages).
+Output written on Thesis.pdf (138 pages).

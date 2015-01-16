@@ -64,8 +64,8 @@
 \usepackage{eso-pic}                  % Watermark and other bag
 \usepackage{preamble/dtucolors}
 \graphicspath{{graphics/}}
-\usepackage{caption}
-\usepackage{subcaption}
+%\usepackage{caption}
+
 
 
 % Language
