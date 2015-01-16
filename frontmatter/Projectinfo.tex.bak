@@ -1,0 +1,33 @@
+%!TEX root = ../Thesis.tex
+\noindent
+\textbf{Tether Control of Unmanned Aerial Vehicle}\\
+\\
+\textbf{This thesis was written by:}\\
+Peter Juhl Savnik (s113556)\\
+\\
+\textbf{Advisors:}\\
+Søren Hansen, Assistance Professor at the Electrical Engineering Department of DTU\\
+Jens Christian Andersen, Associate Professor at the Electrical Engineering Department of DTU\\
+\\
+\textbf{DTU Electrical Engineering} \\
+Automation and Control\\
+Technical University of Denmark\\
+Elektrovej, Building 326\\
+2800 Kgs. Lyngby\\
+Denmark\\
+Tel: +45 45255 3576\\
+\\
+studieadministrationen@elektro.dtu.dk\\
+\\
+\begin{tabular}{ll}
+Project period: & 2014-09-01 to 2015-01-23\\
+ECTS: & 15\\
+Education: & BSc.\\
+Field: & Electrical Engineering\\
+Class: & Public\\
+Remarks: & This report is submitted as partial fulfilment of the requirements\\
+ & for graduation in above education at the Technical University of Denmark.\\
+Copyrights: & \copyright Peter J. Savnik 2015
+\end{tabular}
+ 
+

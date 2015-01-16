@@ -232,10 +232,27 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 
 
 
-\section{Software design}
+\section{Software Design}
+All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications.
+
+\subsection{Ground Control Station}
+The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure is shows the periodic run sequence and plugin variable dependency relationship. The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.8]{graphics/Visio/GCS-software-overview.png}
+\caption{Ground Control Station software overview based on the RHD plugin structure showing plugin sequence for one sample period.}
+\label{fig:GCS-software-overview}
+\end{figure}
+
+
 
 
 \subsection{Flight Control System}
+The objective of the Flight Control System is to measure the force from the 3-axes loadcell system, establish a link connection to Ground Control Station and fetch control variables, and make control variables available to the PixHawk(UAV Flight Controller).
 
 
-\subsection{Ground Control Station}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.8]{graphics/Visio/FCS-software-overview.png}
+\caption{Flight Control System software overview based on RHD plugin structure showing plugin sequence for one sample period.}
+\end{figure}
