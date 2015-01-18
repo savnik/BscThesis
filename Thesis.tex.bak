@@ -24,8 +24,7 @@
 \clearforchapter
 \mylistoftodos
 \clearforchapter
-\listoffigures
-\listoftables
+\listoffigures 
 
 \mainmatter
 \include{chapters/Introduction}

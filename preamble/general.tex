@@ -246,6 +246,19 @@
     }
 }
 
+\newcommand{\friezeColor}{%
+    \AddToShipoutPicture*{
+        \put(180,10){
+            \parbox[b][\paperheight]{\paperwidth}{%
+            	\begin{flushright}
+                \includegraphics[trim=0 0 0 0,width=1\textwidth]{DTU-frise.eps}
+                %\vspace*{2.5cm}
+            	\end{flushright}
+            }
+        }
+    }
+}
+
 % This is a double sided book. If there is a last empty page lets use it for some fun e.g. the frieze.
 % NB: For a fully functional hack the \clearpage used in \include does some odd thinks with the sequence numbering. Thefore use \input instead of \include at the end of the book. If bibliography is used at last everything should be ok.
 \makeatletter

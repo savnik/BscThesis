@@ -4,13 +4,14 @@
 \begin{adjustwidth*}{\unitlength}{-\unitlength}
     \begin{adjustwidth}{-0.5cm}{-0.5cm}
         \sffamily
-        \begin{flushright}
+        \hfill\includegraphics[scale=1]{DTU-logo-CMYK}
+        \begin{flushright}        
             \thesistypeabbr{} Thesis\\*[0cm]
             \thesistype{}\\
         \end{flushright}
         \vspace*{\fill}
         \noindent
-        \includegraphics[width=0.75\textwidth]{DTU-Elektro-B-UK}\\*[0.5cm]
+        \includegraphics[width=0.75\textwidth]{graphics/DTU-Elektro-B-UK}\\*[0.5cm]
         \Huge \thesistitle{}\\*[0.2cm]
         \LARGE \thesissubtitle{}\\*[1.2cm]
         \parbox[b]{0.5\linewidth}{%
@@ -19,8 +20,9 @@
             \normalsize
             \thesislocation{} \the\year
         }
-        \hfill\includegraphics[scale=0.7]{DTU-logo-CMYK}
+        
     \end{adjustwidth}
 \end{adjustwidth*}
+\friezeColor
 \normalfont
 \normalsize
