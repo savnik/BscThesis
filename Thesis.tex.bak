@@ -31,6 +31,7 @@
 \include{chapters/Introduction}
 \include{chapters/analysis}
 \include{chapters/prototype}
+\include{chapters/results}
 %\include{chapters/LongTitle}
 %\blinddocument
 

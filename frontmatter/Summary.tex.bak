@@ -1,17 +1,17 @@
 %!TEX root = ../Thesis.tex
 \chapter{Abstract}
-Unmanned Aerial Vehicles or UAVs is getting more common in everyday life, both as hobby projects and industrial applications. The aim of this projects is to propose a solution to extend flight time for UAVs in an industrial application using a tether cable connection. It is desired to develop a platform, that handles the mechanical part of winching and storing the cable, the electrical part of using the cable as position reference for the UAV, and using the cable for communication with the UAV.
-Using a hexacopter(a 6 rotor UAV) with lifting capabilities of about 3kg and a 50m light weight cable ensures the UAV to be able to lift the cable.
-Two metodes of winching and storing the cable is analysed, and one selected for prototyping.
-Two electrical measurement devices are developed to measure position references for position control of UAV. This work does not deal with the position controller for the UAV.
-A Ethernet link from the Ground Control Station to the UAV is established through a regular Ethernet over power line adapter.
-Both Ground Control Station and the UAV are designed to run on Beaglebone Black, the actual flight controller is a PixHawk.
-The system design and prototype is analysed and discussed for further development on this project.
+Unmanned Aerial Vehicles or UAVs is getting more common in everyday life, both as hobby projects and in industrial applications. The aim of this project is to propose a solution to extend flight time for UAVs in industrial application using a tether cable connection. It is desired to develop a platform, which handles the mechanical part of winching and storing the cable, the electrical part of powering the UAV, using the cable as position reference for the UAV, and using the cable for communication with the UAV.
+Using a hexacopter(a 6 rotor UAV) with lifting capabilities of about 3kg and a 50m lightweight cable ensures the UAV to be able to lift the cable.
+Two methods of winching and storing the cable is analysed, and one method selected for prototyping.
+Developing two electrical measurement devices to measure the position references for position control of UAV. This work does not deal with the position controller for the UAV.
+A Ethernet link from the Ground Control Station to the UAV system is established through a regular Ethernet over power line adapter.
+Designing both Ground Control Station and the UAV are designed to run on Beaglebone Black, the actual flight controller is a PixHawk.
+The system design and prototype is analysed, and discussed for further development on this project.
 
 
 \chapter{Resume}
-Ubemandet luftfartøjer eller i daglig tale UAV'er bliver et mere almindeligt syn i hverdagen, både som hobby projekter og industrielle applikationer. Formålet med dette projekt er at forslå en løsning til at forlænge flyvetiden for UAV'er ved hjælp af en kabel forbindelse til UAV'en. Det er ønsket at udvikle en platform, der håndtere den mekaniske af ind og ul rulning af kablet, samt opbevaring, den eletriske del ved at benytte kablet som positions reference for UAV'en, og at kommunikere med UAV'en via kabel forbindelsen.
+Ubemandet luftfartøjer eller i daglig tale UAV'er bliver et mere almindeligt syn i hverdagen, både som hobby projekter og i industrielle applikationer. Formålet med dette projekt er at forslå en løsning til at forlænge flyvetiden for UAV'er ved hjælp af en kabel forbindelse til UAV'en. Det er ønsket at udvikle en platform, der håndtere den mekaniske del af ind og ud rulning af kablet, samt opkvejling\footnote{At kvejle er en Maritim terminologi for at opsamlet et torværk flot, således det ikke er tvunden og uden knuder.}, den elektriske del ved at benytte kablet som positions reference for UAV'en, og at kommunikere med UAV'en via kabel forbindelsen.
 Til formålet benyttes en 6 rotor, Hexacopter, som UAV med en løfte kapacitet på omkring 3kg og et 50m letvægts kabel.
-To metoder til at rulle kabelet ind og ud, samt opbevaring analyseres, hvoraf en udvælges til at blive prototype fremstillet.
-To elektriske måleapperater designes til at måle positions referencerne for positions styring af UAV'en. Dette projekt omhandler ikke selve positions regulatoren til UAV'en. En netværksforbindelse etableres fra jordstationen til UAV'en via et "Ethernet-over-power-line" system. Både jordstationen og UAV'ens flyve computer designes til at køre på en Beaglebone Black, UAV'en er dog udstyret med en PixHawk microcontroller.
+To metoder til at rulle kablet ind og ud, samt opbevaring analyseres, hvoraf en metode udvælges til at blive prototype fremstillet.
+To elektriske måleapparater designes til at måle positions referencerne for positions regulering af UAV'en. Dette projekt omhandler ikke selve positions regulatoren til UAV'en. En netværksforbindelse etableres fra jordstationen til UAV'en via et "Ethernet-over-power-line" system. Både jordstationen og UAV'ens flyve computer designes til at køre på en Beaglebone Black, UAV'en er dog udstyret med en PixHawk microcontroller.
 Det samlede system design og prototype analyseres og diskuteres til fremtidigt videre arbejde med systemet.  

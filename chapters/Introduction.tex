@@ -2,33 +2,34 @@
 \chapter{Introduction}
 
 Unmanned Aerial Vehicles, also commonly known as UAVs or drones, have for long time only been used for military, research and hobby purposes - recently a wide range of industrial applications has seen the potential in using UAVs for industrial purposes.
-Flying UAVs have been implemented in a variety of applications such as monitoring, photography/filming, surveying the landscape and much more \cite{Dandrone2015}.\\
+A variety of applications such as monitoring, photography/filming, surveying the landscape and much more have implemented flying UAVs \cite{Dandrone2015}.\\
 \\
-At present most UAVs have a flight time of 20-30 minutes on their on-board battery.
-In some applications the system must be capable of operating for a long period of time. In these cases there is a need for a constant power supply via a cable. This project aim to develop a platform for tether control of UAV with a cable.
+At present, most UAVs have a flight time of 20-30 minutes on their on-board battery.
+In some applications, such as power line inspections, the system must be capable of operating for a long period. In these cases, there is a need for a constant power supply via a cable. This project aim to develop a platform for tether control of UAV with a cable.
 A solution must not be limited to solving a single problem, but as a general platform for the implementation of tethered UAVs in a wide range of applications.
 
 
 \section{Previous work}
 Several attempts to build a tethered UAV have been seen before, several design concepts have been panted across the world \cite{Peverill2013} - yet there is no commonly known commercial system available for sale. It is a great curiosity because most UAV systems have started to be tethered in some degree.\\
-\todo{Indsæt billede af 1 rotor forsøgsopstilling}
 \\
-For this project a 6 rotor UAV from Microcopter\footnote{German company specialised in building UAV systems. http://www.mikrokopter.de/en/home} with a PixHawk\footnote{The PixHawk is a microcontroller especially developed to work as a flight controller. https://pixhawk.org/} is provided. The UAV and the PixHawk has in previous work been set up and are working.\\
+For this project a 6 rotor UAV from Mikrocopter\footnote{German company specialised in building UAV systems. http://www.mikrokopter.de/en/home} with a PixHawk\footnote{The PixHawk is a microcontroller especially developed to work as a flight controller. https://pixhawk.org/} is provided. The UAV and the PixHawk has in previous work been set up and are working.\\
 \noindent
-While this thesis was written Mikkel Wahlgreen has designed a power supply system \cite{Wahlgreen2014} that attempts to meet the requirements described in this design requirement specification and Claudia G. Walls is working on a position controller for the UAV.\\
+Mikkel Wahlgreen has designed a power supply system \cite{Wahlgreen2014}, which attempts to meet the requirements described in this design requirement specification and Claudia G. Walls is working on a position controller for the UAV while this thesis is written.\\
+
  
 
 
 \section{Problem formulation} 
 
-The objective for this project is to analyse and propose mechanical and electrical design for a platform for tether control of UAV. The UAV must be able to stay airborne for significantly longer time than a battery powered alternative. The designs have to be analysed and through the analysis one design must be selected to be prototyped and tested.
+The objective for this project is to analyse and propose mechanical and electrical design for a platform for tether control of UAV. The UAV must be able to stay airborne for significantly longer time than a battery powered alternative. The designs have to be analysed and through the analysis one design chosen to be prototyped and tested.
 
 \section{Problem limitation}
 \begin{itemize}
 \item It is assumed the anchor point of the UAV has significantly greater mass than the UAV lifting capabilities.
-\item The power supply may be optimized by using both a cable and a battery. The UAV do not use 100 per cent of it's power at all time, but cable and power converters must be dimensioned so it can deliver 100\% power when needed. Therefore it can be imagined that the UAV take off and land on the battery, and the battery is recharged in air by the cable. This thesis only investigates the case without battery.
+\item The power supply may be optimized by using both a cable and a battery. The UAV do not use 100 per cent of its power at all time, but cable and power converters is dimensioned to deliver 100 per cent power when needed. Therefore, it is imagined the UAV is capable to take off and land on the battery, and the battery is recharged in air by the cable. This thesis only investigates the case without battery.
 \item This project will not cover the position control in the PixHawk. 
-\item Due to the price range of UAV systems today, the system must keep a relative lost cost. 
+\item Due to the price range of UAV systems today, the system must keep a relative lost cost.
+\item The UAV used in this project will be a Hexacopter from Mikrocopter.
 \end{itemize}
 
 
@@ -37,13 +38,14 @@ The objective for this project is to analyse and propose mechanical and electric
 In Denmark agriculture grain production constitutes $35$ per cent of the total area, or $1,495,000$ hectares with a value of $29.4$ billion. kr. Producing increasingly more with less resources, the Agriculture puts a strong focus on optimizing production through research and innovation\cite{FødevarerLandbrug2013}.
 \\
 \\
-A well-known problem in cereal production is when the farmer harvests near the forest, there is often young wild deer hiding in the grain. Their natural instinct of danger is to hide or pretend to be dead. This means when the farmer harvests his field, the animal is not moving away from the machinery. This results in a large number of young deer who are hit by farmers machinery. It have economic consequences for the farmer, hence the harvested grain is destroyed, materiel damage can happen to the equipment resulting in down-time, and not least it is an unpleasant experience for the farmer.
+A well-known problem in cereal production is when the farmer harvests near the forest, there is often young wild deer hiding in the grain. Their natural instinct of danger is to hide or pretend to be dead. This means when the farmer harvests his field, the animal is not moving away from the machinery. This results in a large number of young deer who are hit by farmer’s machinery. It have economic consequences for the farmer, hence the harvested grain is destroyed, materiel damage can happen to the equipment resulting in down-time, and not least it is an unpleasant experience for the farmer.
 \\
 \\
 A research group at the department of Automation and Control at DTU have proposed a solution with a tether UAV flying in front of the vehicle and with a vision system that is capable of detecting obstacles such as animals or stones in front of the harvester.
 
+
 \section{Outline of this thesis}
-This thesis is divided into 2 main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components. All practical information and configuration for replicating this work is located in the appendix.
+This thesis is divided into two main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components. All practical information and configuration for replicating this work is located in the appendix.
 
 
 
