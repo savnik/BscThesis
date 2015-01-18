@@ -3,12 +3,25 @@
 \chapter{Test and Results}
 This chapter deals with testing of the prototype, discussion of the results achieved and how to improve the results in case the data achieved is not satisfying.  
 
+\section{The test setup}
+Given to the short time frame for this project and unexpected long time sick leave foreman in the mechanical workshop some short cuts was performed in order to get a working prototype. The mechanical and electrical parts are fitted into a rack cabinet.
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[scale=1]{graphics/Visio/rack-setup.png}
+  \caption{Rack cabinet overview.}
+  \end{figure}   
+
+From top the Horizontal Measurement Device is mounted underneath the helipad. On the front a emergency switch is mounted to disconnect the 75 volt supply to the UAV. In the middle there is room for cable storing and winching mechanism. The position of the winch can easily be adjusted through aluminium bars milled track.
+\todo{Indsæt billede}
+Underneath that a shelf is mounted with the Beaglebone, motor driver, Network adapter and router.
+
 \section{Cable Drum}
 To address the heating issue in the cable drum a test was performed to evaluate the heating’s influence, in order to incorporate the results in the design process.\\
 
 \subsection{Test - Worst-case heating in cable}
 The worst-case test with full load over long time was performed at indoor environment with room temperature on 24 degree Celsius. The coil was excited with 75V DC and 360W just over an hour. This is not 100 per cent of the UAVs power consumption, but the testing equipments upper limit. The inner diameter of the coil is 10cm and is made of 2mm thick PVC pipe.
-\todo{Skelne tydligere mellem 75 volt siden og 12 volt siden}
+
 
 \begin{figure}[H]
    \centering
@@ -28,7 +41,7 @@ The worst-case test with full load over long time was performed at indoor enviro
 \section{Summary}
 Even through the cable is not excited with 100 per cent of the UAV power consumption; the test puts the heating issue in perspective. The heating is not critical high, but must be considered in the cable requirement specification; hence, CE certification only requires the cable to withstand up to 80 degrees\cite{Parliament2006}.    
 
-\todo{Lav matlab plot af data}
+
 
 \section{Horizontal Measuring Device}
 This measurement devices is tested with regards to stability and the results of the calculated position references. Hence this is relative cheap load cells, the precision is expected to be with in an acceptable region.
@@ -40,7 +53,7 @@ The offset for $x$ is found to $-455.9787$ and the $y$ offset to $-511.2618$, as
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
-\caption[Raw data from load cell]{Raw input data from load cell $x$ and $y$. The average line is the calculated offset used for calibration. Measured without load in any directions.}
+\caption[Raw data from load cell]{Raw input data from load cell $x$ and $y$. The average line is the calculated offset used for calibration. Measured without load any directions.}
 \label{fig:HMDcalib}
 \end{figure}
 
@@ -99,7 +112,7 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 
 \noindent
 At all previous tests the load has only been anchored in the Teflon ring, but in the real setup the cable are anchored in the winch instead. This mean the measured force is now only a component of the total force. From figure \ref{fig:catenary_force_diagram} $T_0$ only has an x-component, but when the cable now is anchored in the winch the total force equation change to:
-\todo{ref til sum af kræfter i 2.4 + lav diagram}
+
 \begin{equation}
 \sum T -\lambda gs + (T_{0,x} + T_{whinch,y} ) = 0
 \end{equation}
@@ -108,23 +121,59 @@ At all previous tests the load has only been anchored in the Teflon ring, but in
 Hence the measurement device only measures $T_{0,x}$, $T_{whinch,y}$ is unknown. This test will show how much $T_{winch,y}$ influences.
 On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision of the calibration. 
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[scale=1]{graphics/gcs_test/Theta1kgCable.eps}
-\caption[Comparing measured results to the theoretically expected, $\theta$ variable]{Comparing measured results to the theoretically expected when varying $\theta$ and 1kg load. The results is a little higher than expected, but comparing to figure \ref{fig:45degTheta1kg} this result is unexpected.}
-\end{figure}
+
 
 \newpage
 \subsection{Summary}
 The prototype is able to measure the force in $x$- and $y$-direction, $\phi$ and $r$ can be calculated with good results. Higher precision might be possible with more precise testing equipment.
 The 5kg load cell has a zero balance at $\pm75g$. Any values close to this range must be considered as very unreliable. 
-The force in $T_{winch,y}$ is quite small and can therefore be ignored.
+When calibrating the 5kg load cell, the calibration gives better results using a calibration load greater than $0.5$kg.
+The force in $T_{winch,y}$ is quite small and can therefore be ignored.\\
+All plots have a zoom time axis, thus resulting in more readable and intuitive graphics. All test where measured in 60-120 seconds to ensure the data is stable over time.
 
 \newpage
 \section{Tree Dimensional Force Measurement Device}
+This measurement devices consist of tree load cells, all perpendicular to each other. The load cells are of different working range, but after calibration their scale is close to equal. However they have different precision, creep and non-linearity region, which might cause unexpected results.
+
+\subsection{Calibration}
+As in the Horizontal Measuring Device, first thing is to perform a calibration, now in tree axes, but with same method. The $x$ offset is $-5992.5241$, $y$ offset $464.4041$, and $z$ offset $104.0533$, as seen on figure \ref{fig:fcs-calib-offset}.\\
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/fcs_test/fcs_calib.eps}
+\caption{Raw input data from load cell $x$, $y$, and $z$. The avage line is the calculated offset used for calibration. Measured without any load.}
+\label{fig:fcs-calib-offset}
+\end{figure}
+
+\noindent
+The $z$-axis is calibrated with 1000g load, hence it is a 5kg load cell. The $x$- and $y$-axes is calibrated with 500g load, hence their measuring range limit is $0.78$kg. The gain is calculated to: $Kx=0.0868$, $Ky=-0.0851$, and $Kz=0.4277$. 
+\\
+
+\newpage
+\subsection{Test of Calibration}
+Testing the calibration with 600g of load at $\phi=0$ degrees and $\theta=45$ degrees. The results are shown on figure \ref{fig:FCS-calib-results}. The results seams to have unexpected results in the first 10 seconds and the last 20 seconds. This might be due to vibrations in the test setup, when people are walking by, touching the table, or the spring is not in equilibrium, because the distortion is seen on all tree axes. From approximate 15 seconds in to 50 seconds, the reading is quite stable, thus it has a slight drift. This drift is, as describes in testing of the Horizontal Measurement Device, presumably given due to elasticity in the rope, the spring is permanently bending or tolerances in the manufacturing process gives rise to small displacements of mechanical components.\\
+\\
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/fcs_test/calib_result_compare.eps}
+\caption{d}
+\label{fig:FCS-calib-results}
+\end{figure}
 
 
 \newpage
-\section{Data Connection}
+\section{Data Connection test}
+The data connection is tested by performing a ping test from Ground Control Station to the Flight Control Station and measuring the response time. The ping test is started and then the throttle for the UAV is moved slowly up to a point where the UAV is close to take off.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/pingTest.eps}
+\caption{Ping test from Ground Station to Flight Control Station, while throttle is on.}
+\label{fig:pingTest}
+\end{figure}
+
+\noindent
+From figure \ref{fig:pingTest} the average response time is $5.16$ms which is a robust result. Unfortunately is have not been possible to test the data connection when the UAV is on full throttle, which also is the worst-case conditions for the network connection. The test where performed with 50m of cable, and the supply volte in the power line never went under 69 volt. Taking this in consideration further testing must be performed to finally conclude if this concept works. 
 
 
