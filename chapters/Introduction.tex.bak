@@ -29,7 +29,7 @@ The objective for this project is to analyse and propose mechanical and electric
 \item The power supply may be optimized by using both a cable and a battery. The UAV do not use 100 per cent of its power at all time, but cable and power converters is dimensioned to deliver 100 per cent power when needed. Therefore, it is imagined the UAV is capable to take off and land on the battery, and the battery is recharged in air by the cable. This thesis only investigates the case without battery.
 \item This project will not cover the position control in the PixHawk. 
 \item Due to the price range of UAV systems today, the system must keep a relative lost cost.
-
+\item The UAV used in this project will be a Hexacopter from Mikrocopter.
 \end{itemize}
 
 
@@ -43,9 +43,15 @@ A well-known problem in cereal production is when the farmer harvests near the f
 \\
 A research group at the department of Automation and Control at DTU have proposed a solution with a tether UAV flying in front of the vehicle and with a vision system that is capable of detecting obstacles such as animals or stones in front of the harvester.
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/drone_harvester.eps}
+\caption{A UAV using a vision system is scanning the field in front of the Harvester.}
+\end{figure}
+
 
 \section{Outline of this thesis}
-This thesis is divided into 2 main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components. All practical information and configuration for replicating this work is located in the appendix.
+This thesis is divided into two main chapters, excluding the introduction. Chapter 2 investigate the presented problem through deeper analysis - resulting in a design requirement specification. Chapter 3, Prototyping, using the design requirement specification from the analysis chapter to develop both mechanical and electrical components. All practical information and configuration for replicating this work is located in the appendix. Chapter 4 is all about testing and discussing
 
 
 

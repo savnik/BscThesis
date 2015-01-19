@@ -4,6 +4,7 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A UAV using a vision system is scanning the field in front of the Harvester.}}{3}{figure.1.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tether UAV}}{5}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between voltage drop and cable length per ampere}}{7}{figure.2.2}
@@ -19,7 +20,7 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Cable drum design}}{18}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces The Simple Winch}}{19}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces 3-axes measuring device for the UAV with appliance inlet connector.}}{20}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Neutrix True One appliance connector system.}}{21}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Neutrix True One appliance connector system.}}{20}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Ground Station electrical overview.}}{21}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces UAV electrical overview.}}{22}{figure.3.9}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Ethernet over power line setup}}{23}{figure.3.10}

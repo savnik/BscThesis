@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  18 JAN 2015 21:13
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  19 JAN 2015 09:41
 entering extended mode
 **Thesis.tex
 
@@ -2475,6 +2475,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--45
 
  []
 
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 48 replaced by U+FFFD.
+File: graphics/drone_harvester.eps Graphic file (type eps)
+<graphics/drone_harvester.eps>
+Overfull \hbox (63.91249pt too wide) in paragraph at lines 48--49
+ [][][][] 
+ []
+
 [2]) [3]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\chapters/
 analysis.tex" [4
@@ -2654,11 +2666,6 @@ File: graphics/cad/hexa.png Graphic file (type QTm)
 <use  "graphics/cad/hexa.png" > [19]
 File: graphics/Neutrix-True-One.png Graphic file (type QTm)
  <use  "graphics/Neutrix-True-One.png" >
-Overfull \hbox (44.9988pt too wide) in paragraph at lines 101--102
- [][][][] 
- []
-
-
 Overfull \hbox (9.04237pt too wide) in paragraph at lines 109--109
 [][][][][][]\EU1/lmr/m/n/12 3.5 (5) In- 
  []
@@ -2698,17 +2705,15 @@ Overfull \hbox (4.54723pt too wide) in paragraph at lines 109--109
 \EU1/lmr/m/n/12 12V/75V 
  []
 
+[20]
 File: graphics/GCS-eltectrical-overview.png Graphic file (type QTm)
-<use  "graphics/GCS-eltectrical-overview.png" >
+ <use  "graphics/GCS-eltectrical-overview.png" >
 File: graphics/UAV-electrical-system.png Graphic file (type QTm)
 
-<use  "graphics/UAV-electrical-system.png" >
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
- [20]
-[21]
+<use  "graphics/UAV-electrical-system.png" > [21]
 File: graphics/EthernetLink.png Graphic file (type QTm)
- <use  "graphics/EthernetLink.png" >
+
+<use  "graphics/EthernetLink.png" >
 Overfull \hbox (29.77838pt too wide) in paragraph at lines 148--148
 [][][][][][]\EU1/lmr/m/n/12 3.6 (6) Fortæl 
  []
@@ -2752,7 +2757,7 @@ File: graphics/Visio/GCS-software-overview.png Graphic file (type QTm)
 <use  "graphics/Visio/GCS-software-overview.png" > [22]
 File: graphics/Visio/FCS-software-overview.png Graphic file (type QTm)
 
-<use  "graphics/Visio/FCS-software-overview.png" > [23]) [24] [25]
+<use  "graphics/Visio/FCS-software-overview.png" >) [23] [24] [25]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\chapters/
 results.tex" [26
 
@@ -3933,8 +3938,8 @@ File: graphics/DTU-frise-SH-15.pdf Graphic file (type QTm)
 \tf@toc=\write7
 \tf@tdo=\write8
 \tf@lof=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.au
 x"
@@ -3970,19 +3975,19 @@ s/Beagle.aux")
 s/RHD.aux")
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
 s/cad.aux"))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 56592 strings out of 429025
- 1222640 string characters out of 3167800
- 1703797 words of memory out of 3000000
- 58930 multiletter control sequences out of 15000+200000
+ 56594 strings out of 429025
+ 1222687 string characters out of 3167800
+ 1704491 words of memory out of 3000000
+ 58931 multiletter control sequences out of 15000+200000
  9645 words of font info for 77 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
  62i,54n,98p,10454b,3765s stack positions out of 5000i,500n,10000p,200000b,50000s

@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.2}Problem formulation}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Problem limitation}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Example of use case}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}Outline of this thesis}{2}{section.1.5}
+\contentsline {section}{\numberline {1.5}Outline of this thesis}{3}{section.1.5}
 \contentsline {chapter}{\chapternumberline {2}Analysis}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Background}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Platform for Tether UAV}{5}{section.2.2}
@@ -32,11 +32,11 @@
 \contentsline {subsection}{Summary}{19}{section*.19}
 \contentsline {section}{\numberline {3.4}Cable Connection point on the UAV}{19}{section.3.4}
 \contentsline {section}{\numberline {3.5}Electrical Design}{20}{section.3.5}
-\contentsline {subsection}{Ground Station}{20}{section*.22}
-\contentsline {subsection}{UAV System}{22}{section*.23}
-\contentsline {subsection}{Data Connection using Ethernet over Power line}{22}{section*.24}
+\contentsline {subsection}{Ground Station}{21}{section*.22}
+\contentsline {subsection}{UAV System}{21}{section*.23}
+\contentsline {subsection}{Data Connection using Ethernet over Power line}{21}{section*.24}
 \contentsline {section}{\numberline {3.6}Software Design}{22}{section.3.6}
-\contentsline {subsection}{Ground Control Station}{23}{section*.25}
+\contentsline {subsection}{Ground Control Station}{22}{section*.25}
 \contentsline {subsection}{Flight Control System}{23}{section*.27}
 \contentsline {chapter}{\chapternumberline {4}Test and Results}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}The test setup}{27}{section.4.1}
