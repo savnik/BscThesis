@@ -1,10 +1,20 @@
 %!TEX root = ../Thesis.tex 
 \thispagestyle{empty}             % No page numbers
+\AddToShipoutPicture*{
+	\put(0,800){
+		\parbox[t][\paperheight]{\paperwidth}{
+						
+				\hfill\includegraphics[trim = 0 0 0 0,scale=1]{DTU-logo-CMYK}
+				%\vfill		
+		}
+	}
+}
+
 \calccentering{\unitlength}
 \begin{adjustwidth*}{\unitlength}{-\unitlength}
     \begin{adjustwidth}{-0.5cm}{-0.5cm}
         \sffamily
-        \hfill\includegraphics[scale=1]{DTU-logo-CMYK}
+		\vspace*{1cm}        
         \begin{flushright}        
             \thesistypeabbr{} Thesis\\*[0cm]
             \thesistype{}\\

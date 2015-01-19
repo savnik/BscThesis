@@ -21,7 +21,7 @@ At the bottom, the DC/DC power converters are mounted and a on/off switch is sur
 \section{Cable Drum}
 To address the heating issue in the cable drum a test was performed to evaluate the heating’s influence, in order to incorporate the results in the design process.\\
 
-\subsection{Test - Worst-case heating in cable}
+\subsection{Test - Worst-case heating in the cable coil}
 The worst-case test with full load over long time was performed at indoor environment with room temperature on 24 degree Celsius. The coil was excited with 75V DC and 360W just over an hour. This is not 100 per cent of the UAVs power consumption, but the testing equipments upper limit. The inner diameter of the coil is 10cm and is made of 2mm thick PVC pipe.
 
 
@@ -46,7 +46,7 @@ Even through the cable is not excited with 100 per cent of the UAV power consump
 
 
 \section{Horizontal Measuring Device}
-This measurement devices is tested with regards to stability and the results of the calculated position references. Hence this is relative cheap load cells, the precision is expected to be with in an acceptable region.
+This measurement devices is tested with regards to stability and the results of the calculated position references. Hence this is relative cheap load cells, the precision is expected to be within an acceptable region.
 
 \subsection{Calibration}
 First off is calibrating the load cells. First measurement is without any forces acting in $x$ and $y$ direction in order to determine the offset of each load cell.
@@ -55,7 +55,7 @@ The offset for $x$ is found to $-455.9787$ and the $y$ offset to $-511.2618$, as
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_0_data_raw.eps}
-\caption[Raw data from load cell]{Raw input data from load cell $x$ and $y$. The average line is the calculated offset used for calibration. Measured without load any directions.}
+\caption[Raw data from load cell, GCS]{Raw input data from load cell $x$ and $y$. The average line is the calculated offset used for calibration. Measured without load in any directions.}
 \label{fig:HMDcalib}
 \end{figure}
 
@@ -65,29 +65,29 @@ Next 1000g of load is put on the load cell with a rope through the Teflon ring f
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
-\caption[Comparing raw data from load cells to the calibrated values]{Comparing raw data to the calibrated values. The $x$-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision can vary $\pm75$g around the zero balance.}
+\caption[Result of calibration for Horizontal Measurement Device]{The result of calibration. The $x$-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from calibrating with the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision will vary $\pm75$g around the zero balance.}
 \end{figure}
 
 \newpage
-\subsection{Test of calibration}
+\subsection{Test of angular calculations}
 After the calibration process, a test of the calibration shows the quality of the calibration.
 This test is performed by applying a known force in a combination of $x$ and $y$ direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over time. This is probably due to tolerances in the manufacturing process of the mount enabling the load cell to move slightly over time or the elasticity of the connecting rope between the spring load and the load cell.
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/gcs_test/phi45deg1kg.eps}
-\caption[Test combines both $x$ and $y$ direction]{This test combines both $x$ and $y$ direction, therefore the force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating at around $1$kg of load the data drift slightly decreasing.}
+\caption[Test of calculating the horizontal angle]{This test combines both $x$ and $y$ direction by setting $\phi=45$ degrees and 1kg of load, therefore the total force is calculated into the variable $r$, equivalent to $T_0$ from the analysis chapter. Notating the data drift slightly decreasing, but the calculated angle is steady. }
 \label{fig:phi45deg1kg}
 \end{figure}
 
 \newpage
 \noindent
-On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to tolerances in the manufacturing process enabling the load cell to move slightly over time or it can be caused by the spring load is permanently bending. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both $x$ and $y$ load cell. Because it applies to both load cells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle.
+On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to the spring load is permanently bending, not excluding the elasticity of the rope and tolerances in the manufacturing process enabling the load cell to move slightly over time. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both $x$ and $y$ load cell. Because it applies to both load cells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle. The two degrees error in the angle is likely due to the precision of the load angle.
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.8]{graphics/gcs_test/phi45deg1kgdata.eps}
-\caption[Calibrated data from $x$ and $y$ load cell]{Showing the calibrated data from $x$ and $y$ load cell then 1kg of load is applied with $\phi=45$ degrees.}
+\includegraphics[scale=1]{graphics/gcs_test/phi45deg1kgdata.eps}
+\caption[Calibrated data from $x$ and $y$ load cell]{Showing the calibrated data from $x$ and $y$ load cell then 1kg of load is applied with $\phi=45$ degrees. The trend lines decays with a equal factor.}
 \label{fig:phi45deg1kgdata}
 \end{figure}
 
@@ -108,7 +108,7 @@ At $\theta=45$ degrees and 1kg of load the measured result is very close to the 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/45degTheta1kg.eps}
-\caption[Comparing the measured load to the theoretical value]{Comparing the measured load to the theoretical value. Showing slightly less than expected.}
+\caption[Comparing the measured load to the theoretical value, $\phi=45$ degrees]{Comparing the measured load to the theoretical expected values with a load of 1kg when setting $\phi=45$ degrees. The result is showing slightly less than expected.}
 \label{fig:45degTheta1kg}
 \end{figure}
 
@@ -121,7 +121,27 @@ At all previous tests the load has only been anchored in the Teflon ring, but in
 
 \noindent
 Hence the measurement device only measures $T_{0,x}$, $T_{whinch,y}$ is unknown. This test will show how much $T_{winch,y}$ influences.
-On figure \ref{fig:45degTheta1kg} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision of the calibration. 
+On figure \ref{fig:theta0phi0deg1kgCable} the measured values are slightly higher than expected. At $\theta = 0$ the overshoot is $13-17$g and at $\theta = 45$ the overshoot is $28-32$g, which is within what's in the first test was discussed as due to limitation in precision of the calibration. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/theta0phi0deg1kgCable.eps}
+\caption{Calculated total force and angle then pulling in the cable when $\phi=0$ and $\theta=0$.}
+\label{fig:theta0phi0deg1kgCable}
+\end{figure}
+
+\newpage
+\noindent
+Repeating the above test with $\theta=45$ degrees on figure \ref{fig:theta45phi0deg1kgCable}. Again a slightly decreasing total force but stable angle calculation, hence $x$ and $y$ load cell is decreasing in the same rate. The expected total force is $707$g and the measured is around $23$g higher, might because the angle have been a little less than 45 degrees or the tension has been a little higher. This is given to et limited precision in the test setup.
+
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/gcs_test/theta45phi0deg1kgCable.eps}
+\caption{Calculated total force and angle then pulling in the cable when $\phi=0$ and $\theta=45$ degrees.}
+\label{fig:theta45phi0deg1kgCable}
+\end{figure}
+
 
 
 
@@ -131,7 +151,14 @@ The prototype is able to measure the force in $x$- and $y$-direction, $\phi$ and
 The 5kg load cell has a zero balance at $\pm75g$. Any values close to this range must be considered as very unreliable. 
 When calibrating the 5kg load cell, the calibration gives better results using a calibration load greater than $0.5$kg.
 The force in $T_{winch,y}$ is quite small and can therefore be ignored.\\
-All plots have a zoom time axis, thus resulting in more readable and intuitive graphics. All test where measured in 60-120 seconds to ensure the data is stable over time.
+All plots have a zoom time axis, thus resulting in more readable and intuitive graphics. All test where measured in 60-120 seconds to ensure the data is stable over time.\\
+It is very important to keep +50mm distance between the winch and the load cell, if they are too close the measured force is rapidly decreasing. 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
 \section{Tree Dimensional Force Measurement Device}
@@ -151,7 +178,7 @@ As in the Horizontal Measuring Device, first thing is to perform a calibration, 
 The $z$-axis is calibrated with 1000g load, hence it is a 5kg load cell. The $x$- and $y$-axes is calibrated with 500g load, hence their measuring range limit is $0.78$kg. The gain is calculated to: $Kx=0.0868$, $Ky=-0.0851$, and $Kz=0.4277$. 
 \\
 
-\newpage
+
 \subsection{Test of Calibration}
 Testing the calibration with 600g of load at $\phi=0$ degrees and $\theta=45$ degrees. The results are shown on figure \ref{fig:FCS-calib-results}. The results seams to have unexpected results in the first 10 seconds and the last 20 seconds. This might be due to vibrations in the test setup, when people are walking by, touching the table, or the spring is not in equilibrium, because the distortion is seen on all tree axes. From approximate 15 seconds in to 50 seconds, the reading is quite stable, thus it has a slight drift. This drift is, as describes in testing of the Horizontal Measurement Device, presumably given due to elasticity in the rope, the spring is permanently bending or tolerances in the manufacturing process gives rise to small displacements of mechanical components.\\
 \\
@@ -159,11 +186,21 @@ Testing the calibration with 600g of load at $\phi=0$ degrees and $\theta=45$ de
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/fcs_test/calib_result_compare.eps}
-\caption{d}
+\caption{Calibrated load cell input data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
 \label{fig:FCS-calib-results}
 \end{figure}
 
-\todo{Lav plot af de beregnede vinkler osv.}
+\noindent
+Taking a look at the calculated values for $r$, $\phi$, and $\theta$ reflects the distortion from the calibrated tension, but it is not a significant distortion and can be smooth out with a lowpass filter. Filtering the data must be done very cautious since it might interfere with the position controller.  
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/fcs_test/calib_result_compare_angles.eps}
+\caption{The result of the}
+\label{fig:calib_result_compare_angles}
+\end{figure}
+
+
 
 \subsection{Summary}
 \todo{Lav en opsummering}

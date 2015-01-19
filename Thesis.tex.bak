@@ -42,6 +42,7 @@
 \include{appendices/Beagle}
 \include{appendices/RHD}
 \include{appendices/cad}
+\include{appendices/componentSpecs}
 %\include{appendices/matlab}
 
 \newpage % CD Page

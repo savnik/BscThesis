@@ -59,11 +59,98 @@ Files:
 }
 
 \subsection{TCUAV}
-TCUAV or Tether Control of UAV is the Ground Station.
-\todo{Skriv}
+TCUAV or Tether Control of UAV is the Ground Station plugin. This plugin handles the steering input references, the horizontal measurement, and winching control. TCUAV relies on the Phidget Bridge plugin to determine the horizontal angle, and the Joycontrol plugin to switch between steering references. Hence this plugin uses the GPIO on the Beaglebone a special installation procedure is found in the readme file.
+
+\begin{lstlisting}[language=XML]
+<?xml version="1.0" ?>
+<!--
+    Configuration file for 
+    Robot Hardware Daemon
+    This configuration is for the Ground Control Station
+  
+-->
+<!-- Starting RHD Configuration -->
+<rhd>
+  <!-- *** Core Components Configuration *** -->
+  <!-- Sheduler configuration -->
+  <sheduler>
+    <period value="1000"/>
+    <type value="itimer"/><!--"usleep","itimer","LXRT" -->
+  </sheduler>
+  <!-- Server configuration -->
+  <server>
+    <port value="24902"/>
+    <clients number="10" allwriters="1"/>
+  </server>
+    
+  <!-- *** Plugins Configuration *** -->
+  <plugins basepath="/home/debian/rhd/trunk/build/lib/rhdplugin/">
+    <!-- Joystick Control
+          Updated!! Observe the max speed setting, deadband and the "safety" parameter -->
+    
+    
+    <!-- Phidget Bridge -->
+    <phidgetsbridge2
+	    enable = "true"
+	    lib="phidgetsbridge2.so.1"
+	    debug = "1"
+	    interval = "0"
+	    updateTimeMs = "10"
+	    gain = "128 128 0 0"
+	    enableCh = "1 1 0 0"
+	    offset = "-456 -511"
+	    k = "4786 -5134 0 0"
+      >
+    </phidgetsbridge2>  
+    
+    <!-- tcuav - Ground Station System - Tether Control of UAV -->
+    <tcuav 
+	    enable= "true"
+	    lib="tcuav.so.1"
+	    debug = "true"
+	    critical = "true"
+      >
+    </tcuav>
+    
+    
+    <!-- Joystick Control Not critical plugin for Guidebot -->
+   <joycontrol enable="true" lib="libjoycontrol.so.1" critical="false" safety="1">
+    <joystick port="/dev/input/js0"/>
+	<speed maxlr="5000" maxfwd="5000" maxspin="5000" maxupdown="5000" />
+	<deadband max="767" min="-767"/>
+	<control enable="true"/>
+	<scale right="1.000" left="1.000"/>
+    </joycontrol>  
+   
+    
+    <rhdlog enable = "true"
+            lib="rhdlog.so.1"
+            debug="true"
+            interval="0"
+           >
+    </rhdlog>
+  </plugins>
+</rhd> 
+\end{lstlisting}
+
+\noindent
+Files:
+\dirtree{%
+.1 plugins.
+.2 tcuav.
+.3 Makefile.
+.3 README.
+.3 gpio.c
+.3 gpio.h
+.3 pwm.c
+.3 pwm.h
+.3 rhdconfig.xml.
+.3 tcuav.c.
+.3 tcuav.h.
+}
 
 \subsection{FCS}
-FCS or Flight Control System is a part of the Tether Control of UAV project. This plugin establish contact to Ground Station via a Socket connection, and exchange information(references) from the ground stations measurements and control parameters, and then sends control parameters in to a PixHawk. It also reads 3 loadcell from a Phidget Bridge to determine the yaw and the force from the cable in x,y and z direction.\\
+FCS or Flight Control System is a part of the Tether Control of UAV project. This plugin establish contact to Ground Station via a Socket connection, and exchange information(references) from the ground stations measurements and control parameters, and then sends control parameters in to a PixHawk. It also reads 3 load cell from a Phidget Bridge to determine the yaw and the force from the cable in x,y and z direction.\\
 It is intended the PixHawk runs it's own position estimator in hard real time, and the control parameters from this plugin in soft real time, because of the variable delay in the feedback from the Ground Station.\\
 
 \noindent

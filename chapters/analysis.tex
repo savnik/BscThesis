@@ -72,15 +72,18 @@ The loss in the cable needs to be minimal. A known method to minimize the loss o
 % Calculated with copper resistivity and for both + and GND conductor cores.
 \label{fig:relationship_loss_length}
 \end{figure}
-\todo{Check udregning om den der dobbelt}
+
 
 \noindent
 From figure \ref{fig:relationship_loss_length} it is seen the electrical loss is the conductor also depends on length and cross-sectional area of the conductor. The electrical loss is converted into heat in the cable.
 
 
 \section{Tension force in the Cable}
+
+\noindent
 In a simplified model, the weight of the cable will only drag the UAV on one axis, towards the Ground Station. On the UAV there is one load cell mounted, measuring the force in the direction of the tension. The output of the load cell will enable the Ground Station to decide if it should roll cable out or in. However, this simplified model assumes the UAV perpendicular to the cable at all times. 
-In the real world, this is only true when it hovers directly over the Ground Station. As the UAV goes to one of the sides, it will try to maintain horizontal pitch/tilt \todo{definer udtryk}. The cable will try to drag the UAV in the direction of the Ground Station, cause at steady force the UAV have to work against. Because of aerodynamics the UAV will tilt in some extend to work against the tension. If this tilt get to large, the UAV will lose its lifting capability, therefore stall, and crash towards the ground.
+In the real world, this is only true when it hovers directly over the Ground Station. As the UAV goes to one of the sides, it will try to maintain horizontal pitch/tilt. On figure \ref{fig:uav-axes} the definition of roll, pitch and yaw are shown. The cable will try to drag the UAV in the direction of the Ground Station, cause at steady force the UAV have to work against. Because of aerodynamics the UAV will tilt in some extend to work against the tension. If this tilt get to large, the UAV will lose its lifting capability, therefore stall, and crash towards the ground.
+
 
    
 
@@ -170,7 +173,7 @@ The length og $\overline{XY}$ corresponds to the total tension in the cable in $
 
 \subsubsection{Tree Dimensional Force Measurement at the UAV}
 The UAV has tree degrees of freedom in space, thus a tree axes measurement devices is needed in order to measure the total force $T$.  The measurement device must measure the force relative to the UAV, thus if the UAV tilted to one side, by roll or pitch, it will not be adjusted in the angular calculation of $\theta$.  
-\todo{Introducer roll pitch yaw}
+
 
 \begin{figure}[hbtp]
 \centering
@@ -189,7 +192,7 @@ T = \sqrt{x^2+y^2+z^2}
 To determine the direction of the total force the angle between $x$- and $y$-axes is denoted as $\phi$ and the angle between the $xy$-plane and $z$-axis is denoted as $\theta$.
 $\phi$ is derived as in the horizontal force measurement device.
 \begin{equation}
-\phi = \mathrm{atan2}(x,y)
+\phi = \mathrm{atan2}(y,x)
 \end{equation}
 
 \noindent

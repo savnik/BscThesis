@@ -248,10 +248,10 @@
 
 \newcommand{\friezeColor}{%
     \AddToShipoutPicture*{
-        \put(10,0){
+        \put(180,10){
             \parbox[b][\paperheight]{\paperwidth}{%
             	\begin{flushright}
-                \includegraphics[trim=0 0 0 0,width=0.75\textwidth]{DTU-frise.eps}
+                \includegraphics[trim=0 0 0 0,width=1\textwidth]{DTU-frise.eps}
                 %\vspace*{2.5cm}
             	\end{flushright}
             }

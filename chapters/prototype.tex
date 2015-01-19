@@ -82,7 +82,7 @@ Both concepts are mature enough to be prototyped and tested, but due to the time
 
 
 \section{Cable Connection point on the UAV}
-Connecting the cable to the UAV have several issues to address. First a 3-axes measurement device is needed to measure how much the cable tension is and in tree directions - $x$, $y$, and $z$ directions. The load cells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In $z$-direction the maximal force applied to the load cell is the UAVs lifting capability on approximately 3kg\todo{Citer adriana}. Hence the choice of load cell is a 5kg load cell.\\
+Connecting the cable to the UAV have several issues to address. First a 3-axes measurement device is needed to measure how much the cable tension is and in tree directions - $x$, $y$, and $z$ directions. The load cells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In $z$-direction the maximal force applied to the load cell is the UAVs lifting capability on approximately 3kg\cite{Sidea2013}. Hence the choice of load cell is a 5kg load cell.\\
 \noindent
 In $x$- and $y$-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg load cell is used to measure the $x$- and $y$-directional force. 
 
@@ -103,13 +103,19 @@ Second an appliance inlet connector for easy plug-in and unplug is wanted. The c
 \end{figure}
 
 
+\section{The Cable}
+The cable connection is the UAVs lifeline; if it breaks, the UAV will immediately crash towards the ground. Thus, the cable must be robust and resistant to the surrounding conditions, such as UV-light, heat and mechanical wear and tear.  Given the UAVs limited lifting capabilities, the cable must be lightweight. 
+The choice of cable ended on the Ölflex Classic Flexible Mains range, hence great performance on flexibility, heat resistance and low weight. Furthermore, the sheath material is made of silicone resulting in a better grip on the winch. The cable has two conductors of $0.75mm^2$ and the total length is 50m\footnote{ÖLFLEX HEAT 180 Deg H05SS-F 2 x 0.75mm}. The detailed specifications are found in the appendix.\\
+The cable weight is $54$kg/km giving a total cable weight of $2.7$kg, for 50 meter cable.
+
 
 \section{Electrical Design}
 From an electrical view there are two separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAVs position controller is running on the UAV. 
-\todo{Introducer 12V/75V system}
+The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.
 
 \subsection{Ground Station}
-The ground station sends data to the UAV system and decides weather to roll cable in or out based on the wanted position. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher then expected more cable are rolled out and vice versa.  
+The ground station sends data to the UAV system and decides weather to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher then expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.
+  
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/GCS-eltectrical-overview.png}
@@ -144,8 +150,11 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at the deparment of Automation and Control at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications.
 
 \subsection{Ground Control Station}
-The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. 
-\todo{Fortæl om GPIO+Encoder}
+The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
+\noindent
+The Ground Control Station interfaces the hardware component through the on-board GPIO pins allowing the Beaglebone to send a Pulse Width Modulation signal to the motor driver and reading the encoders, either as a SPI signal or by counting rising and falling edges.
+
+
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{graphics/Visio/GCS-software-overview.png}
@@ -157,7 +166,7 @@ The objective of the Ground Control station software is to measure the horizonta
 
 
 \subsection{Flight Control System}
-The objective of the Flight Control System is to measure the force from the 3-axes load cell system, establish a link connection to Ground Control Station and fetch control variables, and make control variables available to the PixHawk(UAV Flight Controller).
+The objective of the Flight Control System is to measure the force from the 3-axes load cell system, establish a link connection to Ground Control Station and fetch control variables, and make control variables available to the PixHawk(UAV Flight Controller) through a serial connection, hence the USB plug is already occupied.
 
 
 \begin{figure}[hbtp]
