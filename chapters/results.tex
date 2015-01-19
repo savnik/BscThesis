@@ -126,7 +126,7 @@ On figure \ref{fig:theta0phi0deg1kgCable} the measured values are slightly highe
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/theta0phi0deg1kgCable.eps}
-\caption{Calculated total force and angle then pulling in the cable when $\phi=0$ and $\theta=0$.}
+\caption[Total force and angle when $1$kg load, $\phi=0$ and $\theta=0$]{Calculated total force and angle when $1$kg load, $\phi=0$ and $\theta=0$. The green trend line shows the data is drifting slightly.}
 \label{fig:theta0phi0deg1kgCable}
 \end{figure}
 
@@ -138,7 +138,7 @@ Repeating the above test with $\theta=45$ degrees on figure \ref{fig:theta45phi0
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/theta45phi0deg1kgCable.eps}
-\caption{Calculated total force and angle then pulling in the cable when $\phi=0$ and $\theta=45$ degrees.}
+\caption[Calculated total force and angle, 1kg load, $\phi=0$, and $\theta=45$ degrees.]{Calculated total force and angle then pulling the cable with 1kg load when $\phi=0$, and $\theta=45$ degrees.}
 \label{fig:theta45phi0deg1kgCable}
 \end{figure}
 
@@ -186,35 +186,36 @@ Testing the calibration with 600g of load at $\phi=0$ degrees and $\theta=45$ de
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/fcs_test/calib_result_compare.eps}
-\caption{Calibrated load cell input data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
+\caption[Calibrated data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.]{Calibrated load cell input data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
 \label{fig:FCS-calib-results}
 \end{figure}
 
+\newpage
 \noindent
 Taking a look at the calculated values for $r$, $\phi$, and $\theta$ reflects the distortion from the calibrated tension, but it is not a significant distortion and can be smooth out with a lowpass filter. Filtering the data must be done very cautious since it might interfere with the position controller in a negative way.  
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/fcs_test/calib_result_compare_angles.eps}
-\caption{The calculated variables after calibration; $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
+\caption[The calculated variables, $\phi=0$, $\theta=45$, and 600g load.]{The calculated variables after calibration; $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
 \label{fig:calib_result_compare_angles}
 \end{figure}
 
 
-
+\newpage
 \subsection{Summary}
-\todo{Lav en opsummering}
+The measurement device can measure all tree axis independently with acceptable results. The drift in the data, of same type as in the Horizontal Measurement Device, are very likely of same causes. The $x$-axis load cell has a very large offset compared to the others. This might be caused by a damage or over load resulting in permanent bending of the Aluminium block. Thus the data from it is still acceptable.
 
 
 
 \newpage
-\section{Data Connection test}
-The data connection is tested by performing a ping test from Ground Control Station to the Flight Control Station and measuring the response time. The ping test is started and then the throttle for the UAV is moved slowly up to a point where the UAV is close to take off.
+\section{Data connection test}
+The data connection is tested by performing a ping test from Ground Control Station to the Flight Control System and measuring the response time. The ping test is started and then the throttle for the UAV is moved slowly up to a point where the UAV is close to take off.
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/pingTest.eps}
-\caption{Ping test from Ground Station to Flight Control Station, while throttle is on.}
+\caption{Ping test from Ground Station to Flight Control System, while throttle is on.}
 \label{fig:pingTest}
 \end{figure}
 

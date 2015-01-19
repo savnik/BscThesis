@@ -132,7 +132,7 @@ The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge.
 \caption{UAV electrical overview.}
 \end{figure}
 
-
+\newpage
 
 \subsection{Data Connection using Ethernet over Power line}
 To connect the UAV to the Ground Station an Ethernet over power line system is used. Ethernet over power line operate by adding a modulated carrier to the wiring system, intended to work on 110-230 volt AC with frequencies in 50-60 Hertz. The AV500 Nano\footnote{Model number: TL-PA411KIT.} system from TP-Link supports speeds up to 500Mbps and works without any configuration needed. Stripping the housing from the electronic and soldering two wires on to parallel connect the component to the 75 volt system. All detailed setup and configurations are descried in the appendix.
@@ -147,7 +147,15 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 
 
 \section{Software Design}
-All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at the deparment of Automation and Control at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications.
+All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at the department of Automation and Control at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications. On figure \ref{fig:software-block-diagram} a block diagram is showing a overview of key software components and their structural relations to other components.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.8]{graphics/Visio/block-diagram1.png}
+\caption{Software Block Diagram.}
+\label{fig:software-block-diagram}
+\end{figure}
+
 
 \subsection{Ground Control Station}
 The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
