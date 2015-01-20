@@ -4,8 +4,7 @@
 \contentsline {chapter}{Preface}{vii}{chapter*.3}
 \contentsline {chapter}{Acknowledgements}{ix}{chapter*.4}
 \contentsline {chapter}{Contents}{xi}{section*.5}
-\contentsline {chapter}{Todo list}{xv}{section*.6}
-\contentsline {chapter}{List of Figures}{xvii}{section*.8}
+\contentsline {chapter}{List of Figures}{xv}{section*.6}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Previous work}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Problem formulation}{1}{section.1.2}
@@ -17,49 +16,49 @@
 \contentsline {section}{\numberline {2.2}Platform for Tether UAV}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Power line}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Tension force in the Cable}{8}{section.2.4}
-\contentsline {subsection}{Modelling the Tension in the Free Hanging Cable}{8}{section*.9}
-\contentsline {subsubsection}{Horizontal Angular Force Measurement}{11}{section*.10}
-\contentsline {subsubsection}{Tree Dimensional Force Measurement at the UAV}{12}{section*.11}
-\contentsline {subsection}{Load cell}{13}{section*.12}
-\contentsline {subsection}{Data Connection}{13}{section*.13}
+\contentsline {subsection}{Modelling the Tension in the Free Hanging Cable}{8}{section*.7}
+\contentsline {subsubsection}{Horizontal Angular Force Measurement}{11}{section*.8}
+\contentsline {subsubsection}{Tree Dimensional Force Measurement at the UAV}{12}{section*.9}
+\contentsline {subsection}{Load cell}{13}{section*.10}
+\contentsline {subsection}{Data Connection}{13}{section*.11}
 \contentsline {section}{\numberline {2.5}Design Requirement Specification}{14}{section.2.5}
 \contentsline {chapter}{\chapternumberline {3}Prototype}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Landing platform / Helipad}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Messuring the horisontal angle}{16}{section.3.2}
 \contentsline {section}{\numberline {3.3}Winching and storing the cable}{17}{section.3.3}
-\contentsline {subsection}{Storing cable on a drum}{17}{section*.14}
-\contentsline {subsection}{The Simple Winch}{18}{section*.15}
-\contentsline {subsection}{Summary}{19}{section*.16}
+\contentsline {subsection}{Storing cable on a drum}{17}{section*.12}
+\contentsline {subsection}{The Simple Winch}{18}{section*.13}
+\contentsline {subsection}{Summary}{19}{section*.14}
 \contentsline {section}{\numberline {3.4}Cable Connection point on the UAV}{19}{section.3.4}
 \contentsline {section}{\numberline {3.5}The Cable}{20}{section.3.5}
 \contentsline {section}{\numberline {3.6}Electrical Design}{21}{section.3.6}
-\contentsline {subsection}{Ground Station}{21}{section*.17}
-\contentsline {subsection}{UAV System}{21}{section*.18}
-\contentsline {subsection}{Data Connection using Ethernet over Power line}{23}{section*.19}
+\contentsline {subsection}{Ground Station}{21}{section*.15}
+\contentsline {subsection}{UAV System}{21}{section*.16}
+\contentsline {subsection}{Data Connection using Ethernet over Power line}{23}{section*.17}
 \contentsline {section}{\numberline {3.7}Software Design}{24}{section.3.7}
-\contentsline {subsection}{Ground Control Station}{24}{section*.20}
-\contentsline {subsection}{Flight Control System}{24}{section*.21}
+\contentsline {subsection}{Ground Control Station}{24}{section*.18}
+\contentsline {subsection}{Flight Control System}{25}{section*.19}
 \contentsline {chapter}{\chapternumberline {4}Test and Results}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}The test setup}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}Cable Drum}{27}{section.4.2}
-\contentsline {subsection}{Test - Worst-case heating in the cable coil}{28}{section*.23}
-\contentsline {subsection}{Summary}{29}{section*.24}
-\contentsline {section}{\numberline {4.3}Horizontal Measuring Device}{29}{section.4.3}
-\contentsline {subsection}{Calibration}{29}{section*.25}
-\contentsline {subsection}{Test of angular calculations}{31}{section*.26}
-\contentsline {subsection}{Testing with $\theta >0$}{33}{section*.27}
-\contentsline {subsection}{Summary}{36}{section*.28}
-\contentsline {section}{\numberline {4.4}Tree Dimensional Force Measurement Device}{37}{section.4.4}
-\contentsline {subsection}{Calibration}{37}{section*.29}
-\contentsline {subsection}{Test of Calibration}{38}{section*.30}
-\contentsline {subsection}{Summary}{40}{section*.31}
-\contentsline {section}{\numberline {4.5}Data connection test}{41}{section.4.5}
+\contentsline {section}{\numberline {4.2}Cable Drum}{29}{section.4.2}
+\contentsline {subsection}{Test - Worst-case heating in the cable coil}{29}{section*.20}
+\contentsline {subsection}{Summary}{30}{section*.21}
+\contentsline {section}{\numberline {4.3}Horizontal Measuring Device}{30}{section.4.3}
+\contentsline {subsection}{Calibration}{30}{section*.22}
+\contentsline {subsection}{Test of angular calculations}{32}{section*.23}
+\contentsline {subsection}{Testing with $\theta >0$}{34}{section*.24}
+\contentsline {subsection}{Summary}{37}{section*.25}
+\contentsline {section}{\numberline {4.4}Tree Dimensional Force Measurement Device}{38}{section.4.4}
+\contentsline {subsection}{Calibration}{38}{section*.26}
+\contentsline {subsection}{Test of Calibration}{39}{section*.27}
+\contentsline {subsection}{Summary}{41}{section*.28}
+\contentsline {section}{\numberline {4.5}Data connection test}{42}{section.4.5}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{43}{chapter.5}
 \contentsline {section}{\numberline {5.1}Further Work}{43}{section.5.1}
-\contentsline {subsection}{RHD Link}{43}{section*.34}
-\contentsline {subsection}{Joystick}{44}{section*.35}
-\contentsline {subsection}{Network connection}{44}{section*.36}
-\contentsline {subsection}{Serial connection to PixHawk}{44}{section*.37}
+\contentsline {subsection}{RHD Link}{43}{section*.31}
+\contentsline {subsection}{Joystick}{44}{section*.32}
+\contentsline {subsection}{Network connection}{44}{section*.33}
+\contentsline {subsection}{Serial connection to PixHawk}{44}{section*.34}
 \contentsline {appendix}{\chapternumberline {A}Symbols and Acronyms}{45}{appendix.A}
 \contentsline {section}{\numberline {A.1}Acronyms}{45}{section.A.1}
 \contentsline {section}{\numberline {A.2}Symbols}{45}{section.A.2}
@@ -74,17 +73,17 @@
 \contentsline {section}{\numberline {B.8}General notes}{51}{section.B.8}
 \contentsline {appendix}{\chapternumberline {C}Robot Hardware Daemon}{53}{appendix.C}
 \contentsline {section}{\numberline {C.1}Plugins}{53}{section.C.1}
-\contentsline {subsection}{PhidgetsBridge2}{53}{section*.38}
-\contentsline {subsection}{TCUAV}{54}{section*.39}
-\contentsline {subsection}{FCS}{56}{section*.40}
-\contentsline {subsection}{RHDLink}{57}{section*.41}
-\contentsline {subsection}{Joycontrol}{58}{section*.42}
+\contentsline {subsection}{PhidgetsBridge2}{53}{section*.35}
+\contentsline {subsection}{TCUAV}{54}{section*.36}
+\contentsline {subsection}{FCS}{56}{section*.37}
+\contentsline {subsection}{RHDLink}{57}{section*.38}
+\contentsline {subsection}{Joycontrol}{58}{section*.39}
 \contentsline {appendix}{\chapternumberline {D}CAD Design}{59}{appendix.D}
-\contentsline {subsection}{Horizontal angle messurement device}{59}{section*.43}
-\contentsline {subsection}{The Simple Winch}{67}{section*.44}
-\contentsline {subsection}{The Cable Drum}{81}{section*.45}
-\contentsline {subsection}{Helipad}{111}{section*.46}
+\contentsline {subsection}{Horizontal angle messurement device}{59}{section*.40}
+\contentsline {subsection}{The Simple Winch}{67}{section*.41}
+\contentsline {subsection}{The Cable Drum}{81}{section*.42}
+\contentsline {subsection}{Helipad}{111}{section*.43}
 \contentsline {section}{\numberline {D.1}UAV}{113}{section.D.1}
 \contentsline {appendix}{\chapternumberline {E}Component Specifications}{123}{appendix.E}
 \contentsline {section}{\numberline {E.1}ÖLFLEX HEAT 180 Deg H05SS-F 2 x 0.75mm}{123}{section.E.1}
-\contentsline {chapter}{Bibliography}{125}{section*.47}
+\contentsline {chapter}{Bibliography}{125}{section*.44}

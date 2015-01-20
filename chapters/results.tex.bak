@@ -14,9 +14,15 @@ Given to the short time frame for this project and unexpected long time sick lea
 
 \noindent
 From top the Horizontal Measurement Device is mounted underneath the helipad. On the front a emergency switch is mounted to disconnect the 75 volt supply to the UAV. In the middle there is room for cable storing and winching mechanism. The position of the winch can easily be adjusted through aluminium bars milled track.
-\todo{Indsæt billede}
 Underneath that a shelf is mounted with the Beaglebone, motor driver, Network adapter and router.
 At the bottom, the DC/DC power converters are mounted and a on/off switch is surface mounted to the entire system.  
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{graphics/product_pictures/IMG_6249_cutout.jpg}
+\caption{The final assembly of the prototype.}
+\end{figure}
+
+
 
 \section{Cable Drum}
 To address the heating issue in the cable drum a test was performed to evaluate the heating’s influence, in order to incorporate the results in the design process.\\
@@ -186,7 +192,7 @@ Testing the calibration with 600g of load at $\phi=0$ degrees and $\theta=45$ de
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/fcs_test/calib_result_compare.eps}
-\caption{Calibrated load cell input data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
+\caption[Calibrated data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.]{Calibrated load cell input data with $\phi=0$ degrees, $\theta=45$ degrees, and 600g load.}
 \label{fig:FCS-calib-results}
 \end{figure}
 
@@ -209,13 +215,13 @@ The measurement device can measure all tree axis independently with acceptable r
 
 
 \newpage
-\section{Data Connection test}
-The data connection is tested by performing a ping test from Ground Control Station to the Flight Control Station and measuring the response time. The ping test is started and then the throttle for the UAV is moved slowly up to a point where the UAV is close to take off.
+\section{Data connection test}
+The data connection is tested by performing a ping test from Ground Control Station to the Flight Control System and measuring the response time. The ping test is started and then the throttle for the UAV is moved slowly up to a point where the UAV is close to take off.
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/pingTest.eps}
-\caption{Ping test from Ground Station to Flight Control Station, while throttle is on.}
+\caption{Ping test from Ground Station to Flight Control System, while throttle is on.}
 \label{fig:pingTest}
 \end{figure}
 

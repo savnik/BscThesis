@@ -111,7 +111,8 @@ The cable weight is $54$kg/km giving a total cable weight of $2.7$kg, for 50 met
 
 \section{Electrical Design}
 From an electrical view there are two separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAVs position controller is running on the UAV. 
-The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.
+The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.\\
+A Beaglebone is a small credit-card-sized Linux computer that runs a Debian operating system. It has penty I/O ports, a USB plug and a Ethernet connection. A AM335x 720MHz ARM processor enables the Beaglebone to run real-time applications.  
 
 \subsection{Ground Station}
 The ground station sends data to the UAV system and decides whether to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher than expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.
@@ -158,7 +159,7 @@ All software for measuring and controlling is implemented in the real-time softw
 
 
 \subsection{Ground Control Station}
-The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The plu The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
+The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The key plugin in the Ground Control is called tcuav. The speed variables are created in tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
 \noindent
 The Ground Control Station interfaces the hardware component through the on-board GPIO pins allowing the Beaglebone to send a Pulse Width Modulation signal to the motor driver and reading the encoders, either as a SPI signal or by counting rising and falling edges.
 

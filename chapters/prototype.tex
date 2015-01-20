@@ -111,7 +111,8 @@ The cable weight is $54$kg/km giving a total cable weight of $2.7$kg, for 50 met
 
 \section{Electrical Design}
 From an electrical view there are two separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAVs position controller is running on the UAV. 
-The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.
+The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.\\
+A Beaglebone is a small credit-card-sized Linux computer that runs a Debian operating system. It has plenty I/O ports, an USB plug, and an Ethernet connection. A AM335x 720MHz ARM processor enables the Beaglebone to run real-time applications, which makes it ideal for this application - both for the Ground Station and the UAV. 
 
 \subsection{Ground Station}
 The ground station sends data to the UAV system and decides whether to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher than expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.

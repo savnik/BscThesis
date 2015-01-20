@@ -85,15 +85,15 @@ publisher = {The European Parlement},
 title = {{Low Voltage Diretive}},
 year = {2006}
 }
-@article{Peverill2013,
+@misc{Peverill2013,
 author = {Peverill, James},
 file = {:C$\backslash$:/Users/Savnik/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Peverill - 2013 - Figure 1b.pdf:pdf},
 number = {19},
-title = {{Figure 1b}},
+title = {{TETHERED AERIAL SYSTEM FOR DATA GATHERING}},
 volume = {1},
 year = {2013}
 }
-@misc{PhidgetsInc.2012,
+@manual{PhidgetsInc.2012,
 author = {{Phidgets Inc.}},
 booktitle = {Wikipedia},
 title = {{Load Cell Primer}},

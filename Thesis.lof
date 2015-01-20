@@ -29,20 +29,21 @@
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Flight Control System software overview}}{26}{figure.3.13}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Rack cabinet overview.}}{27}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Heat test setup showing the coil, the test load and DC/DC power converters.}}{28}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Heat test, image from thermal camera}}{29}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Raw data from load cell, GCS}}{30}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Result of calibration for Horizontal Measurement Device}}{31}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Test of calculating the horizontal angle}}{32}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Calibrated data from $x$ and $y$ load cell}}{33}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.}}{33}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Comparing the measured load to the theoretical value, $\phi =45$ degrees}}{34}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Total force and angle when $1$kg load, $\phi =0$ and $\theta =0$}}{35}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Calculated total force and angle, 1kg load, $\phi =0$, and $\theta =45$ degrees.}}{36}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Raw input data from load cell $x$, $y$, and $z$.}}{37}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Calibrated data with $\phi =0$ degrees, $\theta =45$ degrees, and 600g load.}}{39}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces The calculated variables, $\phi =0$, $\theta =45$, and 600g load.}}{40}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Ping test from Ground Station to Flight Control System, while throttle is on.}}{41}{figure.4.15}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The final assembly of the prototype.}}{28}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Heat test setup showing the coil, the test load and DC/DC power converters.}}{29}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Heat test, image from thermal camera}}{30}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Raw data from load cell, GCS}}{31}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Result of calibration for Horizontal Measurement Device}}{32}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Test of calculating the horizontal angle}}{33}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Calibrated data from $x$ and $y$ load cell}}{34}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Testing the horizontal measuring device by keeping $\phi $ constant and varying $\theta $.}}{34}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparing the measured load to the theoretical value, $\phi =45$ degrees}}{35}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Total force and angle when $1$kg load, $\phi =0$ and $\theta =0$}}{36}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Calculated total force and angle, 1kg load, $\phi =0$, and $\theta =45$ degrees.}}{37}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Raw input data from load cell $x$, $y$, and $z$.}}{38}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Calibrated data with $\phi =0$ degrees, $\theta =45$ degrees, and 600g load.}}{40}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The calculated variables, $\phi =0$, $\theta =45$, and 600g load.}}{41}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Ping test from Ground Station to Flight Control System, while throttle is on.}}{42}{figure.4.16}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
