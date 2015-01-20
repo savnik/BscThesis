@@ -68,7 +68,7 @@ With all wire winded in and the UAV on maximum throttle there is assumed to be 5
 
 
 \subsection{The Simple Winch}
-Sometimes simple is better. The simple design have a motorized toothed wheel and an encoder wheel pushing the cable against the wheels. The encoder wheel turns only when the cable is moving, and the slip is minimal making it a very robust feedback for the motor controller. The encoder wheel is pushing the cable toward the motor wheel with a spring, that assures small imperfections in the cable does not make it slip. two simple screws adjust the spring tension. For storing the cable a box underneath collects the cable.
+Sometimes simple is better. The simple design have a motorized toothed wheel and an encoder wheel pushing the cable against the wheels. The encoder wheel turns only when the cable is moving, and the slip is minimal making it a very robust feedback for the motor controller. The encoder wheel is pushing the cable toward the motor wheel with a spring, that assures small imperfections in the cable does not make it slip. Two simple screws adjust the spring tension. For storing the cable a box underneath collects the cable.
 
 \begin{figure}[H]
 \centering
@@ -114,7 +114,7 @@ From an electrical view there are two separate systems, Flight Control System on
 The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.
 
 \subsection{Ground Station}
-The ground station sends data to the UAV system and decides weather to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher then expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.
+The ground station sends data to the UAV system and decides whether to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher than expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.
   
 \begin{figure}[hbtp]
 \centering
@@ -124,7 +124,7 @@ The ground station sends data to the UAV system and decides weather to roll cabl
 
 
 \subsection{UAV System}
-The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge. The Phidget Bridge are interfaced via a Beaglebone Black.  
+The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge. The Phidget Bridge is interfaced via a Beaglebone Black.  
 
 \begin{figure}[hbtp]
 \centering
@@ -132,7 +132,7 @@ The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge.
 \caption{UAV electrical overview.}
 \end{figure}
 
-
+\newpage
 
 \subsection{Data Connection using Ethernet over Power line}
 To connect the UAV to the Ground Station an Ethernet over power line system is used. Ethernet over power line operate by adding a modulated carrier to the wiring system, intended to work on 110-230 volt AC with frequencies in 50-60 Hertz. The AV500 Nano\footnote{Model number: TL-PA411KIT.} system from TP-Link supports speeds up to 500Mbps and works without any configuration needed. Stripping the housing from the electronic and soldering two wires on to parallel connect the component to the 75 volt system. All detailed setup and configurations are descried in the appendix.
@@ -147,7 +147,7 @@ To connect the UAV to the Ground Station an Ethernet over power line system is u
 
 
 \section{Software Design}
-All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at the deparment of Automation and Control at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications. On figure \ref{fig:software-block-diagram} a block diagram is showing a overview of key software components and their structural relations to other components.
+All software for measuring and controlling is implemented in the real-time software framework Robot Hardware Daemon, RHD. RHD is the real-time hardware abstraction layer for the Mobotware platform, developed at the department of Automation and Control at DTU. RHD is a plugin-based platform that allows easy integration with sensors and actuators. RHD creates a synchronized database with read/write variables that can be shared between plugins and/or accessed by other software applications. On figure \ref{fig:software-block-diagram} a block diagram is showing a overview of key software components and their structural relations to other components.
 
 \begin{figure}[hbtp]
 \centering
@@ -158,7 +158,7 @@ All software for measuring and controlling is implemented in the real-time softw
 
 
 \subsection{Ground Control Station}
-The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
+The objective of the Ground Control station software is to measure the horizontal force, fetch steering reference signals from joystick or other controller, control the cable winch, and make the calculated control signals available in the variable database. On figure \ref{fig:GCS-software-overview} a graphical overview of the plugin structure shows the periodic run sequence and plugin variable dependency relationship. The plu The speed variables are created in the plugin tcuav, and not the joycontrol hence the joycontrol module estimates the steering method by variables available. This also mean the initialization of joystick must be performed after initialization of tcuav. \\
 \noindent
 The Ground Control Station interfaces the hardware component through the on-board GPIO pins allowing the Beaglebone to send a Pulse Width Modulation signal to the motor driver and reading the encoders, either as a SPI signal or by counting rising and falling edges.
 
