@@ -274,3 +274,5 @@
 \usepackage{pdfsync}
 \usepackage{units}
 \usepackage{siunitx}
+\usepackage{wrapfig}
+
