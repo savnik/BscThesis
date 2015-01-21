@@ -22,8 +22,8 @@
 \clearforchapter
 \tableofcontents
 \clearforchapter
-\mylistoftodos
-\clearforchapter
+%\mylistoftodos
+%\clearforchapter
 \listoffigures 
 
 \mainmatter
@@ -49,5 +49,15 @@
 \backmatter
 \bibliographystyle{alpha}
 \bibliography{bibliography/Bibliography}
+\clearforchapter
+\chapter*{CD Content}
+\begin{itemize}
+\item RHD server source code
+\item CAD files (Solid Works)
+\item PDF version of the thesis
+\item Matlab calibration of load cells
+\item Test data
+\item Copy of selected references
+\end{itemize}
 \clearforchapter
 \end{document}

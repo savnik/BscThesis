@@ -1,10 +1,10 @@
 %!TEX root = ../Thesis.tex
 
 \chapter{Test and Results}
-This chapter deals with testing of the prototype, discussion of the results achieved and how to improve the results in case the data achieved is not satisfying.  
+This chapter deals with testing of the prototype, discussion of the results achieved and possible improvements.  
 
 \section{The test setup}
-Given to the short time frame for this project and unexpected long time sick leave foreman in the mechanical workshop some short cuts was performed in order to get a working prototype. The mechanical and electrical parts are fitted into a rack cabinet.
+Given the short time frame for this project and an unexpected long time sick leave foreman in the mechanical workshop some short cuts was performed in order to get a working prototype. The mechanical and electrical parts are fitted into a rack cabinet.
 
 \begin{figure}[hbtp]
   \centering
@@ -18,12 +18,12 @@ Underneath that a shelf is mounted with the Beaglebone, motor driver, Network ad
 At the bottom, the DC/DC power converters are mounted and a on/off switch is surface mounted to the entire system.  
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=1]{graphics/product_pictures/IMG_6249_cutout.jpg}
+\includegraphics[scale=0.5]{graphics/product_pictures/IMG_6249_cutout.jpg}
 \caption{The final assembly of the prototype.}
 \end{figure}
 
 
-
+\newpage
 \section{Cable Drum}
 To address the heating issue in the cable drum a test was performed to evaluate the heating’s influence, in order to incorporate the results in the design process.\\
 

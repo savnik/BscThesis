@@ -1,12 +1,12 @@
 %!TEX root = ../Thesis.tex
 
 \chapter{Prototype}
-The Ground Control Platform must have some physical dimension due to the size of the UAV used in this project. The dimension of the UAV used will affect the dimension and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is on making an industrial and robust prototype. 
+The Ground Control Platform have some physical dimension due to the size of the UAV used in this project. The dimensions of the UAV used will affect the dimensions and choice of construction of the ground station. In dimensioning and designing the ground station the primary focus is making an industrial and robust prototype. 
 
 
 
 \section{Landing platform / Helipad}
-The landing platform or helipad is a 60cm x 60cm wide plate with a hole in the middle. Dimensioning of the size mainly relies on tolerance on the precision of landing the UAV. The UAV only needs 30cm x 30cm space for the landing gear, but in case a big wind gust comes in just before landing/take-off, the UAV can slide off the platform if the platform is too small. On figure \ref{fig:helipad} the helipad is seen from the top.
+The landing platform or helipad is a 60cm $\times$ 60cm wide plate with a hole in the middle. Dimensioning of the size mainly relies of tolerance on the precision of landing the UAV. The UAV only needs 30cm $\times$ 30cm space for the landing gear, but in case a big wind gust comes in just before landing/take-off, the UAV can slide off the platform if the platform is too small. On figure \ref{fig:helipad} the helipad is seen from the top.
 
 \begin{figure}[hbtp]
 \centering
@@ -27,17 +27,17 @@ In order to precisely determinate where the UAV is positioned relative to the he
 \end{figure}
 
 \noindent
-To measure the horizontal angle between the Ground Station and the UAV to load cells are used, perpendicular to each other. One end attached to the Ground Station and the other end attached to a cable though hole made in Teflon. Then the UAV is exactly direct over the centre, no force will be measured, but then the UAV moves to one of the sides it will create a cable tension that results in a force in $x$- and $y$-direction. Combining the $x$ and $y$ force can be translated to an angle. 
+To measure the horizontal angle between the Ground Station and the UAV two load cells are used, mounted perpendicular to each other. One end attached to the Ground Station and the other end attached to a cable though hole made in Teflon. Then the UAV is exactly direct over the centre, no force will be measured, but then the UAV moves to one of the sides it will create a cable tension that results in a force in $x$- and $y$-direction. Combining the $x$ and $y$ force can be translated to an angle. 
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/cad/loadcell.png}
-\caption[Configuration of two load cells, for measuring the cable drag]{Configuration of two load cells, for measuring the cable drag in x and y direction. Load cell 1 measures in $x$-direction and load cell 2 in $y$-direction.}
+\caption[Configuration of two load cells, for measuring the cable drag]{Configuration of two load cells, for measuring the cable drag in $x$- and $y$-direction. Load cell 1 measures in $x$-direction and load cell 2 in $y$-direction.}
 \label{fig:loadcells}
 \end{figure}
 
 \noindent
-The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable and the measuring device must be able to withstand such a force without permanently bending. Two 5kg load cells from Phidget Inc is assessed to be the best match for the job with regard to what is available in the projects price range.
+The UAV can lift approximate 3kg payload therefore exert 3kg tension to the cable -- which the measuring device must be able to withstand such a force without permanently bending. Two 5kg load cells from Phidget Inc is assessed to be the best match for the job with regard to what is available in the projects price range.
 
 
 
@@ -47,7 +47,7 @@ The UAV can lift about 3kg payload and therefore exert 3kg thrust to the cable a
 
 
 \section{Winching and storing the cable}
-There are several ways to keep the cable when it's not rolled out, two commonly used methods are on a cable drum or in a winded pile. The critical parameters here is the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cable is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
+There are several ways to store the cable when it's not rolled out, two commonly used methods are on a cable drum or in a winded pile. The critical parameters here are the flexibility of the cable, diameter of the cable and heat tolerances.  Because the cable is stored tightly together, heating from the cable resistance has to be given a thought in the cable storing design.
 
 \subsection{Storing cable on a drum}
 Storing cable on a drum is a very practical and commonly known method to store cables in a organised way. The benefits of this design is that the drum it self can be used as a winch to winch in the cable. But the minimum diameter of the drum is given by the cable minimum bending radius for flexible installation and that sets a physical minimum for the drums outer diameter. The larger the diameter the greater the force needed for rotating the drum. To assure smooth windings the drum can move from side to side. 
@@ -63,12 +63,12 @@ On figure \ref{fig:cable-drum} a cable drum is put under the helipad and the hor
 \end{figure}
 
 \noindent
-With all wire winded in and the UAV on maximum throttle there is assumed to be 500W running through the cable with a electrical loss at around 120 Watt, which is transformed into heat. 120 Watt of heat will give rise to heating up the cable drum. This is a known cause of electrical fire, when a cable drum gets too hot and melts. Therefore a series of pretests where performed to address how big a problem this would be, and to incorporate the result in the design of the system. The test and results are described in next chapter.
+With all wire winded in and the UAV of maximum throttle there is assumed to be 500W running through the cable with a electrical loss at around 120 Watt, which is transformed into heat. 120 Watt of heat will give rise to heating up the cable drum. This is a known cause of electrical fire, when a cable drum gets too hot and melts. Therefore a series of pretests where performed to address how big a problem this would be, and to incorporate the result in the design of the system. The test and results are described in next chapter.
 
 
 
 \subsection{The Simple Winch}
-Sometimes simple is better. The simple design have a motorized toothed wheel and an encoder wheel pushing the cable against the wheels. The encoder wheel turns only when the cable is moving, and the slip is minimal making it a very robust feedback for the motor controller. The encoder wheel is pushing the cable toward the motor wheel with a spring, that assures small imperfections in the cable does not make it slip. Two simple screws adjust the spring tension. For storing the cable a box underneath collects the cable.
+Sometimes simple is better. The simple design has a motorized toothed wheel and an encoder wheel pushing the cable against the wheels. The encoder wheel turns only when the cable is moving, and the slip is minimal making it a very robust feedback for the motor controller. The encoder wheel is pushing the cable toward the motor wheel with a spring, that assures small imperfections in the cable does not make it slip. Two simple screws adjust the spring tension. For storing the cable a box underneath collects the cable.
 
 \begin{figure}[H]
 \centering
@@ -82,9 +82,9 @@ Both concepts are mature enough to be prototyped and tested, but due to the time
 
 
 \section{Cable Connection point on the UAV}
-Connecting the cable to the UAV have several issues to address. First a 3-axes measurement device is needed to measure how much the cable tension is and in tree directions - $x$, $y$, and $z$ directions. The load cells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In $z$-direction the maximal force applied to the load cell is the UAVs lifting capability on approximately 3kg\cite{Sidea2013}. Hence the choice of load cell is a 5kg load cell.\\
+Connecting the cable to the UAV have several issues to address. First a 3-axes measurement device is needed to measure how much the cable tension is and in tree directions -- $x$, $y$, and $z$ directions. The load cells used is of same type as in measuring the horizontal angle in section \ref{sec:horizontalAnglePrototype} on page \pageref{sec:horizontalAnglePrototype}. In $z$-direction the maximal force applied to the load cell is the UAVs lifting capability on approximately 3kg\cite{Sidea2013}. Hence the choice of load cell is a 5kg load cell.\\
 \noindent
-In $x$- and $y$-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller $0.78$kg load cell is used to measure the $x$- and $y$-directional force. 
+In $x$- and $y$-direction the force applied by the cable or the UAV is not expected to exceed $0.5$kg, thus two smaller, $0.78$kg, load cell are used to measure the $x$- and $y$-directional force. 
 
 \begin{figure}[hbtp]
 \centering
@@ -104,28 +104,29 @@ Second an appliance inlet connector for easy plug-in and unplug is wanted. The c
 
 
 \section{The Cable}
-The cable connection is the UAVs lifeline; if it breaks, the UAV will immediately crash towards the ground. Thus, the cable must be robust and resistant to the surrounding conditions, such as UV-light, heat and mechanical wear and tear.  Given the UAVs limited lifting capabilities, the cable must be lightweight. 
+The cable connection is the UAV's lifeline; if it breaks, the UAV will immediately crash towards the ground. Thus, the cable must be robust and resistant to the surrounding conditions, such as UV-light, heat and mechanical wear and tear.  Given the UAVs limited lifting capabilities, the cable must be lightweight. 
 The choice of cable ended on the Ölflex Classic Flexible Mains range, hence great performance on flexibility, heat resistance and low weight. Furthermore, the sheath material is made of silicone resulting in a better grip on the winch. The cable has two conductors of $0.75mm^2$ and the total length is 50m\footnote{ÖLFLEX HEAT 180 Deg H05SS-F 2 x 0.75mm}. The detailed specifications are found in the appendix.\\
 The cable weight is $54$kg/km giving a total cable weight of $2.7$kg, for 50 meter cable.
 
 
 \section{Electrical Design}
-From an electrical view there are two separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAVs position controller is running on the UAV. 
-The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and convert it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.\\
-A Beaglebone is a small credit-card-sized Linux computer that runs a Debian operating system. It has penty I/O ports, a USB plug and a Ethernet connection. A AM335x 720MHz ARM processor enables the Beaglebone to run real-time applications.  
+From an electrical view there are two separate systems, Flight Control System on the UAV and Ground Control Station. The system reading the sensor data on the Ground Control Station has to feed the UAV with the measured data hence the UAV's position controller is running on the UAV. 
+The UAV needs a 12 volt DC power supply and the Ground station will be supplied with 12 volt DC. The power supply unit (PSU), Mikkel Wahlgreen developed, takes a 12 volt input and converts it to 75 volt DC output for the power line, and at the UAV the reverse process of converting it back to 12 volt.\\
+A Beaglebone is a small credit-card-sized Linux computer that runs a Debian operating system. It has plenty I/O ports, an USB plug, and an Ethernet connection. A AM335x 720MHz ARM processor enables the Beaglebone to run real-time applications, which makes it ideal for this application - both for the Ground Station and the UAV. 
 
 \subsection{Ground Station}
-The ground station sends data to the UAV system and decides whether to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher than expected more cable are rolled out and vice versa. The Ground Station have both an encoder on the motor, and one on the encoder wheel. The encoder signal is red from the GPIO pins on the Beaglebone, detailed described in the appendix.
+The ground station sends data to the UAV system and decides whether to roll cable in or out based on the wanted position and cable tension. The control of feeding the cable is done by comparing the load on the UAV system to what is expected by the weight of the rolled out amount of cable. If the load is higher than expected more cable are rolled out and vice versa. The Ground Station has both an encoder on the motor, and one on the encoder wheel. The encoder signal is read from the GPIO pins on the Beaglebone, described in details in the appendix. The Ground Station's electrical overview is shown on figure \ref{fig:GCS-elec}
   
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{graphics/GCS-eltectrical-overview.png}
 \caption{Ground Station electrical overview.}
+\label{fig:GCS-elec}
 \end{figure}
 
 
 \subsection{UAV System}
-The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge. The Phidget Bridge is interfaced via a Beaglebone Black.  
+The system on the UAV measures a 3-axes load cell connected to a Phigets Bridge. The Phidget Bridge is interfaced via a Beaglebone Black. The  
 
 \begin{figure}[hbtp]
 \centering

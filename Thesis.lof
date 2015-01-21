@@ -4,12 +4,12 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces A UAV using a vision system is scanning the field in front of the Harvester.}}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A UAV uses a vision system to scan the field in front of the Harvester.}}{3}{figure.1.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tether UAV}}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Illustration of key elements for a platform for tether UAV.}}{5}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Relationship between voltage drop and cable length per ampere}}{7}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Relationship between cable length, cross-sectional area and cable loss.}}{7}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing four ways of approximate the cables position.}}{9}{figure.2.4}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram showing four ways of approximating the cable's position.}}{9}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Catenary Chain Force diagram}}{10}{figure.2.5}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Coordinate system for horizontal measurement device.}}{11}{figure.2.6}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Force diagram for UAV}}{12}{figure.2.7}
@@ -23,7 +23,7 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Neutrix True One appliance connector system.}}{20}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Ground Station electrical overview.}}{22}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces UAV electrical overview.}}{22}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Ethernet over power line setup}}{23}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Ethernet-over-power-line setup}}{23}{figure.3.10}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Software Block Diagram.}}{24}{figure.3.11}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Ground Control Station software overview}}{25}{figure.3.12}
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Flight Control System software overview}}{26}{figure.3.13}
@@ -48,6 +48,6 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.}}{58}{figure.C.1}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Implementation of joystick control for UAV control.}}{59}{figure.C.1}
 \addvspace {10pt}
 \addvspace {10pt}

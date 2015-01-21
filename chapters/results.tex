@@ -1,10 +1,10 @@
 %!TEX root = ../Thesis.tex
 
 \chapter{Test and Results}
-This chapter deals with testing of the prototype, discussion of the results achieved and how to improve the results in case the data achieved is not satisfying.  
+This chapter deals with testing of the prototype, discussion of the results achieved and possible improvements.  
 
 \section{The test setup}
-Given to the short time frame for this project and unexpected long time sick leave foreman in the mechanical workshop some short cuts was performed in order to get a working prototype. The mechanical and electrical parts are fitted into a rack cabinet.
+Given the short time frame for this project and an unexpected long time sick leave foreman in the mechanical workshop some short cuts was performed in order to get a working prototype. The mechanical and electrical parts are fitted into a rack cabinet.
 
 \begin{figure}[hbtp]
   \centering
@@ -28,7 +28,7 @@ At the bottom, the DC/DC power converters are mounted and a on/off switch is sur
 To address the heating issue in the cable drum a test was performed to evaluate the heating’s influence, in order to incorporate the results in the design process.\\
 
 \subsection{Test - Worst-case heating in the cable coil}
-The worst-case test with full load over long time was performed at indoor environment with room temperature on 24 degree Celsius. The coil was excited with 75V DC and 360W just over an hour. This is not 100 per cent of the UAVs power consumption, but the testing equipments upper limit. The inner diameter of the coil is 10cm and is made of 2mm thick PVC pipe.
+The worst-case test with full load over long time was performed at indoor environment with room temperature of 24 degree Celsius. The coil was excited with 75V DC and 360W just over an hour. This is not 100 per cent of the UAV's power consumption, but the testing equipments upper limit. The inner diameter of the coil is 10cm and is made of 2mm thick PVC pipe.
 
 
 \begin{figure}[H]
@@ -44,18 +44,18 @@ The worst-case test with full load over long time was performed at indoor enviro
 \caption[Heat test, image from thermal camera]{Heat test of 20m standard household cable\footnotemark winded in two layers with 75V DC and 360W. Spot 1 is inside the coil, spot 2 is the lower side of the outer coil and spot 3 i at center of the outer coil. On the lower left corner thermometer calibration constants is displayed.}
 \label{fig:heat_test_ir}
 \end{figure}
-\footnotetext{House hold cable with unknown origin, cross-sectional area 0.75mm2, Max voltage 230 AC, Max current 10A}
+\footnotetext{House hold cable with unknown origin, cross-sectional area 0.75mm2, Max voltage 230 AC, Max current 10A.}
 
 \subsection{Summary}
-Even through the cable is not excited with 100 per cent of the UAV power consumption; the test puts the heating issue in perspective. The heating is not critical high, but must be considered in the cable requirement specification; hence, CE certification only requires the cable to withstand up to 80 degrees\cite{Parliament2006}.    
+Even though the cable is not excited with 100 per cent of the UAV's power consumption; the test puts the heating issue in perspective. The heating is not critically high, but must be considered in the cable requirement specification; hence, CE certification only requires the cable to withstand up to 80 degrees \cite{Parliament2006}.    
 
 
 
 \section{Horizontal Measuring Device}
-This measurement devices is tested with regards to stability and the results of the calculated position references. Hence this is relative cheap load cells, the precision is expected to be within an acceptable region.
+This measurement devices is tested with regards to stability and the results of the calculated position references. Hence this is relative cheap load cells, the precision is expected to be within an acceptable percentage.
 
 \subsection{Calibration}
-First off is calibrating the load cells. First measurement is without any forces acting in $x$ and $y$ direction in order to determine the offset of each load cell.
+Calibrating the load cells. First measurement is without any forces acting in $x$ and $y$ direction in order to determine the offset of each load cell.
 The offset for $x$ is found to $-455.9787$ and the $y$ offset to $-511.2618$, as seen on figure \ref{fig:HMDcalib}.\\
 
 \begin{figure}[hbtp]
@@ -71,13 +71,13 @@ Next 1000g of load is put on the load cell with a rope through the Teflon ring f
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=1]{graphics/gcs_test/calib_result_compare.eps}
-\caption[Result of calibration for Horizontal Measurement Device]{The result of calibration. The $x$-calibrated values are between $633$g and $636$g, then the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from calibrating with the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision will vary $\pm75$g around the zero balance.}
+\caption[Result of calibration for Horizontal Measurement Device]{The result of calibration. The $x$-calibrated values are between $633$g and $636$g, when the force applied was $600$g. The $33-36$g difference is most likely caused by the limitations of precision from calibrating with the spring load. The y-calibrated data is ranging from $-29$g to $-32$g. It is expected the precision will vary $\pm75$g around the zero balance.}
 \end{figure}
 
 \newpage
 \subsection{Test of angular calculations}
 After the calibration process, a test of the calibration shows the quality of the calibration.
-This test is performed by applying a known force in a combination of $x$ and $y$ direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases over time. This is probably due to tolerances in the manufacturing process of the mount enabling the load cell to move slightly over time or the elasticity of the connecting rope between the spring load and the load cell.
+This test is performed by applying a known force in a combination of $x$ and $y$ direction. For this test $\phi$ is set to 45 degrees and the total force is $1$kg. On figure \ref{fig:phi45deg1kg} it is seen the calculated tension slightly decreases over time. This is probably due to tolerances in the manufacturing process of the mount enabling the load cell to move slightly over time or the elasticity of the connecting rope between the spring load and the load cell.
 
 \begin{figure}[hbtp]
 \centering
@@ -88,7 +88,7 @@ This test is performed by applying a known force in a combination of $x$ and $y$
 
 \newpage
 \noindent
-On figure \ref{fig:phi45deg1kg} it is seen that the data slightly decreases overtime. This is probably due to the spring load is permanently bending, not excluding the elasticity of the rope and tolerances in the manufacturing process enabling the load cell to move slightly over time. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both $x$ and $y$ load cell. Because it applies to both load cells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle. The two degrees error in the angle is likely due to the precision of the load angle.
+On figure \ref{fig:phi45deg1kg} it is seen that the tension slightly decreases overtime. This is probably due to the spring load is permanently bending, not excluding the elasticity of the rope and tolerances in the manufacturing process enabling the load cell to move slightly over time. Taking a closer look at the data on figure \ref{fig:phi45deg1kgdata} showing this phenomena applies to both $x$ and $y$ load cell. Because it applies to both load cells the calculated angle $\phi$ is constant, thus the drift the data is still valid and results in an accurate angle. The two degrees error in the angle is likely due to the precision of the load angle.
 
 \begin{figure}[hbtp]
 \centering
@@ -138,7 +138,7 @@ On figure \ref{fig:theta0phi0deg1kgCable} the measured values are slightly highe
 
 \newpage
 \noindent
-Repeating the above test with $\theta=45$ degrees on figure \ref{fig:theta45phi0deg1kgCable}. Again a slightly decreasing total force but stable angle calculation, hence $x$ and $y$ load cell is decreasing in the same rate. The expected total force is $707$g and the measured is around $23$g higher, might because the angle have been a little less than 45 degrees or the tension has been a little higher. This is given to et limited precision in the test setup.
+Repeating the above test with $\theta=45$ degrees on figure \ref{fig:theta45phi0deg1kgCable}. Again a slightly decreasing total force but stable angle calculation, hence $x$ and $y$ load cell is decreasing in the same rate. The expected total force is $707$g and the measured is around $23$g higher, might be because the angle have been a little less than 45 degrees or the tension has been a little higher. This is given to the limited precision in the test setup.
 
 
 \begin{figure}[hbtp]
@@ -158,7 +158,7 @@ The 5kg load cell has a zero balance at $\pm75g$. Any values close to this range
 When calibrating the 5kg load cell, the calibration gives better results using a calibration load greater than $0.5$kg.
 The force in $T_{winch,y}$ is quite small and can therefore be ignored.\\
 All plots have a zoom time axis, thus resulting in more readable and intuitive graphics. All test where measured in 60-120 seconds to ensure the data is stable over time.\\
-It is very important to keep +50mm distance between the winch and the load cell, if they are too close the measured force is rapidly decreasing. 
+It is important to keep +50mm distance between the winch and the load cell, if they are too close the measured force is rapidly decreasing. 
 
 
 
@@ -171,7 +171,7 @@ It is very important to keep +50mm distance between the winch and the load cell,
 This measurement devices consist of tree load cells, all perpendicular to each other. The load cells are of different working range, but after calibration their scale is close to equal. However they have different precision, creep and non-linearity region, which might cause unexpected results.
 
 \subsection{Calibration}
-As in the Horizontal Measuring Device, first thing is to perform a calibration, now in tree axes, but with same method. The $x$ offset is $-5992.5241$, $y$ offset $464.4041$, and $z$ offset $104.0533$, as seen on figure \ref{fig:fcs-calib-offset}.\\
+As in the Horizontal Measuring Device, the first thing is to perform a calibration, now in tree axes, but with same method. The $x$ offset is $-5992.5241$, $y$ offset $464.4041$, and $z$ offset $104.0533$, as seen on figure \ref{fig:fcs-calib-offset}.\\
 
 \begin{figure}[hbtp]
 \centering
@@ -181,7 +181,7 @@ As in the Horizontal Measuring Device, first thing is to perform a calibration, 
 \end{figure}
 
 \noindent
-The $z$-axis is calibrated with 1000g load, hence it is a 5kg load cell. The $x$- and $y$-axes is calibrated with 500g load, hence their measuring range limit is $0.78$kg. The gain is calculated to: $Kx=0.0868$, $Ky=-0.0851$, and $Kz=0.4277$. 
+The $z$-axis is calibrated with 1000g load, hence it is a 5kg load cell. The $x$- and $y$-axes are calibrated with 500g load, hence their measuring range limit is $0.78$kg. The gain is calculated to: $Kx=0.0868$, $Ky=-0.0851$, and $Kz=0.4277$. 
 \\
 
 
@@ -210,7 +210,7 @@ Taking a look at the calculated values for $r$, $\phi$, and $\theta$ reflects th
 
 \newpage
 \subsection{Summary}
-The measurement device can measure all tree axis independently with acceptable results. The drift in the data, of same type as in the Horizontal Measurement Device, are very likely of same causes. The $x$-axis load cell has a very large offset compared to the others. This might be caused by a damage or over load resulting in permanent bending of the Aluminium block. Thus the data from it is still acceptable.
+The measurement device can measure all tree axis independently with acceptable results. The drift in the data, of same type as in the Horizontal Measurement Device, are very likely of same causes. The $x$-axis load cell has a very large offset compared to the others. This might be caused by a damage or over load resulting in permanent bending of the Aluminium block. Thus the data from it is still within  an acceptable range.
 
 
 

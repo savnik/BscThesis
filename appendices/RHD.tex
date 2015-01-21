@@ -42,6 +42,7 @@ Configuring the bridge is done by first enabling the wanted channels. The defaul
     </fcs>  
 \end{lstlisting}
 
+\noindent
 This plugin depends on Phidgets Linux Library. Special installation notes are found in the readme file.\\
 
 \noindent
@@ -114,14 +115,14 @@ TCUAV or Tether Control of UAV is the Ground Station plugin. This plugin handles
     
     
     <!-- Joystick Control Not critical plugin for Guidebot -->
-   <joycontrol enable="true" lib="libjoycontrol.so.1" critical="false" safety="1">
+    <joycontrol enable="true" lib="libjoycontrol.so.1" critical="false" safety="1">
     <joystick port="/dev/input/js0"/>
 	<speed maxlr="5000" maxfwd="5000" maxspin="5000" maxupdown="5000" />
 	<deadband max="767" min="-767"/>
 	<control enable="true"/>
 	<scale right="1.000" left="1.000"/>
     </joycontrol>  
-   
+    
     
     <rhdlog enable = "true"
             lib="rhdlog.so.1"
@@ -130,7 +131,7 @@ TCUAV or Tether Control of UAV is the Ground Station plugin. This plugin handles
            >
     </rhdlog>
   </plugins>
-</rhd> 
+</rhd>
 \end{lstlisting}
 
 \noindent
@@ -140,10 +141,10 @@ Files:
 .2 tcuav.
 .3 Makefile.
 .3 README.
-.3 gpio.c
-.3 gpio.h
-.3 pwm.c
-.3 pwm.h
+.3 gpio.c.
+.3 gpio.h.
+.3 pwm.c.
+.3 pwm.h.
 .3 rhdconfig.xml.
 .3 tcuav.c.
 .3 tcuav.h.
@@ -158,7 +159,33 @@ Setting up this plugin requires the PhidgetBridge2 to be configured first.
 
 \noindent
 \begin{lstlisting}[language=XML]
-<!-- Phidget Bridge -->
+<?xml version="1.0" ?>
+<!--
+    Configuration file for 
+    Robot Hardware Daemon
+    This configuration is for the Phidget Sensor
+  
+-->
+<!-- Starting RHD Configuration -->
+<rhd>
+  <!-- *** Core Components Configuration *** -->
+  <!-- Sheduler configuration -->
+  <sheduler>
+    <period value="10000"/><!--in usec 10ms is MIN-->
+    <type value="itimer"/><!--"usleep","itimer","LXRT" -->
+  </sheduler>
+  <!-- Server configuration -->
+  <server>
+    <port value="24902"/>
+    <clients number="10" allwriters="1"/>
+  </server>
+    
+  <!-- *** Plugins Configuration *** -->
+  <plugins basepath="/home/debian/rhd/trunk/build/lib/rhdplugin/">
+    <!-- Joystick Control
+          Updated!! Observe the max speed setting, deadband and the "safety" parameter -->
+    
+    <!-- Phidget Bridge -->
     <phidgetsbridge2
 	    enable = "true"
 	    lib="phidgetsbridge2.so.1"
@@ -167,10 +194,19 @@ Setting up this plugin requires the PhidgetBridge2 to be configured first.
 	    updateTimeMs = "10"
 	    gain = "128 128 128 0"
 	    enableCh = "1 1 1 0"
-	    offset = "-290 6050 -90 0"
-	    k = "876 870 360 1"
+	    offset = "464 -5993 104 0"
+	    k = "-510 868 4277 1"
       >
     </phidgetsbridge2>  
+    
+    <rhdlink enable="true"
+      lib="rhdlink.so.1"
+      debug="true"
+      remoteHost="127.0.0.1"
+      port="24902"
+      access="w"
+      >
+    </rhdlink>
     
     <!-- Flight Control System - Tether Control of UAV -->
     <fcs 
@@ -179,6 +215,14 @@ Setting up this plugin requires the PhidgetBridge2 to be configured first.
 	    debug = "true"
       >
     </fcs>  
+    <rhdlog enable = "true"
+            lib="rhdlog.so.1"
+            debug="true"
+            interval="0"
+           >
+    </rhdlog>
+  </plugins>
+</rhd>
 \end{lstlisting}
 
 \noindent

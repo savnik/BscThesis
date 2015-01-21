@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  20 JAN 2015 23:31
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.11.9)  21 JAN 2015 22:12
 entering extended mode
 **Thesis.tex
 
@@ -2381,12 +2381,7 @@ er/Preface.tex" [6
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
+Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
@@ -2425,12 +2420,12 @@ g=tex-text;" at 12.0pt
 xgyreadventor-bold.otf
  [11] [12]
 Overfull \hbox (1.55997pt too wide) detected at line 87
-[][] []\EU1/texgyreadventor(0)/bx/n/12 123[]
+[][] []\EU1/texgyreadventor(0)/bx/n/12 125[]
  []
 
 
 Overfull \hbox (1.55997pt too wide) detected at line 89
-[][] []\EU1/texgyreadventor(0)/bx/n/12 125[]
+[][] []\EU1/texgyreadventor(0)/bx/n/12 127[]
  []
 
 ) [13] [14
@@ -2762,7 +2757,7 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
@@ -2770,34 +2765,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
+
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
-
-Underfull \vbox (badness 1147) has occurred while \output is active []
-
- [57]
+[58]
 File: graphics/joycontrol/joycontrol.png Graphic file (type QTm)
-
-<use  "graphics/joycontrol/joycontrol.png" >) [58]
+ <use  "graphics/joycontrol/joycontrol.png" >) [59]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
-s/cad.tex"
+s/cad.tex" [60
+
+
+
+]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5.
@@ -2806,11 +2801,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf" >
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf" > [59
-
-
-
-]
+<use  "graphics/cad/loadcell-assembly.pdf" > [61]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page1>
@@ -2825,7 +2816,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page1>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page1> [60]
+<use  "graphics/cad/loadcell-assembly.pdf"  page1> [62]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page2>
@@ -2834,7 +2825,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page2>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page2> [61]
+<use  "graphics/cad/loadcell-assembly.pdf"  page2> [63]
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-assembly.pdf"  page3>
@@ -2843,7 +2834,7 @@ File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-assembly.pdf"  page3>
 File: graphics/cad/loadcell-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-assembly.pdf"  page3> [62]
+<use  "graphics/cad/loadcell-assembly.pdf"  page3> [64]
 File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/cable_hole.pdf" >
@@ -2863,7 +2854,7 @@ File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 <use  "graphics/cad/cable_hole.pdf"  page1>
 File: graphics/cad/cable_hole.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/cable_hole.pdf"  page1> [63]
+<use  "graphics/cad/cable_hole.pdf"  page1> [65]
 File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-to-toplevel-fitting.pdf" >
@@ -2884,7 +2875,7 @@ File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1>
 File: graphics/cad/loadcell-to-toplevel-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1> [64]
+<use  "graphics/cad/loadcell-to-toplevel-fitting.pdf"  page1> [66]
 File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/loadcell-vinkel-fitting.pdf" >
@@ -2905,7 +2896,7 @@ File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1>
 File: graphics/cad/loadcell-vinkel-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1> [65]
+<use  "graphics/cad/loadcell-vinkel-fitting.pdf"  page1> [67]
 File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-ring-insert.pdf" >
@@ -2926,13 +2917,13 @@ File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-ring-insert.pdf"  page1>
 File: graphics/cad/teflon-ring-insert.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-ring-insert.pdf"  page1> [66]
+<use  "graphics/cad/teflon-ring-insert.pdf"  page1> [68]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf" >
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf" > [67]
+<use  "graphics/cad/winch-assembly.pdf" > [69]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page1>
@@ -2947,7 +2938,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page1>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page1> [68]
+<use  "graphics/cad/winch-assembly.pdf"  page1> [70]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page2>
@@ -2956,7 +2947,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page2>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page2> [69]
+<use  "graphics/cad/winch-assembly.pdf"  page2> [71]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page3>
@@ -2965,7 +2956,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page3>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page3> [70]
+<use  "graphics/cad/winch-assembly.pdf"  page3> [72]
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-assembly.pdf"  page4>
@@ -2974,7 +2965,7 @@ File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-assembly.pdf"  page4>
 File: graphics/cad/winch-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-assembly.pdf"  page4> [71]
+<use  "graphics/cad/winch-assembly.pdf"  page4> [73]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf" >
@@ -2995,7 +2986,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page1>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page1> [72]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page1> [74]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page2>
@@ -3004,7 +2995,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page2>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page2> [73]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page2> [75]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page3>
@@ -3013,7 +3004,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page3>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page3> [74]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page3> [76]
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page4>
@@ -3022,7 +3013,7 @@ File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 <use  "graphics/cad/winch-side-plate-motor.pdf"  page4>
 File: graphics/cad/winch-side-plate-motor.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/winch-side-plate-motor.pdf"  page4> [75]
+<use  "graphics/cad/winch-side-plate-motor.pdf"  page4> [77]
 File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/tension-fitting.pdf" >
@@ -3043,7 +3034,7 @@ File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/tension-fitting.pdf"  page1>
 File: graphics/cad/tension-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/tension-fitting.pdf"  page1> [76]
+<use  "graphics/cad/tension-fitting.pdf"  page1> [78]
 File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/axis-holder.pdf" >
@@ -3063,7 +3054,7 @@ File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/axis-holder.pdf"  page1>
 File: graphics/cad/axis-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/axis-holder.pdf"  page1> [77]
+<use  "graphics/cad/axis-holder.pdf"  page1> [79]
 File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-ring.pdf" >
@@ -3083,7 +3074,7 @@ File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-ring.pdf"  page1>
 File: graphics/cad/teflon-ring.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-ring.pdf"  page1> [78]
+<use  "graphics/cad/teflon-ring.pdf"  page1> [80]
 File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/brass-bearings.pdf" >
@@ -3104,7 +3095,7 @@ File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 <use  "graphics/cad/brass-bearings.pdf"  page1>
 File: graphics/cad/brass-bearings.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/brass-bearings.pdf"  page1> [79]
+<use  "graphics/cad/brass-bearings.pdf"  page1> [81]
 File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/smooth-rods.pdf" >
@@ -3124,13 +3115,13 @@ File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 <use  "graphics/cad/smooth-rods.pdf"  page1>
 File: graphics/cad/smooth-rods.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/smooth-rods.pdf"  page1> [80]
+<use  "graphics/cad/smooth-rods.pdf"  page1> [82]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf" >
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf" > [81]
+<use  "graphics/cad/main_assembly_3.pdf" > [83]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf"  page1>
@@ -3145,7 +3136,7 @@ File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 <use  "graphics/cad/main_assembly_3.pdf"  page1>
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf"  page1> [82]
+<use  "graphics/cad/main_assembly_3.pdf"  page1> [84]
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/main_assembly_3.pdf"  page2>
@@ -3154,7 +3145,7 @@ File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 <use  "graphics/cad/main_assembly_3.pdf"  page2>
 File: graphics/cad/main_assembly_3.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/main_assembly_3.pdf"  page2> [83]
+<use  "graphics/cad/main_assembly_3.pdf"  page2> [85]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf" >
@@ -3175,7 +3166,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page1>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page1> [84]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page1> [86]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page2>
@@ -3184,7 +3175,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page2>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page2> [85]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page2> [87]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page3>
@@ -3193,7 +3184,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page3>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page3> [86]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page3> [88]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page4>
@@ -3202,7 +3193,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page4>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page4> [87]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page4> [89]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page5>
@@ -3211,7 +3202,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page5>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page5> [88]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page5> [90]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page6>
@@ -3220,7 +3211,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page6>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page6> [89]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page6> [91]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page7>
@@ -3229,7 +3220,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page7>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page7> [90]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page7> [92]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page8>
@@ -3238,7 +3229,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page8>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page8> [91]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page8> [93]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page9>
@@ -3247,7 +3238,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page9>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page9> [92]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page9> [94]
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page10>
@@ -3256,7 +3247,7 @@ File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/drum-carrier-assembly.pdf"  page10>
 File: graphics/cad/drum-carrier-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/drum-carrier-assembly.pdf"  page10> [93]
+<use  "graphics/cad/drum-carrier-assembly.pdf"  page10> [95]
 File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/LM12UU-holder.pdf" >
@@ -3277,7 +3268,7 @@ File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/LM12UU-holder.pdf"  page1>
 File: graphics/cad/LM12UU-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/LM12UU-holder.pdf"  page1> [94]
+<use  "graphics/cad/LM12UU-holder.pdf"  page1> [96]
 File: graphics/cad/end.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/end.pdf" >
@@ -3295,7 +3286,7 @@ File: graphics/cad/end.pdf Graphic file (type QTm)
  <use  "graphics/cad/end.pdf"  page1>
 File: graphics/cad/end.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/end.pdf"  page1> [95]
+<use  "graphics/cad/end.pdf"  page1> [97]
 File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/teflon-inserts.pdf" >
@@ -3316,7 +3307,7 @@ File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 <use  "graphics/cad/teflon-inserts.pdf"  page1>
 File: graphics/cad/teflon-inserts.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/teflon-inserts.pdf"  page1> [96]
+<use  "graphics/cad/teflon-inserts.pdf"  page1> [98]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf" >
@@ -3336,7 +3327,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page1>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page1> [97]
+<use  "graphics/cad/baseplate.pdf"  page1> [99]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page2>
@@ -3345,7 +3336,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page2>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page2> [98]
+<use  "graphics/cad/baseplate.pdf"  page2> [100]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page3>
@@ -3354,7 +3345,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page3>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page3> [99]
+<use  "graphics/cad/baseplate.pdf"  page3> [101]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page4>
@@ -3363,7 +3354,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page4>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page4> [100]
+<use  "graphics/cad/baseplate.pdf"  page4> [102]
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/baseplate.pdf"  page5>
@@ -3372,7 +3363,7 @@ File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 <use  "graphics/cad/baseplate.pdf"  page5>
 File: graphics/cad/baseplate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/baseplate.pdf"  page5> [101]
+<use  "graphics/cad/baseplate.pdf"  page5> [103]
 File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/motor-holder.pdf" >
@@ -3393,7 +3384,7 @@ File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 <use  "graphics/cad/motor-holder.pdf"  page1>
 File: graphics/cad/motor-holder.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/motor-holder.pdf"  page1> [102]
+<use  "graphics/cad/motor-holder.pdf"  page1> [104]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/rod.pdf" >
@@ -3411,7 +3402,7 @@ File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page1>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/rod.pdf"  page1> [103]
+<use  "graphics/cad/rod.pdf"  page1> [105]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/rod.pdf"  page2>
@@ -3419,7 +3410,7 @@ File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page2>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/rod.pdf"  page2> [104]
+<use  "graphics/cad/rod.pdf"  page2> [106]
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/rod.pdf"  page3>
@@ -3427,7 +3418,7 @@ File: graphics/cad/rod.pdf Graphic file (type QTm)
  <use  "graphics/cad/rod.pdf"  page3>
 File: graphics/cad/rod.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/rod.pdf"  page3> [105]
+<use  "graphics/cad/rod.pdf"  page3> [107]
 File: graphics/cad/side.pdf Graphic file (type QTm)
  <use  "graphics/cad/side.pdf" >
 File: graphics/cad/side.pdf Graphic file (type QTm)
@@ -3445,7 +3436,7 @@ File: graphics/cad/side.pdf Graphic file (type QTm)
 <use  "graphics/cad/side.pdf"  page1>
 File: graphics/cad/side.pdf Graphic file (type QTm)
  <use  "graphics/cad/side.pdf"  page1>
-[106]
+[108]
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
  <use  "graphics/cad/belt-fastner-plate.pdf" >
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
@@ -3465,7 +3456,7 @@ File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
 <use  "graphics/cad/belt-fastner-plate.pdf"  page1>
 File: graphics/cad/belt-fastner-plate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/belt-fastner-plate.pdf"  page1> [107]
+<use  "graphics/cad/belt-fastner-plate.pdf"  page1> [109]
 File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/belt-fastner-bracket.pdf" >
@@ -3486,7 +3477,7 @@ File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 <use  "graphics/cad/belt-fastner-bracket.pdf"  page1>
 File: graphics/cad/belt-fastner-bracket.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/belt-fastner-bracket.pdf"  page1> [108]
+<use  "graphics/cad/belt-fastner-bracket.pdf"  page1> [110]
 File: graphics/cad/pullys.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/pullys.pdf" >
@@ -3506,7 +3497,7 @@ File: graphics/cad/pullys.pdf Graphic file (type QTm)
 <use  "graphics/cad/pullys.pdf"  page1>
 File: graphics/cad/pullys.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/pullys.pdf"  page1> [109]
+<use  "graphics/cad/pullys.pdf"  page1> [111]
 File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/slip_ring_with_flange.pdf" >
@@ -3527,13 +3518,13 @@ File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 <use  "graphics/cad/slip_ring_with_flange.pdf"  page1>
 File: graphics/cad/slip_ring_with_flange.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/slip_ring_with_flange.pdf"  page1> [110]
+<use  "graphics/cad/slip_ring_with_flange.pdf"  page1> [112]
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/toplevel.pdf" >
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
  <use  "graphics/cad/toplevel.pdf" >
-[111]
+[113]
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
  <use  "graphics/cad/toplevel.pdf"  page1>
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
@@ -3547,13 +3538,13 @@ File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 <use  "graphics/cad/toplevel.pdf"  page1>
 File: graphics/cad/toplevel.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/toplevel.pdf"  page1> [112]
+<use  "graphics/cad/toplevel.pdf"  page1> [114]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf" >
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf" > [113]
+<use  "graphics/cad/hexa-assembly.pdf" > [115]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page1>
@@ -3568,7 +3559,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page1>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page1> [114]
+<use  "graphics/cad/hexa-assembly.pdf"  page1> [116]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page2>
@@ -3577,7 +3568,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page2>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page2> [115]
+<use  "graphics/cad/hexa-assembly.pdf"  page2> [117]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page3>
@@ -3586,7 +3577,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page3>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page3> [116]
+<use  "graphics/cad/hexa-assembly.pdf"  page3> [118]
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/hexa-assembly.pdf"  page4>
@@ -3595,7 +3586,7 @@ File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 <use  "graphics/cad/hexa-assembly.pdf"  page4>
 File: graphics/cad/hexa-assembly.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/hexa-assembly.pdf"  page4> [117]
+<use  "graphics/cad/hexa-assembly.pdf"  page4> [119]
 File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/powercon-to-loadcell.pdf" >
@@ -3616,7 +3607,7 @@ File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 <use  "graphics/cad/powercon-to-loadcell.pdf"  page1>
 File: graphics/cad/powercon-to-loadcell.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/powercon-to-loadcell.pdf"  page1> [118]
+<use  "graphics/cad/powercon-to-loadcell.pdf"  page1> [120]
 File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/powercon-fitting.pdf" >
@@ -3637,7 +3628,7 @@ File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 <use  "graphics/cad/powercon-fitting.pdf"  page1>
 File: graphics/cad/powercon-fitting.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/powercon-fitting.pdf"  page1> [119]
+<use  "graphics/cad/powercon-fitting.pdf"  page1> [121]
 File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/fitting-5kg-to-075kg.pdf" >
@@ -3658,7 +3649,7 @@ File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 <use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1>
 File: graphics/cad/fitting-5kg-to-075kg.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1> [120]
+<use  "graphics/cad/fitting-5kg-to-075kg.pdf"  page1> [122]
 File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/fitting-075-to-075.pdf" >
@@ -3679,7 +3670,7 @@ File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 <use  "graphics/cad/fitting-075-to-075.pdf"  page1>
 File: graphics/cad/fitting-075-to-075.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/fitting-075-to-075.pdf"  page1> [121]
+<use  "graphics/cad/fitting-075-to-075.pdf"  page1> [123]
 File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 
 <use  "graphics/cad/mount-plate.pdf" >
@@ -3699,7 +3690,7 @@ File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 <use  "graphics/cad/mount-plate.pdf"  page1>
 File: graphics/cad/mount-plate.pdf Graphic file (type QTm)
 
-<use  "graphics/cad/mount-plate.pdf"  page1> [122])
+<use  "graphics/cad/mount-plate.pdf"  page1> [124])
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
 s/componentSpecs.tex"
 
@@ -3710,36 +3701,40 @@ Overfull \hbox (67.64006pt too wide) in paragraph at lines 25--45
 [][] 
  []
 
-) [123
+) [125
 
 
 
-] [124]
+] [126]
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.bb
 l"
 bibitemlist
 Requested font "[lmroman12-italic]:mapping=tex-text" at 12.0pt
  -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-italic.otf
-) [125
+) [127
 
 
 
-] [126
+] [128
 
-] [127
+] [129
+
+] [130
+
+] [131
 
 ]
 
 Package nag Warning: 4 complaints in total.
 
 File: graphics/DTU-frise-SH-15.pdf Graphic file (type QTm)
-<use  "graphics/DTU-frise-SH-15.pdf" > [128
+<use  "graphics/DTU-frise-SH-15.pdf" > [132
 
 ]
 \tf@toc=\write7
 \tf@lof=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
 
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\Thesis.au
 x"
@@ -3777,17 +3772,17 @@ s/RHD.aux")
 s/cad.aux")
 ("C:\Users\Peter\Documents\DTU\7. semester\BSc\TCUAV\thesis\BscThesis\appendice
 s/componentSpecs.aux"))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 53.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 63.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 56623 strings out of 429025
- 1222282 string characters out of 3167800
- 1742049 words of memory out of 3000000
- 58946 multiletter control sequences out of 15000+200000
+ 56638 strings out of 429025
+ 1222470 string characters out of 3167800
+ 1742348 words of memory out of 3000000
+ 58961 multiletter control sequences out of 15000+200000
  9645 words of font info for 77 fonts, out of 3000000 for 9000
  912 hyphenation exceptions out of 8191
  62i,54n,98p,10454b,3780s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Thesis.pdf (146 pages).
+Output written on Thesis.pdf (150 pages).
